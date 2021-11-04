@@ -6,8 +6,9 @@ An interactive tool allows users to critically analyze the current or desired ca
 In the current release two objective funcions are included.
 
 
-Obj Min Bed Slope
-Obj Max Bed Slope
+
+1. Minimize Bed Slope
+2. Maximize Bed Slope
 
 Subject to the following constraints.
 
@@ -15,6 +16,8 @@ Subject to the following constraints.
 
 
 <img src="https://render.githubusercontent.com/render/math?math=\Tau <= \Tau_{max}">
+
+See details of this tool in the complete user manual.
 
 ## Curve handling
 During import of routes, automatic identification and reading of curve data is introduced. 
