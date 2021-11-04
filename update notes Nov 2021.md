@@ -5,6 +5,8 @@ An interactive tool allows users to critically analyze the current or desired ca
 
 In the current release two objective funcions are included.
 
+![formula](https://render.githubusercontent.com/render/math?math=e^{i%20 \pi} = -1)
+
 Obj Min Bed Slope
 Obj Max Bed Slope
 
