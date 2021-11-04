@@ -10,7 +10,7 @@ Open project folder option included to allow easy access to the data files of us
 
 
 
-![](C:\Users\Dell\AppData\Roaming\marktext\images\2021-11-04-17-27-08-image.png)
+![Image 003](https://user-images.githubusercontent.com/88286426/140335886-6ab2310c-44b1-484b-9cc6-082a12a2cd2c.png)
 
 *Quick access to project folder for data management*
 
@@ -29,6 +29,9 @@ In addition, the scope of the transaction for undo and/or redo task is now expan
 5. Drpp height, location edits on longitudinal design
 6. Node editing, segment editing on longitudinal design
 
+Users can also clear transaction manually.
+
+
 ## Optimal bed slope design function
 
 An interactive tool allows users to critically analyze the current or desired canal flow section and easily apply it to the desired segment of a given canal route. The tool incorporates a built in optimization algorithm to find canal parameters that satisfy differnt objective functions. 
@@ -46,7 +49,8 @@ Subject to the following constraints.
 
 See details of this tool in the complete user manual.
 
-![](C:\Users\Dell\AppData\Roaming\marktext\images\2021-11-04-17-23-29-image.png)
+
+![Image 007](https://user-images.githubusercontent.com/88286426/140336164-1c00e855-7b1a-47d4-96ac-e7d6f5e6cf33.png)
 
 *New tool to design bed slope for limiting design criteria, showing results of constrained optimization solution for `Min So`*
 
@@ -60,17 +64,15 @@ During import of routes, automatic identification and reading of curve data is i
 
 The same functionality is included to the  `AlignmentProfile` tool in iCAD, allowing users to work with curves easily. Routes importedi with profile data (or whose data is is imported using `Soft Reload`) is also rendered to AutoCAD drawing while generating LSec drawings.
 
-![](C:\Users\Dell\AppData\Roaming\marktext\images\2021-11-04-16-43-48-image.png)
+
+![Image 002](https://user-images.githubusercontent.com/88286426/140336241-8026c0d6-e85f-45cd-b946-6c70d1999bdb.png)
 
 *Alignment curve in AutoCAD.*
 
 
-
-![](C:\Users\Dell\AppData\Roaming\marktext\images\2021-11-04-16-45-45-image.png)
+![Image 004](https://user-images.githubusercontent.com/88286426/140336281-8e3e889f-7a8f-42ad-9ec5-48cbe906fa51.png)
 
 *Curve presentation in plan and profile views*
-
-
 
 
 
@@ -86,7 +88,8 @@ Drop structure sizing is one of the key design tasks carried out by the engineer
 
 
 
-![](C:\Users\Dell\AppData\Roaming\marktext\images\2021-11-04-17-15-10-image.png)
+
+![Image 005](https://user-images.githubusercontent.com/88286426/140336347-dd63382e-8f5d-49b1-9209-86dd6dc3cb52.png)
 
 *LSec drawing showing variable drop heigh inserted on a longitudinal profile view.*
 
@@ -96,7 +99,8 @@ Canal routes refer [every time they are refreshed] to the design criteria corres
 
 This update includes tools to allow modification of the design criteria and apply it to an entire route.
 
-![](C:\Users\Dell\AppData\Roaming\marktext\images\2021-11-04-17-17-07-image.png)
+
+![Image 006](https://user-images.githubusercontent.com/88286426/140336385-a6745b28-8943-4976-ba53-b3593ff9c5b6.png)
 
 *Variable editor showing option to set design criteria to a current route.*
 
@@ -107,8 +111,7 @@ This update includes tools to allow modification of the design criteria and appl
 Longitudinal Profile (LSec) drawings generate curve details along with other design information on LSec drawings  - following improvements to curve handling as described above - thus making a more complete presentation of design.
 
 
-
-![](C:\Users\Dell\AppData\Roaming\marktext\images\2021-11-04-17-07-18-image.png)
+![Image 001](https://user-images.githubusercontent.com/88286426/140336407-5a6fa731-e200-4263-bfa1-3870f6c8b25a.png)
 
 *Curve Presentation in longitudinal profile view drawing generated to AutoCAD drawing*
 
