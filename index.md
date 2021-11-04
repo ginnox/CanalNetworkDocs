@@ -5,7 +5,7 @@ This is official site for documentation and guide of CanalNetwork software, and 
 
 If you have any questions or comments, please feel free to leave us what you feel here.
 
-See recent updates [here](updatenotesNov2021.md)
+See latest updates [here](updatenotesNov2021.md)
 
 ## What is CanalNETWORK software
 
