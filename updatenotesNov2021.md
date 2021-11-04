@@ -122,7 +122,8 @@ Longitudinal Profile (LSec) drawings generate curve details along with other des
 - fixed drop edit bugs when working with the last drop in segment.
 - fixed undesired node invert change, while using the slider tool to control node elevations
 - improved cleaning for invalid nodes and routes.
-- 
+- polyline filtering to minimize data errors (short length routes, inappropriate profiles...)
+
 
 ## Under progress
 
