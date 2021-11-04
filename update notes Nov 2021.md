@@ -40,6 +40,16 @@ Note: geometric design of curves is now fully entertained in AutoCAD environment
 
 ## Variable drop height
 
+## Design Criteria Exception
+Canal routes refer [every time they are refreshed] to the design criteria corresponding to their level or generation. To override some of these parameters as the site condition may require, users have to change junction node and canal segment assembly criteria. This makes the job time consuming, particularly for long canal routes.
+
+This update includes tools to allow modification of the design criteria and apply it to an entire route.
+
+![image](https://user-images.githubusercontent.com/88286426/140291915-e4ab0ab7-5278-407b-90f8-e8c7810d5f0f.png)
+
+## LSec Drawings
+Longitudinal Profile (LSec) drawings generate curve details along with the other informations, making a more complete presentation of design.
+
 
 ## Bug fixes
 - drop edit (last of segment)
