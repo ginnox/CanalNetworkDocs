@@ -12,7 +12,8 @@ Obj Max Bed Slope
 
 Subject to 
 <img src="https://render.githubusercontent.com/render/math?math=v_{min}<=v<=v_{max}">
-Tau <= Taumax
+
+<img src="https://render.githubusercontent.com/render/math?math=\Tau <= \Tau_{max}">
 
 ## Curve handling
 During import of routes, automatic identification and reading of curve data is introduced. 
