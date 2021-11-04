@@ -22,5 +22,6 @@ Note: geometric design of curves is now fully entertained in AutoCAD environment
 
 ## Bug fixes
 - drop edit (last of segment)
+- others
 - 
 
