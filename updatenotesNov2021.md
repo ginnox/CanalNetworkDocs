@@ -126,6 +126,14 @@ Longitudinal Profile (LSec) drawings generate curve details along with other des
 
 ## Under progress
 
-Title blocks
-Drawing styling
-OPtimization tool for lining 
+The following features comprise the wish list for the next scheduled update (Dec2021). Note this date is subject to change.
+* Custom Title blocks
+
+* Drawing styling for colors and/ or layers organizatoin, and production quality drawing generation
+
+* Optimization entry for lining cost function
+
+* and more...
+
+
+
