@@ -1,5 +1,18 @@
 The updates in the november release include the following features
 
+## Undo/Redo functionality
+Infinite number of Undo/redo transactions are registered to allow the user flexibility in the use of the software.
+
+In addition, the scope of the transaction for undo/redo task is now expanded to include the following user interactions:
+
+1. Add AutoCAD route object to layout view
+2. Remove route object (and associated junciton nodes) from layout view
+3. Manual delete of node
+4. Manual additoin of node
+5. Drpp height, location edits on longitudinal design
+6. Node editing, segment editing on longitudinal design
+
+
 ## Optimal bed slope design function
 An interactive tool allows users to critically analyze the current or desired canal flow section and easily apply it to the desired segment of a given canal route. The tool incorporates a built in optimization algorithm to find canal parameters that satisfy differnt objective functions. 
 
