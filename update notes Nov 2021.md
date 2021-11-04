@@ -4,6 +4,7 @@ The updates in the november release include the following features
 An interactive tool allows users to critically analyze the current or desired canal flow section and easily apply it to the desired segment of a given canal route. The tool incorporates a built in optimization algorithm to find canal parameters that satisfy differnt objective functions. 
 
 In the current release two objective funcions are included.
+
 Obj Min Bed Slope
 Obj Max Bed Slope
 
