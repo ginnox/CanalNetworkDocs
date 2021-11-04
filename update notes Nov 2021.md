@@ -11,7 +11,7 @@ Obj Min Bed Slope
 Obj Max Bed Slope
 
 Subject to 
-<img src="https://render.githubusercontent.com/render/math?math=v_{min}<=v<=v_{max}
+<img src="https://render.githubusercontent.com/render/math?math=v_{min}<=v<=v_{max}">
 Tau <= Taumax
 
 ## Curve handling
