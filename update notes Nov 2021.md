@@ -1,5 +1,9 @@
 The updates in the november release include the following features
 
+## File management Utility
+Open project folder option included to allow easy access to the data files of user projects.
+
+
 ## Undo/Redo functionality
 Infinite number of Undo/redo transactions are registered to allow the user flexibility in the use of the software.
 
@@ -54,5 +58,11 @@ Longitudinal Profile (LSec) drawings generate curve details along with the other
 ## Bug fixes
 - drop edit (last of segment)
 - others
+- Unwanted node invert change, while using the slider tool to control node elevations.
 - 
+
+## Under progress
+Title blocks
+Drawing styling
+OPtimization tool for lining 
 
