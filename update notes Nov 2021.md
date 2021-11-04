@@ -5,13 +5,14 @@ An interactive tool allows users to critically analyze the current or desired ca
 
 In the current release two objective funcions are included.
 
-<img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1">
 
 Obj Min Bed Slope
 Obj Max Bed Slope
 
-Subject to 
+Subject to the following constraints.
+
 <img src="https://render.githubusercontent.com/render/math?math=v_{min}<=v<=v_{max}">
+
 
 <img src="https://render.githubusercontent.com/render/math?math=\Tau <= \Tau_{max}">
 
