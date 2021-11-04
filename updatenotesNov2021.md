@@ -76,7 +76,7 @@ The same functionality is included to the  `AlignmentProfile` tool in iCAD, allo
 
 
 
-> Notee: Geometric design of curves is now fully entertained in AutoCAD environment. Once imported, the user has no option or tools to change any of the curve parameters.
+> Note: Geometric design of curves is now fully entertained in AutoCAD environment. Once imported, the user has no option or tools to change any of the curve parameters.
 
 
 
