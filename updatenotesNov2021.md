@@ -1,6 +1,20 @@
 # Update Notes (Nov 2021)
 
-The following major enhancements and features are made available in this release.
+The update for the period is packaged separately. The version and build information should appear as follows on user terminals. 
+
+> iCAD Version 2.1.8.7512
+
+> iCAD Bridge Version 4.4.1
+
+> CanalNETWORK Version 1.5.0.1241
+
+
+
+
+
+The following major enhancements and features are made available in this release. 
+
+
 
 ## File management Utility
 
@@ -100,11 +114,7 @@ The following functionalities are introduced as new tools to allow faster and we
 
 1. Multi-select button added to the tool bar: previously accessed only from `Edit > Multi-Select (Routes).` Now, the user can set it's state from the toolbar button, and also view its state always.
 
-
-
 ![](Images%20for%20Updates%20Nov21/Image%20008.png)
-
-
 
 2. Increased Speed for Pan/Zoom operations: The number of graphic components on the paln view can grow significantly with out the user noticing it. This has direct bearing on the speed of zoom/ pan scroll actions. In addition to previous tool to toggle on/off route texts, in this version the user can choose to show or hide Node markers on the plan view.
 
