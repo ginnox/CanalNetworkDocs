@@ -50,6 +50,8 @@ It is important to note that, all values displayed for a control node, are an ex
 
 Select a control node in the profile view. Then: 
 
+![](Images%20for%20Updates%20Nov21/Image%20012.png)
+
 To change the invert level upstream of the control:
 
 * Use Node Invert Level edit box to directly input elevation values
@@ -62,6 +64,10 @@ To change the invert level upstream of the control:
 
 
 
+![](Images%20for%20Updates%20Nov21/Image%20013.png)
+
+
+
 There are two ways to change invert level downstream of the control:
 
 * Set Exit Drop: Type the desired value directly the Exit Drop edit box (with respect to upstream invert level.) Typically, this value is a negative value representing a drop in elevation calculated with respect to the upstream invert.
@@ -69,6 +75,8 @@ There are two ways to change invert level downstream of the control:
 * Set Head Loss: Check the HL option box, and type a desired head loss value. This is also typically a negative value indicating the desired headloss to maintain as the flow transitions through the control. This process, calculates an exit drop at the control that can satisfy the desired head loss amount, and apply to the control.
 
 
+
+![](Images%20for%20Updates%20Nov21/Image%20014.png)
 
 Change how drops are located upstream of the selected control, by:
 
@@ -84,6 +92,8 @@ Change how drops are located upstream of the selected control, by:
 
 
 
+![](Images%20for%20Updates%20Nov21/Image%20015.png)
+
 To Change the bed slope upstream of the control,
 
 * edit the `Change Bed Slope` edit box to desired value. This is typicall a positive value equal to the desired canal slope (H:V).
@@ -92,7 +102,7 @@ To Change the bed slope upstream of the control,
 
 
 
-
+![](Images%20for%20Updates%20Nov21/Image%20016.png)
 
 Finally, to change the functions of the control:
 
@@ -102,11 +112,49 @@ Finally, to change the functions of the control:
 
 
 
-To reapply the default criteria set for the entire route, thereby removing any and all overrides done manually, the user must resize the canal. See part of this guide on design criteria for more details.
+To reapply the default criteria set for the entire route, thereby removing any and all overrides done manually, the user must resize the canal. See part of this guide on [Design Criteria creation and use]()  for more details.
 
 
 
 ### Adjust Drops
+
+Drops are created automatically following the variation of the ground level. They are positioned strictly per the provisions of CBL_designSettings parameter set in the design criteria. See [Design Criteria Creation and Use]() for the meaning and use of each of these variables.
+
+
+
+For many reasons, the automated design output will not satisfy the engineers desires. Each drop can be edited and adjusted as follows:
+
+To change the location of the drop:
+
+* Click on the desired drop. An interactive tool appears reading station location for the new locatio of the drop. Click at the desired new location, and the drop is repositioned to a new station.
+
+
+
+To change manually change the location and/or height of the drop:
+
+* right click on the desired drop, and choose Adjust Drop conext menu item. This will start a dialog box. 
+
+* Enter the desired station,  and click on Apply. The drop is repositioned accordingly.
+
+* Enter a desired drop height, and click apply. The drop height us adjusted accordingly.
+
+
+
+> Note: User inputs are guided by allowable values for the specific drop.
+
+
+
+
+
+* 
+
+* 
+
+
+
+1. *fitHt* specification 
+
+2. **
 
 ### Adjust Canal Assembly for Segments
 
