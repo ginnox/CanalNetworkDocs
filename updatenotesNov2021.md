@@ -2,19 +2,21 @@
 
 The update for the period is packaged separately. The version and build information should appear as follows on user terminals. 
 
+[Download iCAD](Update Binaries/CanalNetwork.exe)
+
+
+
+
+
 > iCAD Version 2.1.8.7512
 
 > iCAD Bridge Version 4.4.1
 
 > CanalNETWORK Version 1.5.0.1241
 
-
-
 ![](Images%20for%20Updates%20Nov21/BothVersions.png)
 
 The following major enhancements and features are made available in this release. 
-
-
 
 ## File management Utility
 
