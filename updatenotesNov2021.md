@@ -99,17 +99,17 @@ Longitudinal Profile (LSec) drawings generate curve details along with other des
 The following functionalities are introduced as new tools to allow faster and well informed design task handling for the user:
 
 1. Multi-select button added to the tool bar: previously accessed only from `Edit > Multi-Select (Routes).` Now, the user can set it's state from the toolbar button, and also view its state always.
+2. 
 
-![Image MultiSelectToggle](https://github.com/ginnox/CanalNetworkDocs/blob/c3f2ee89ea53580f1aa008abd4f535986d134eab/Images%20for%20Updates%20Nov21/Image%20008.png)
+![](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Images%20for%20Updates%20Nov21\Image%20008.png)
+
 
 
 2. Increased Speed for Pan/Zoom operations: The number of graphic components on the paln view can grow significantly with out the user noticing it. This has direct bearing on the speed of zoom/ pan scroll actions. In addition to previous tool to toggle on/off route texts, in this version the user can choose to show or hide Node markers on the plan view.
 
 ![Image ShowHideNode](https://github.com/ginnox/CanalNetworkDocs/blob/c3f2ee89ea53580f1aa008abd4f535986d134eab/Images%20for%20Updates%20Nov21/Image%20009.png)
 
-
 4. Faster selection of routes: Users select desired routes by right-clicking on each route individually. In this version, more options are provided in `Edit > Select Rotues`. This offers the user to select multiple routes with one click, from either:
-
 
 3. Faster selection of routes: Users select desired routes by right-clicking on each route individually. In this version, more options are provided in `Edit > Select Rotues`. This offers the user to select multiple routes with one click, from either:
    
