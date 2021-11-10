@@ -10,7 +10,7 @@ The update for the period is packaged separately. The version and build informat
 
 
 
-
+![](Images%20for%20Updates%20Nov21/BothVersions.png)
 
 The following major enhancements and features are made available in this release. 
 
