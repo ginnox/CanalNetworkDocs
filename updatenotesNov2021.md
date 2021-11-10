@@ -102,9 +102,15 @@ The following functionalities are introduced as new tools to allow faster and we
 
 2. Increased Speed for Pan/Zoom operations: The number of graphic components on the paln view can grow significantly with out the user noticing it. This has direct bearing on the speed of zoom/ pan scroll actions. In addition to previous tool to toggle on/off route texts, in this version the user can choose to show or hide Node markers on the plan view.
 
+<<<<<<< HEAD
 3. ![](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Images%20for%20Updates%20Nov21\Image%20009.png)
 
 4. Faster selection of routes: Users select desired routes by right-clicking on each route individually. In this version, more options are provided in `Edit > Select Rotues`. This offers the user to select multiple routes with one click, from either:
+=======
+
+
+3. Faster selection of routes: Users select desired routes by right-clicking on each route individually. In this version, more options are provided in `Edit > Select Rotues`. This offers the user to select multiple routes with one click, from either:
+>>>>>>> 589a73def05efb20c7f611602ee8eeb745918884
    
    - `Select by Instanc`e: Using an instance in AutoCAD, or
    
