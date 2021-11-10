@@ -9,6 +9,13 @@ Learn about latest updates and feature enhancements for Nov 2021 [here](updateno
 
 This site will also be the platform for online documentation. Contents relevant to software users will soon be available with a link on this page.
 
-## Visit online documentation (Under Development)
-You van visit the complete online documentation [here](Introduction1.md)
+## Online documentation (Under Development)
+This section is under devekiopment. New contents will be added frequently, so visit frequently.
+
+Available guides and documentation:
+
+[Introducing CanalNETWORK software](Introduction.md)
+
+[Longitudinal Design of Canals](LongitudinalDesignOfRoutes.md)
+
 
