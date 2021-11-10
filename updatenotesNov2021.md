@@ -80,15 +80,11 @@ This update includes tools to allow modification of the design criteria and appl
 
 *Variable editor showing option to set design criteria to a current route.*
 
-
-
 ## Limiting Velocity
 
 Minimum and maximum values of permissible velocities can now be set explicitly under the Hydraulic_Design parameters group. See above figure, row number 23.
 
 > Note: The name for the variable is changed respectively, and the number of inputs expeted is 2.
-
-
 
 ## LSec Drawing
 
@@ -98,8 +94,6 @@ Longitudinal Profile (LSec) drawings generate curve details along with other des
 
 *Curve Presentation in longitudinal profile view drawing generated to AutoCAD drawing*
 
-
-
 # UX Improvements
 
 The following functionalities are introduced as new tools to allow faster and well informed design task handling for the user:
@@ -108,23 +102,19 @@ The following functionalities are introduced as new tools to allow faster and we
 
 2. Increased Speed for Pan/Zoom operations: The number of graphic components on the paln view can grow significantly with out the user noticing it. This has direct bearing on the speed of zoom/ pan scroll actions. In addition to previous tool to toggle on/off route texts, in this version the user can choose to show or hide Node markers on the plan view.
 
-3. Faster selection of routes: Users select desired routes by right-clicking on each route individually. In this version, more options are provided in `Edit > Select Rotues`. This offers the user to select multiple routes with one click, from either:
+3. ![](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Images%20for%20Updates%20Nov21\Image%20009.png)
+
+4. Faster selection of routes: Users select desired routes by right-clicking on each route individually. In this version, more options are provided in `Edit > Select Rotues`. This offers the user to select multiple routes with one click, from either:
    
    - `Select by Instanc`e: Using an instance in AutoCAD, or
    
    - `Select Sub Routes`: which selects all subroutes corresponding to an existing selection.
-   
-   
 
 4. Manage exceptions (view and remove) for naming, and also newly introduced design criteria override accessible from `Edit > Route Exceptions > Manage Exceptions...`
 
 5. Find text tool using `Ctrl + F`
 
 6. A new annotation option in `Explore Solutions > Annotations > min FSL-OGL`  to display the value of FSL-OGL, colored according to the settings in Design criteria.
-   
-   
-
-
 
 ## Bug fixes
 
@@ -133,8 +123,6 @@ The following functionalities are introduced as new tools to allow faster and we
 - improved cleaning for invalid nodes and routes.
 - polyline filtering to minimize data errors (short length routes, inappropriate profiles...)
 - fixed missing detail on additional branch canals when exploring division box table data.
-  
-   
 
 ## Under progress
 
