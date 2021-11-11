@@ -12,7 +12,7 @@ The update for the period is packaged separately. Download the updates from the 
 
 
 
-> 
+
 
 ![](Images%20for%20Updates%20Nov21/BothVersions.png)
 
