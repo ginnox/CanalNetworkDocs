@@ -6,7 +6,13 @@ The update for the period is packaged separately. Download the updates from the 
 
 [Download CanalNETWORK Version 1.5.0.1241 (beta)](Update Binaries/CanalNetwork.exe)
 
-> Note: Accompanying bridge application for both products is V4.4.1.
+[Download iCAD Bridge 4.4.1](Update Binaries/iCAD Bridge.dvb)
+
+
+
+
+
+> 
 
 ![](Images%20for%20Updates%20Nov21/BothVersions.png)
 
