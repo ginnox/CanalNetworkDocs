@@ -8,13 +8,13 @@ The update for the period is packaged separately. Download the updates from the 
 
 [Download iCAD Bridge 4.4.1](Update Binaries/iCAD Bridge.dvb)
 
-
-
-
-
-
-
 ![](Images%20for%20Updates%20Nov21/BothVersions.png)
+
+
+
+> IMPORTANT NOTE: The design criteria listing and content to default values from this release onwards has changed for (a) `Hydraulic_Design>Limiting Velocit`y, (b) `CBL_designSettings > Max. Drop Height`, and (c) `CBL_designSettings>Min Drop Spacing`. Previous projects done with the older listing REQUIRE polishing, or error will occur. Seek Technical support if you face this issue.
+
+
 
 The following major enhancements and features are made available in this release. 
 
