@@ -10,15 +10,9 @@ The update for the period is packaged separately. Download the updates from the 
 
 ![](Images%20for%20Updates%20Nov21/BothVersions.png)
 
-
-
 > IMPORTANT NOTE: The design criteria listing and content to default values from this release onwards has changed for (a) `Hydraulic_Design>Limiting Velocit`y, (b) `CBL_designSettings > Max. Drop Height`, and (c) `CBL_designSettings>Min Drop Spacing`. Previous projects done with the older listing REQUIRE polishing, or error will occur. Seek Technical support if you face this issue.
 
-
-
 The following major enhancements and features are made available in this release. 
-
-[File Management Utility](##Undo/Redo Functionality)
 
 ## File management Utility
 
@@ -124,19 +118,19 @@ The following functionalities are introduced as new tools to allow faster and we
 
 ![Image ShowHideNode](Images%20for%20Updates%20Nov21/Image%20009.png)
 
-4. Faster selection of routes: Users select desired routes by right-clicking on each route individually. In this version, more options are provided in `Edit > Select Rotues`. This offers the user to select multiple routes with one click, from either:
 
-5. Faster selection of routes: Users select desired routes by right-clicking on each route individually. In this version, more options are provided in `Edit > Select Rotues`. This offers the user to select multiple routes with one click, from either:
+
+4. Faster selection of routes: Users select desired routes by right-clicking on each route individually. In this version, more options are provided in `Edit > Select Rotues`. This offers the user to select multiple routes with one click, from either:
    
    - `Select by Instanc`e: Using an instance in AutoCAD, or
    
    - `Select Sub Routes`: which selects all subroutes corresponding to an existing selection.
 
-6. Manage exceptions (view and remove) for naming, and also newly introduced design criteria override accessible from `Edit > Route Exceptions > Manage Exceptions...`
+5. Manage exceptions (view and remove) for naming, and also newly introduced design criteria override accessible from `Edit > Route Exceptions > Manage Exceptions...`
 
-7. Find text tool using `Ctrl + F`
+6. Find text tool using `Ctrl + F`
 
-8. A new annotation option in `Explore Solutions > Annotations > min FSL-OGL`  to display the value of FSL-OGL, colored according to the settings in Design criteria.
+7. A new annotation option in `Explore Solutions > Annotations > min FSL-OGL`  to display the value of FSL-OGL, colored according to the settings in Design criteria.
 
 ## Bug fixes
 
