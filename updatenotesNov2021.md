@@ -18,6 +18,8 @@ The update for the period is packaged separately. Download the updates from the 
 
 The following major enhancements and features are made available in this release. 
 
+[File Management Utility](##Undo/Redo Functionality)
+
 ## File management Utility
 
 Open project folder option included to allow easy access to the data files of user projects.
