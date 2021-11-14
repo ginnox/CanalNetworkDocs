@@ -48,7 +48,7 @@ Working with CanalNETWORK software requires the following tools:
 
 * AutoCAD 2018 and latter
 
-* Matlab Runtime R2021
+* 
 
 In addition, text and spreadsheet applications are also helpful to export and/or import data to and from.
 
