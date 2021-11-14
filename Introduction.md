@@ -64,11 +64,7 @@ CanalNETWORK software handles detailed design task for an system of irrigation c
 
 CanalNETOWORK allows for flexible design approaches and processes. However, due to high dependency of tasks on available data, it is recommended to adopt the below discussed workflow. Adopting this workflow is proven to offer optimal progress towards the final products in the shortest possible time.
 
-
-
 ![](Images%20for%20Guide/Workflow1.png)
-
-
 
 Note in the above figure that:
 
@@ -79,12 +75,8 @@ Note in the above figure that:
 - Network resolution process ensures the connectivity between each route, through the automatic Node Creation task and available management tools (in `Workflow > Nodes >` ). In the process of resolving connectivity, editing the polyline objects representing individual routes is often unavoidable, hence the two way interaction shown. It is also important to check the profile of individual routes is always downgrade. This also requires adjusting the AutoCAD drawing.
   
   *Important Note: Network resolution task often forces change to AutoCAD objects. The AutoCAD file must be saved to maintain these changes frequently.*
-  
-  
-  
+
   Network resolution also requires naming to be available. Use the maximum generation style available as a tentative source to complete this task.
-  
-  
 
 - Establishing Network is generating, based on the resolved network, the right naming and design criteria to each route in the network. The Design Criteria is required for this stage. 
   
@@ -95,10 +87,6 @@ Note in the above figure that:
   $Q_i= d_i*A_i$
   
   *This is a key milestone in the progress towards longitudinal design task. Back up the network data at this stage for latter use.*
-  
-  
-
-
 
 - Profile extraction is the final stage before longitudinal design. The AutoCAD polylines representing canal routes are refined in the node resolution process. Hence, one can use iCAD product to generate profiles for all routes. Note this stage must follow succesful node resolution.
   
@@ -127,8 +115,6 @@ Note in the above figure that:
   Repeat the process for all instances. 
   
   *This is an important mile stone in the progress towards longitudinal design. Backup the project data from within CanalNETWORK.* Use `Workspace > File Managmenet > Backup Project Data...`
-  
-  
 
 - Here the user brings everything together to sprint to Longitudinal design task. With every work backdup, start clean (that is delete .xsd file). Then:
   
@@ -137,7 +123,9 @@ Note in the above figure that:
   - Link the CSV data file as a separate data source to the current project from `Workspace > File Management > Attach Alternate CSV Source..`. and point to the profile data backup file. This allows the software to read profile data for each route from this file.
   
   - Finally, use `Edit > Soft Reload Route` to render profile data for each of the routes in the network. Upon succesful completion, user can now directly interact with each route to procceed with longitudnal design task for each route.
-  
-  - 
+    
+    
 
-- dasd
+Refer to relevant guide lines on how to proceed with each of the above stages, or final production of construction drawings.
+
+END.
