@@ -38,7 +38,7 @@ CanalNETWORK software for use in:
 
 * Compact saving and sharing of design data
 
-* ,,, and more.
+* ... and more.
 
 ## Data and Software required for use with CanalNETWORK
 
@@ -47,8 +47,6 @@ Working with CanalNETWORK software requires the following tools:
 * iCAD software (a related product)
 
 * AutoCAD 2018 and latter
-
-* 
 
 In addition, text and spreadsheet applications are also helpful to export and/or import data to and from.
 
