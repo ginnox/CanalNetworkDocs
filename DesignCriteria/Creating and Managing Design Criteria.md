@@ -8,11 +8,11 @@ Establishing a set of design criteria is the basis of design work. These data ar
 
 CanalNETWORK environment in the software offers tools to set and edit key criteria for design work, corresponding to each generation of canals. 
 
-There are two options for creating design criteria set for a given project. These are:
+There are options for creating design criteria set for a given project. These are:
 
 * Default Criteria set, found in software library.
 
-* Pre-created criteria file stored in *.dcf* file
+* Pre-created criteria file stored in *.dcf* file [...](## Import from a Pre-created Criteria File)
 
 
 
