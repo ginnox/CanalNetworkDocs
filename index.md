@@ -18,6 +18,6 @@ Available guides and documentation:
 
 [Longitudinal Design of Canals](LongitudinalDesignOfRoutes.md)
 
-[Manageing Design Criteria](https://github.com/ginnox/CanalNetworkDocs/blob/e51bd84b0f60459a626ac84f208402aebd04f9ca/DesignCriteria/CreatingAndManagingDesignCriteria.md)
+[Manageing Design Criteria](https://github.com/ginnox/CanalNetworkDocs/DesignCriteria/CreatingAndManagingDesignCriteria.md)
 
 
