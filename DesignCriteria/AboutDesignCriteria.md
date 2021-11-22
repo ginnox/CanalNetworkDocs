@@ -258,9 +258,7 @@ This setting determines the bottom width to depth ration to be used on the desig
 
 The equation is 
 
-$$
-B/D= 1.76 * Q ^ 0.75
-$$
+<img src="https://render.githubusercontent.com/render/math?math=B/D= 1.76 Q ^{0.75}">
 
 
 
