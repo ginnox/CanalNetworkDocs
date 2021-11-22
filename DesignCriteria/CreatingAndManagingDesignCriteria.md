@@ -90,10 +90,6 @@ The saved design criteria, along with the naming style used to create it is now 
 
 ![](Images/Image%20010.png)
 
-
-
 ## Overriding Design Criteria
 
 Latter in the longitudinal profile design stage, the user may want to change some design criteria values to suit specific conditions on a specific route. This option is available to automate manual override procedures that may take time. Refer to *Longitudinal Design of Routes* guide.
-
-
