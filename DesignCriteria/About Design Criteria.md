@@ -159,16 +159,10 @@ This group of design criteria parameters dictates the assembly information for c
 Specifies if a canal segment is provided with lining, and the type of lining:
 
 * *=-1:* The canal segment has no lining, canal section is applied to existing formation as is. Both the lining nor the foundation thickness values (below) are ignored.
-  
-  
 
 * *=0:* The canal segment is lined with a thin lining provision. The canal lining thickness value (below) is taken in to account to form the geometry of the lining.
-  
-  
 
 * *=1:* The canal is Lined with thick structure. Here both the lining and foundation thickness value(below) are taken in to account to form the shape of the lining.
-
-
 
 [ 3 figures] *Figure showing Unlines, Lined (Thin) and Lined (Thick) flow sections.*
 
@@ -176,13 +170,9 @@ Specifies if a canal segment is provided with lining, and the type of lining:
 
 This parameter sets the value representing the thickness of lining to be applied (See above for *Canal Lining Type*). A minimum value of 0.05m and a maxiumum value of 0.30 is allowed.
 
-
-
 #### Foundation Thickness, THK(m)
 
 This sets the value for the thickness of the canal lining at the bottom (See above for *Canal Lining Type*). A minimum value of 0.3 and a maximum value of 0.6 are allowed.
-
-
 
 #### Earth cut shape, Smc(-)
 
@@ -192,15 +182,9 @@ This parameter specifies how the formation level varies in the transverse direct
 
 * h is set to Inf (Infinity) for the last entry in single, double or triple entry method.
 
-
-
 [ ] *Figure showing a canal section in cut using single and double entry methods*
 
-
-
 > Note: The triplets in both Eatch and FIll shape specification must be of the same size. This means even if double triplet is needed ONLY for the cut shape, the fill shape must also be double triplet. In this case simply repeat the first triplet, then set w to slightly greater than the smallest allowable value (0.05m, say 0.051).
-
-
 
 #### Earth fill shape, Smf(-)
 
@@ -210,59 +194,107 @@ This parameter serves the same function as *Earth Cut Shape* parameter above, bu
 
 * h is set to inf (Infinity) for the last entry.
 
-
-
 [ ] *Figure showing a canal section in cut using single and double entry methods.*
-
-
 
 ### Hydraulic Design
 
 This is the last group of parameters in the Design Criteria set. It detemines how canal flow sections are sized and positioned for the diffenernt segments in all of the canal network. For a given canal level, the following parametrs and their uses apply:
 
-
-
-
-
 #### Min. Design Discharge(m3/sec)
 
+This value overrides canal capcity determined from Duty (above) and area served. The final value used to size the canal segment is tha maximum of:
 
+* Min Design Discharge value setting
 
+* Ai * Duty(i) 
 
-
+This if of typical use in lower level canals, where small areas may result in discharge capacities smaller than practically feasible canal capacities.
 
 #### Design B to D ratio(-)
 
+This setting determines the bottom width to depth ration to be used on the design of flow sections for canal segments. Three values are possible:
 
+* *B/D>0:* indicates to use the specified value as the ratio for the design. A maximum value of 10 is allowed.
 
+* *B/D=0:* indicates to use the build in equation to determine the ratio for design. 
 
-Limiting Velocity(m/sec)
+* *B/D=-1:* indicates to use built in table for determining the raio for design
 
+The equation is 
 
+B/D= [  ]
 
+The table includes the following set of values. (Source: USBR Recommended values)
 
-Max. All. Shear Stress (Kg/m2)
+[   ]
 
+#### Limiting Velocity(m/sec)
 
+Limiting velocity prescribe the minimum and maximum allowable velocities in any given segment. These are used to guide design of flow sections, along with Shear stress value prescriptions. (See below)
 
+#### Max. All. Shear Stress (Kg/m2)
 
-Mannings Roughness, N(-)
+This variable defines the maxium allowable shear stress for a canal segment in Kg/sq. meter or N/sq.mm (equivalent). As in *Limiting Velocity* value, this is also used to guide design of flow sections.
 
+[ ] *Figure showing flow seciotn design with interactive update of current velocity and shear stress values, compared to set criteria values. Here, The shear stress limit of 3N/mm2 is exceeded, while velocity is still with in Limits.* 
 
+#### Mannings Roughness, N(-)
 
+The value of mannings roughness coeficient for the canal segment in question.
 
-Freeboard, FB(m)
+#### Freeboard, FB(m)
 
+Specifies the free board provision for flow section design in one of two ways:
 
+* *FB>0:* indicates to use specified value for free board provission
 
+* *FB=0:*  Indicates to use built in table for estimating freeboard.
 
-Canal Side Slope, m(-)
+The table of values for free board estimation are as follows:
 
+[  ] Table
 
+#### Canal Side Slope, m(-)
 
+Specifies the side slope of the wetted canal section (H:1V)
 
-Bed Slope, So(m/m)
+#### Bed Slope, So(m/m)
 
+Specifies the bed slope of the canal segment. The minimum (Steepest) value is 1in 50 and the maximum (flattest) slope allowed is 1 in 10,000.
 
+# Default Criteria values for different canal Levels
 
+The following table summarizes default values set to different canal levels upon generation of default design criteria set.
 
+| Parameter                      | MC, PC              | SC                    | TC                  | QC, FC, …           |
+| ------------------------------ | ------------------- | --------------------- | ------------------- | ------------------- |
+| **CBL_designSettings**         |                     |                       |                     |                     |
+| Prefered/Max Drop Height(m)    | 2                   | [0.800, 0.100, 1.500] | 0.75                | 0.5                 |
+| Minimum Drop Height(m)         | 0.5                 | 0.25                  | 0.25                | 0.2                 |
+| Min Control spacing(m)         | 30                  | [15.000, 150.000]     | 10                  | 10                  |
+| Fit Height(m)                  | -99                 | -0.5                  | -0.4                | 0.3                 |
+| Fit Type (-)                   | last                | last                  | last                | last                |
+| **Command_Criteria**           | <br>                | <br>                  | <br>                | <br>                |
+| Canal Duty(l/s/ha)             | 2.2                 | 1.8                   | 1.75                | 1.7                 |
+| Min. FSL-OGL @ Controls(m)     | 0.2                 | 0.2                   | 0.15                | 0.15                |
+| FSL-OGL Control Type           | USControl           | USControl             | USControl           | USControl           |
+| Min. FSL-OGL @ Reach(m)        | -99                 | -99                   | -99                 | 0.15                |
+| Min.Drv. Head @ Control(m)     | 0.2                 | 0.2                   | 0.15                | 0.1                 |
+| Branch Invert Raise(-)         | Free                | Free                  | Free                | Free                |
+| **Construction_Variables**     |                     |                       |                     |                     |
+| Canal Lining type, Ltyp(-)     | 0                   | -1                    | -1                  | -1                  |
+| Lining Thickness, Thk(m)       | 0.1                 | 0.1                   | 0.1                 | 0.1                 |
+| Foundation Thickness, THK(m)   | 0.6                 | 0.6                   | 0.6                 | 0.6                 |
+| Earth cut shape, Smc(-)        | [2.000, 1.500, Inf] | [1.000, 1.500, Inf]   | [0.800, 1.500, Inf] | [0.600, 1.500, Inf] |
+| Earth fill shape, Smf(-)       | [2.000, 2.000, Inf] | [1.000, 1.750, Inf]   | [0.800, 1.750, Inf] | [0.600, 1.500, Inf] |
+| **Hydraulic_Design**           |                     |                       |                     |                     |
+| Min. Design Discharge(m3/sec)  | 0.5                 | 0.1                   | 0.05                | 0.03                |
+| Design B to D ratio(-)         | -1                  | -1                    | -1                  | -1                  |
+| Limiting Velocity(m/sec)       | [0.300, 2.000]      | [0.300, 0.800]        | [0.300, 0.700]      | [0.300, 0.700]      |
+| Max. All. Shear Stress (Kg/m2) | 10                  | 3                     | 3                   | 3                   |
+| Mannings Roughness, N(-)       | 0.014               | 0.03                  | 0.03                | 0.03                |
+| Freeboard, FB(m)               | -1                  | 0.3                   | 0.25                | 0.2                 |
+| Canal Side Slope, m(-)         | 1                   | 1                     | 1                   | 1                   |
+| Bed Slope, So(m/m)             | 5000                | 1000                  | 2000                | 750                 |
+
+END.
