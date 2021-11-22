@@ -57,8 +57,6 @@ See details of this tool in the complete user manual.
 
 ![Image 007](Images%20for%20Updates%20Nov21/Image%20032.png)
 
-
-
 *New tool to design bed slope for limiting design criteria, showing results of constrained optimization solution for `Min So`*
 
 ## Curve handling
@@ -136,26 +134,16 @@ The following functionalities are introduced as new tools to allow faster and we
    * Available precisions are 0.0 to 0.50.
    
    * Example 5.83 is changed to 15.80 using a precision of 0.10.
-   
-   * 
-   
-   * [    ] image 033, 034
+     
+     
 
 ![](Images%20for%20Updates%20Nov21/Image%20033.png)
-
-
-
-
 
 ![](Images%20for%20Updates%20Nov21/Image%20034.png)
 
 9. Warning to User on reload of routes
-   
-   
 
 ![](Images%20for%20Updates%20Nov21/Image%20035.png)
-
-
 
 11. A new annotation option in `Explore Solutions > Annotations > min FSL-OGL`  to display the value of FSL-OGL, colored according to the settings in Design criteria.
 
@@ -185,6 +173,4 @@ The following features comprise the wish list for the next scheduled update (Dec
 
 * Custom Title blocks
 
-* Drawing styling for colors and/ or layers organizatoin, and production quality drawing generation
-
-* 
+* Drawing styling for colors and/ or layers organizatoin, and near-production quality drawing generation
