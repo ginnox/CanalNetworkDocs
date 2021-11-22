@@ -18,6 +18,8 @@ Available guides and documentation:
 
 [Longitudinal Design of Canals](LongitudinalDesignOfRoutes.md)
 
+[About Design Criteria](DesignCriteria/AboutDesignCriteria.md)
+
 [Creating & Manageing Design Criteria](DesignCriteria/CreatingAndManagingDesignCriteria.md)
 
 
