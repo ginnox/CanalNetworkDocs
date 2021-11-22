@@ -4,7 +4,7 @@ The update for the period is packaged separately. Download the updates from the 
 
 [Download iCAD Version 2.2.8.7512](Update Binaries/iCAD21.exe)
 
-[Download CanalNETWORK Version 1.5.0.1241 (beta)](Update Binaries/CanalNetwork.exe)
+[Download CanalNETWORK Version 1.5.0.1245](Update Binaries/CanalNetwork.exe)
 
 [Download iCAD Bridge 4.4.1](Update Binaries/iCAD Bridge.dvb)
 
