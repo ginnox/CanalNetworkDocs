@@ -16,10 +16,12 @@ Available guides and documentation:
 
 [Introducing CanalNETWORK software](Introduction.md)
 
-[Longitudinal Design of Canals](LongitudinalDesignOfRoutes.md)
-
 [About Design Criteria](DesignCriteria/AboutDesignCriteria.md)
 
 [Creating & Manageing Design Criteria](DesignCriteria/CreatingAndManagingDesignCriteria.md)
+
+[Longitudinal Design of Canals](LongitudinalDesignOfRoutes.md)
+
+More contents coming soon. Stay tuned!
 
 
