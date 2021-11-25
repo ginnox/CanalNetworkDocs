@@ -28,13 +28,11 @@ Controls are points along a canal route that may represent a phyisical structure
 
 In the sample network of canals shown below, the MC canal feeds four sub canals. Therefore, the branch locaitons represent a physical control point. As can be seen in the correponding profile view, these are represented by solid vertical bars. In plan view they are represented with small circles as Nodes. Such controls are automatically identified and positioned by the software.
 
-![](DesignCriteria/Images%20for%20Design%20Criteria/Image%20001.png)
-
-[  ] image  plan
+![](ImagesAbout/Image%20001.png)
 
 The user can also introduce fictious controls for design purposes. This could be to change the hydraulic characterisics or the construciotn details of a canal reach. The 
 
-[  ] image profile
+![](ImagesAbout/Image%20002.png)
 
 Controls are built on a number of Node, and Segment Assembly parameters. These parameters represent hydraulic and geometric conditions UPSTREAM of the control. Changing a parameter on a control, therfore, affects ONLY the canal reach or segment located upstream of that control. 
 
@@ -56,9 +54,17 @@ There are different ways to set value for this parameter
 
 * Three values: (Variable Drop Height design) specifies setting for canal bed level design by inserting variable drop heights depending on two conditions: (a) terrain variation and, if specified corresponding FSL variation, (b) Provissions of 
 
-[  ] *Fig showing Drops created using a set of three values. Whenever feasible with in presctibed prefered control spacing (150m in this case) the prefered heigh is applied. If not increment/ or decrement is applied. This results in a vaiable drop height design*
+![](ImagesAbout/Image%20004.png)
 
-[  ] *Fig showing Drops created using a single value that specifies a standard drop heigh (in this case 1.50meters).*
+![](ImagesAbout/Image%20003.png)
+
+*Fig showing Drops created using a set of three values. Whenever feasible with in presctibed prefered control spacing (150m in this case) the prefered heigh is applied. If not increment/ or decrement is applied. This results in a vaiable drop height design*
+
+![](ImagesAbout/Image%20006.png)
+
+![](ImagesAbout/Image%20005.png)
+
+*Fig showing Drops created using a single value that specifies a standard drop heigh (in this case 1.50meters).*
 
 Note: In each case, the last drop is automatically sized to meet the remaining head loss in the canl reach. The values above do not control the last drop in a reach.
 
@@ -96,7 +102,11 @@ The setting in this parameter is used to determine where in the reach drops must
 
 * *last:* inserts drops at the last location (same as above.) this setting tends to increase fill volumes and reduce cut volumes.
 
-[  ] *Figure showing drop positioning along a canal reach using First and Last options.*
+![](ImagesAbout/Image%20008.png)
+
+![](ImagesAbout/Image%20007.png)
+
+*Figure showing drop positioning along a canal reach using First and Last options.*
 
 ### Command Criteria
 
@@ -120,7 +130,9 @@ This value controls the invert level of all the controls along a canal with refe
 
 * *=-99* means this value is not applicable for controls along the canal. The status is still shown as above, but color coding is not applied. 
 
-[  ] *Figure showing FSL-OGL conditions at control for a criteria settinhg of 0.50m* 
+![](ImagesAbout/Image%20009.png)
+
+*Figure showing FSL-OGL conditions at control for a criteria settinhg of 0.50m* 
 
 #### FSL-OGL Control type
 
@@ -134,13 +146,19 @@ This value can be set to help design process by showing which parts of a canal r
 
 * *=-99* meanse this parameter is not applicable, and invoking above command shows  no information. This is typically the value for all canals, except feeder (lowest) level canals.
 
-[  ] *Figure showing FSL-OGL values graphically, showing areas that meet or exceed the MIN FSL-OGL=0.50  Note: The figure is example only, and this criteria may not be required to be set for MC type canals.*
+![](ImagesAbout/Image%20010.png)
+
+*Figure showing FSL-OGL values graphically, showing areas that meet or exceed the MIN FSL-OGL=0.50  Note: The figure is example only, and this criteria may not be required to be set for MC type canals.*
 
 #### Min Drv. Head @Control(m)
 
 This value dictates the head to be maintained at each junciton node (or control structure) when positioning bed levels for branch canals. This value is ALWAYS maintained between FSL of parent canal and FSL of branch canal. However, the final CBL for the branch canal also depends on the *Branch Invert Raise* parameter setting below,
 
-[ ] *Figure showing bed level of Branch Canal (SC_2) with respect to parent canal (MC) based on Min Drv Head value of 0.30 (a) Branch Invert Raise= Free, (b) Branch Invert raise= Fixed)*
+![](ImagesAbout/Image%20011.png)
+
+![](ImagesAbout/Image%20012.png)
+
+ *Figure showing bed level of Branch Canal (SC_2) with respect to parent canal (MC) based on Min Drv Head value of 0.30 (a) Branch Invert Raise= Free, (b) Branch Invert raise= Fixed). It can be seen that in the second figure, the CBL branch level is fixed at the same level as that of the parent canal*.
 
 #### Branch Invert Raise (-):
 
@@ -154,6 +172,14 @@ This value dicates how invert level for branch canals is set with respect to CBL
 
 This group of design criteria parameters dictates the assembly information for canal flow section (Lined or unlined), and their placement with respect to prevailing ground level variation in transverse direction (using cut and fill shape specificaiton). 
 
+
+
+The following schematic drawing gives a general overview of possible canal flow sections, and position with respect to prevailing ground condition in the transverse direction.
+
+
+
+![](ImagesAbout/Image%20020.png)
+
 #### Canal Lining type, Ltyp(-)
 
 Specifies if a canal segment is provided with lining, and the type of lining:
@@ -164,7 +190,13 @@ Specifies if a canal segment is provided with lining, and the type of lining:
 
 * *=1:* The canal is Lined with thick structure. Here both the lining and foundation thickness value(below) are taken in to account to form the shape of the lining.
 
-[ 3 figures] *Figure showing Unlines, Lined (Thin) and Lined (Thick) flow sections.*
+![](ImagesAbout/Image%20013.png)
+
+![](ImagesAbout/Image%20014.png)
+
+![](ImagesAbout/Image%20015.png)
+
+ *Figure showing Unlined, Lined (Thin) and Lined (Thick) flow sections.*
 
 #### Lining Thickness, Thk(m)
 
@@ -182,7 +214,9 @@ This parameter specifies how the formation level varies in the transverse direct
 
 * h is set to Inf (Infinity) for the last entry in single, double or triple entry method.
 
-[ ] *Figure showing a canal section in cut using single and double entry methods*
+![](ImagesAbout/Image%20017.png)
+
+*Figure showing a canal section in cut using double entry specification*
 
 > Note: The triplets in both Eatch and FIll shape specification must be of the same size. This means even if double triplet is needed ONLY for the cut shape, the fill shape must also be double triplet. In this case simply repeat the first triplet, then set w to slightly greater than the smallest allowable value (0.05m, say 0.051).
 
@@ -194,7 +228,9 @@ This parameter serves the same function as *Earth Cut Shape* parameter above, bu
 
 * h is set to inf (Infinity) for the last entry.
 
-[ ] *Figure showing a canal section in cut using single and double entry methods.*
+![](ImagesAbout/Image%20016.png)
+
+*Figure showing a canal section in cut using single and double entry specification.*
 
 ### Hydraulic Design
 
@@ -222,21 +258,27 @@ This setting determines the bottom width to depth ration to be used on the desig
 
 The equation is 
 
-B/D= [  ]
+<img src="https://render.githubusercontent.com/render/math?math=B/D= 1.76 Q ^{0.75}">
 
-The table includes the following set of values. (Source: USBR Recommended values)
 
-[   ]
+
+The built in table is represented as a chart as follows. (Source: USBR Recommended values)
+
+![](ImagesAbout/Image%20019.png)
+
+
 
 #### Limiting Velocity(m/sec)
 
-Limiting velocity prescribe the minimum and maximum allowable velocities in any given segment. These are used to guide design of flow sections, along with Shear stress value prescriptions. (See below)
+Limiting velocity prescribe the minimum and maximum allowable velocities, consequtively, in any given segment. These are used to guide design of flow sections, along with Shear stress value prescriptions. (See below)
 
 #### Max. All. Shear Stress (Kg/m2)
 
 This variable defines the maxium allowable shear stress for a canal segment in Kg/sq. meter or N/sq.mm (equivalent). As in *Limiting Velocity* value, this is also used to guide design of flow sections.
 
-[ ] *Figure showing flow seciotn design with interactive update of current velocity and shear stress values, compared to set criteria values. Here, The shear stress limit of 3N/mm2 is exceeded, while velocity is still with in Limits.* 
+![](ImagesAbout/Image%20018.png)
+
+*Figure showing flow seciotn design with interactive update of current velocity and shear stress values, compared to set criteria values. Here, The shear stress limit of 3N/mm2 is exceeded, while velocity is still with in Limits.* 
 
 #### Mannings Roughness, N(-)
 
@@ -252,7 +294,9 @@ Specifies the free board provision for flow section design in one of two ways:
 
 The table of values for free board estimation are as follows:
 
-[  ] Table
+
+
+![](ImagesAbout/Image%20021.png)
 
 #### Canal Side Slope, m(-)
 
