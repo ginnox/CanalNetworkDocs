@@ -4,7 +4,7 @@ The update for the period is packaged separately. Download the updates from the 
 
 [Download iCAD Version 2.2.8.7512](Update Binaries/iCAD21.exe)
 
-[Download CanalNETWORK Version 1.5.0.1245](Update Binaries/CanalNetwork.exe)
+[Download CanalNETWORK Version 1.5.0.1246 - with a small bugfix](Update Binaries/CanalNetwork.exe)
 
 [Download iCAD Bridge 4.4.1](Update Binaries/iCAD Bridge.dvb)
 
@@ -134,8 +134,6 @@ The following functionalities are introduced as new tools to allow faster and we
    * Available precisions are 0.0 to 0.50.
    
    * Example 5.83 is changed to 15.80 using a precision of 0.10.
-     
-     
 
 ![](Images%20for%20Updates%20Nov21/Image%20033.png)
 
@@ -155,6 +153,7 @@ The following functionalities are introduced as new tools to allow faster and we
 
 ## Bug fixes
 
+- fixed design-criteria refab tool
 - fixed drop edit bugs when working with the last drop in segment.
 - fixed undesired node invert change, while using the slider tool to control node elevations
 - improved cleaning for invalid nodes and routes.
