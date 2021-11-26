@@ -172,11 +172,7 @@ This value dicates how invert level for branch canals is set with respect to CBL
 
 This group of design criteria parameters dictates the assembly information for canal flow section (Lined or unlined), and their placement with respect to prevailing ground level variation in transverse direction (using cut and fill shape specificaiton). 
 
-
-
 The following schematic drawing gives a general overview of possible canal flow sections, and position with respect to prevailing ground condition in the transverse direction.
-
-
 
 ![](ImagesAbout/Image%20020.png)
 
@@ -260,13 +256,9 @@ The equation is
 
 <img src="https://render.githubusercontent.com/render/math?math=B/D= 1.76 Q ^{0.75}">
 
-
-
 The built in table is represented as a chart as follows. (Source: USBR Recommended values)
 
 ![](ImagesAbout/Image%20019.png)
-
-
 
 #### Limiting Velocity(m/sec)
 
@@ -293,8 +285,6 @@ Specifies the free board provision for flow section design in one of two ways:
 * *FB=0:*  Indicates to use built in table for estimating freeboard.
 
 The table of values for free board estimation are as follows:
-
-
 
 ![](ImagesAbout/Image%20021.png)
 

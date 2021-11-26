@@ -93,3 +93,29 @@ The saved design criteria, along with the naming style used to create it is now 
 ## Overriding Design Criteria
 
 Latter in the longitudinal profile design stage, the user may want to change some design criteria values to suit specific conditions on a specific route. This option is available to automate manual override procedures that may take time. Refer to *Longitudinal Design of Routes* guide.
+
+
+
+# Important Note
+
+The design criteria and naming style are critically linked. It is mandatory to maintain the consistency of the data in both. To be specific:
+
+The design criteria data set has exactly the same fields and labels as the naming style. FOr instance, a naming style MC, SC, TC, QC produces a design criteria data set with exactly four fields, each labeled MC, SC, TC, and QC.
+
+
+
+Normally, this consistency is maintained through out the life of the data file with out the requiring any action from the user. However, some actions may lead to possible incosisteny, and cause issues - such as inability to save criteria data to a file, resulting in early termination with a message similar to '... data inconsistency'.
+
+
+
+> The most frequent source of data inconsistency between naming and design crietia is the users DELIBERATE action to change the naming style after a design criteria is established. This is ALWAYS a problem, and must be avoided. As explained above in *Design Criteria Set*, the namin style definition ALWAYS preceeds the Design Criteria definition.
+
+ 
+
+Inconsistency may also arise if the use opts to import a design criteria to a project for which an other set of criteria is already defined, and used to establish the canal network system. This is especially true, if the naming style in the import file is not exactly the same as the one in the project.
+
+
+
+As a final note, it is ALWAYS recommended - and a best practice - to carefully choose and set a naming style that could best represent the project in question, and maintain it that way.
+
+END. 
