@@ -94,28 +94,46 @@ The saved design criteria, along with the naming style used to create it is now 
 
 Latter in the longitudinal profile design stage, the user may want to change some design criteria values to suit specific conditions on a specific route. This option is available to automate manual override procedures that may take time. Refer to *Longitudinal Design of Routes* guide.
 
-
-
 # Important Note
 
 The design criteria and naming style are critically linked. It is mandatory to maintain the consistency of the data in both. To be specific:
 
 The design criteria data set has exactly the same fields and labels as the naming style. FOr instance, a naming style MC, SC, TC, QC produces a design criteria data set with exactly four fields, each labeled MC, SC, TC, and QC.
 
-
-
 Normally, this consistency is maintained through out the life of the data file with out the requiring any action from the user. However, some actions may lead to possible incosisteny, and cause issues - such as inability to save criteria data to a file, resulting in early termination with a message similar to '... data inconsistency'.
-
-
 
 > The most frequent source of data inconsistency between naming and design crietia is the users DELIBERATE action to change the naming style after a design criteria is established. This is ALWAYS a problem, and must be avoided. As explained above in *Design Criteria Set*, the namin style definition ALWAYS preceeds the Design Criteria definition.
 
- 
-
 Inconsistency may also arise if the use opts to import a design criteria to a project for which an other set of criteria is already defined, and used to establish the canal network system. This is especially true, if the naming style in the import file is not exactly the same as the one in the project.
 
-
-
 As a final note, it is ALWAYS recommended - and a best practice - to carefully choose and set a naming style that could best represent the project in question, and maintain it that way.
+
+
+
+## Attempting to Solve Criteria Inconsistency
+
+If such issues arrise, there are a few ways the user can attempt to resolve the issue. However, success is not guaranteed.
+
+
+
+### Change the Naming Style
+
+The easiest way is to change the naming style for the current project to match exactly the fields for the design criteria. The later can be seen from `Workspace > Manage Design Criteria > Set/ Edit Design Criteria... `This will list all the available fields for the data. Make note of it.
+
+Then change naming style. There are two ways to do this:
+
+1. go to `Workspace > Manage Design Criteria > Edit Current Naming...` and Choose the one that matches the above noted list. and hit Apply.
+
+2. go to Workspace > Manage Design Criteria > New Naming... This will throw a warning message. Choose a desired naming that matches the above noted list, and hit Apply.
+
+This should solve the insocistency. The crietia set can now be saved. Go to Workspace > Manage Design Criteria> Edit Current Naming ... Then in the dialog, set the value for *On Apply use for* variable to *Save to File*, and hit Apply. This will allow to save data to a file in a prefered location.
+
+
+
+To use the above saved criteria set, in any open project go to `Workspace > Manage Design Criteria > Import from File...` and pick the file saved above. This will import and replace the criteria set in the project, if any, with the new one. 
+
+
+
+
 
 END. 
