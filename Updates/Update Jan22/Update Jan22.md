@@ -16,7 +16,7 @@ To update your software to the recent version, down load these resources and fol
 
 iCAD bridge 4.4.2
 
-CanalNetwork 1.5.2.1250
+[CanalNetwork 1.5.2.1250](https://drive.google.com/file/d/17s1LeEmFjmopEcsC2N5KrEQFnm8LNyu8/view?usp=sharing)
 
 ## iCAD Product:
 
