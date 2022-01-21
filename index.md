@@ -24,4 +24,6 @@ Available guides and documentation:
 
 [3. Creating & Manageing Design Criteria](DesignCriteria/CreatingAndManagingDesignCriteria.md)
 
-[4. Longitudinal Design of Canals](LongitudinalDesignOfRoutes.md)
+[4. Layout Plans and Netowrk Resolution](Layout%20plans%20and%20Network%20Resolution/Layout%20plans%20and%20Network%20Resolution)
+
+[5. Longitudinal Design of Canals](LongitudinalDesignOfRoutes.md)
