@@ -12,11 +12,13 @@ We are pleased to bring to you many enhanced features and functionalities to our
 
 To update your software to the recent version, down load these resources and follow the usual procedure.
 
-[iCAD 2.2.8.7515]()
+*Note: The download links will take you to a goole drive link. Go to the top right of the page, and choose download to get the files.*
 
-iCAD bridge 4.4.2
+[Download iCAD 2.2.8.7515](https://drive.google.com/file/d/1t8iI7plaJql4Jq2RpYrl_l6qEZW_W5Rt/view?usp=sharing)
 
-[CanalNetwork 1.5.2.1250](https://drive.google.com/file/d/17s1LeEmFjmopEcsC2N5KrEQFnm8LNyu8/view?usp=sharing)
+[Download iCAD bridge 4.4.2](https://drive.google.com/file/d/12XkeziKqElVQOz8NLDLhB0ogHpi247mp/view?usp=sharing)
+
+[Donaload CanalNetwork 1.5.2.1250](https://drive.google.com/file/d/1ft42jrHtuhivBdtHgFCA_Gvtc-mq0kPK/view?usp=sharing)
 
 ## iCAD Product:
 
@@ -30,7 +32,7 @@ The iCAD product is modified for the following features:
 
 * A major improvement is made to the plan view generating algorithm of CanalStructures module, to allow scaling and rotating plan view drawings to best fit a selected drawing window.
   
-  ![f](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Updates\Update%20Jan22\Images\Image%207.png)
+  ![f](Images/Image%207.png)
   
   *Screenshot of plan view generated with option of a drawing window.*
 
@@ -40,7 +42,7 @@ The iCAD product is modified for the following features:
 
 - Progress bar introduced for data opening operation, helpful while dealing with large size files.
 
-![fd](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Updates\Update%20Jan22\Images\Image%206.png)
+![fd](Images/Image%206.png)
 
 - Short cut to frequent tasks including:
   
@@ -88,11 +90,11 @@ The iCAD product is modified for the following features:
 
 - Improved overall design capability - better consideration of ground slope variation.
   
-  ![d](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Updates\Update%20Jan22\Images\Image%20002.png)
+  ![d](Images/Image%20002.png)
   
   *Screenshot for AutoDesign for a sample canal route, using earlier version of the algorithm*
   
-  ![f](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Updates\Update%20Jan22\Images\Image%20001.png)
+  ![f](Images/Image%20001.png)
   
   *Screenshot for design of same canal, with improved algorithm, showing better CBL design closer to to the OGL and with standard size drops that results in better FSL-OGL in downstream controls.*
 * Now improved to consider Qmin specification in design criteria, instead of using the calculated capacity for each canal segment. This used to generate and position impractical flow sections where calculated capacities are less than specified Qmin values.
@@ -109,11 +111,11 @@ The iCAD product is modified for the following features:
 
 - Drop detail inforamtion generated to AutoCAD is modified to provide appropriate position and height details as shown in below screen shot.
   
-  ![fd](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Updates\Update%20Jan22\Images\Capture.PNG)
+  ![fd](Images/Capture.PNG)
   
   *Screenshot of Drop detail text in previous version.*
   
-  ![c](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Updates\Update%20Jan22\Images\Capture2.PNG)
+  ![c](Images/Capture2.PNG)
   
   *Screenshot of drop annotatoin text in the current release, showing additional information on Invert levels at inlet and exit of a given drop.*
 
