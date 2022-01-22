@@ -62,7 +62,7 @@ CanalNETWORK software handles detailed design task for an system of irrigation c
 
 CanalNETOWORK allows for flexible design approaches and processes. However, due to high dependency of tasks on available data, it is recommended to adopt the below discussed workflow. Adopting this workflow is proven to offer optimal progress towards the final products in the shortest possible time.
 
-![](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Introduction\Images\Workflow1.png)
+![](Images/Workflow1.png)
 
 Note in the above figure that:
 
