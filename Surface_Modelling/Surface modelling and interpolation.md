@@ -8,7 +8,7 @@ Surface fitting and interpolation, as applied in the context of topographic data
 
 To estimate the surface model for a given set of x,y,z data, iCAD builds on scattered interpolation algorithm in matlab. This algorithm performs Delauney triangulation over the data set, with the aim of creating a surface fit made up of small triangles. A Delaunay Triangulation maximizes  the smallest occuring triangle over all triangulations og the point set. In other words, any other triangulation will have a smaller angle at vertices.
 
-![d](Images/Screenshot_20220118-111908_Gallery.jpg)
+![d](Images/2.png)
 
 It is important to note that the method:
 
