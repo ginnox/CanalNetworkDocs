@@ -12,7 +12,7 @@ The AutoCAD layout maps must fulfil certain conventions to be used in the CanalN
 
 3. All canal routes start and end with a stratight segment of at least 20m. 
    
-   ![[  ]](Layout_plans_and_Network_Resolution/Images/Image%20001.png) *Maintain straight segments at begining and end of canal alignments*
+   ![[  ]](Images/Image%20001.png) *Maintain straight segments at begining and end of canal alignments*
 
 4. All canal routes are drawn to scale of 1:1, and referenced to world coordinate system (WCS) of AutoCAD.
 
