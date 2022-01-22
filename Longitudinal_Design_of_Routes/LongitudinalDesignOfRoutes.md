@@ -330,7 +330,16 @@ This option specifically lists the relevant construction dimensions for each tur
 
 The symbols for the dimensions are explained in the accompanying drawing below.
 
-[  ] Figure: Drop detail drawings from ECDSWC
+![  ](Images/CDSWC_str/Image%20003.png)
+
+![sec](Images/CDSWC_str/Image%20004.png)
+
+![sec2](Images/CDSWC_str/Image%20005.png)
+
+*Figure: Tunrout Structure detail drawings from ECDSWC, with dimension detail corresponding to the symbols in the explore output table.*
+
+
+
 
 
 
@@ -348,7 +357,11 @@ The symbols for each dimension heading is described in the below drawing.
 
 
 
-[  ] Fig: Drawing for a typical division box, showing the deginition of symbols used in the table listing.
+![d1](Images/CDSWC_str/Image%20001.png)
+
+![d2](Images/CDSWC_str/Image%20002.png)
+
+*Fig: Drawing for a typical division box from CDSWC, showing the deginition of symbols used in the table listing.*
 
 
 
