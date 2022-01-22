@@ -26,7 +26,8 @@ Best practices for layout drawings include, but are not limited to:
    
    * Where two canals offtake from a single parent canal, make sure they do not intersect themselves any where other than the point where they intersect the parent canal. This may be the case where the starting segments of the branch canals are either parallel, or the cross the parent canal at slighly different locaitons. If necessary edit the first or second vertext of one of the canal routes to avoid parallel.
    
-   ![[  ]](Images/Image%20002.png) * Intersection of branch canals with a parent canal*
+   ![[  ]](Images/Image%20002.png) 
+   * Intersection of branch canals with a parent canal*
 * If possible avoid curves on a parent canal where it intersects with branch canals.
 
 * Except where brnaching is needed, avoid extending the end of canals anywhere close to other canals, and certainly not with in the extension distance (specified in Network Preferences). Failure to observe this will result in unintended junctions leading to significant time in correcting the connectivity of the network.
@@ -35,7 +36,9 @@ Best practices for layout drawings include, but are not limited to:
   
   *Desired network relation ship.*
   
-  ![[](Images/Image%20004.png) *Unintended Junction at a canal end potentially confusing canal parent-child relation ships*
+  ![[]](Images/Image%20004.png) 
+  
+  *Unintended Junction at a canal end potentially confusing canal parent-child relation ships*
 3. All routes should end at sufficient distance from other canal routes. (Sufficiently farther than the extension length and node merge distance parameter values in `Network Preferences`, which are often set at 2m and 5m respectively.) 
 
 > Note: The amount of time spent to resolve a network analysis, depends little on the size of the irrigation area or the number of canals. Rather it greately depends on how strictly the above guideline is adhered to in preapring the layout map.
@@ -108,7 +111,9 @@ Unwanted polyline objects may be imported to the plan view area during the proce
    
    ![s](Images/Image%20008.png)
 
-![[  ]](Images/Image%20011.png) *Delete dialog requesting confirmation for selected routes.*
+![[  ]](Images/Image%20011.png) 
+
+*Delete dialog requesting confirmation for selected routes.*
 
 Once all the canal routes are imported, the next step is Node Identification.
 
@@ -379,7 +384,9 @@ The canal namimng generated as described above can be exported to the AutoCAD en
 
 1. Make sure the desired text is displayed on the layout view area. Toggle the text view button on if not already. Use `View > Route Text > Select and Shot Text...` menu command if not already.
    
-   ![dasd ](Images/Image%20041.png)*Sample Layout map with Canal naming displayed.*
+   ![dasd ](Images/Image%20041.png)
+   
+   *Sample Layout map with Canal naming displayed.*
 
 2. Choose `View > Route Text > Generate to AutoCAD` menu command. This will invoke the *Sample Text* dialog.
    
