@@ -14,7 +14,7 @@ The solution for dimensions of a flow section are required in each of these cana
 
 
 
-![f](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Flow_section_design\Images\floswsec1.jpg)
+![f](Images/floswsec1.jpg)
 
 ## Manning's Equation: The basis
 
@@ -60,7 +60,9 @@ The equation is solved numerically to precisely determine the anticipated flow d
 
 
 
-![[  ] ](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Flow_section_design\Images\Flowchart.jpg)*Flow chart depicting the algorithm implementation for designing canal flow sections.*
+![[  ] ](Images/Flowchart.jpg)
+
+*Flow chart depicting the algorithm implementation for designing canal flow sections.*
 
 
 
@@ -76,7 +78,7 @@ The above solution depends on a setting for the variable b-to-d ratio. This valu
 
 
 
-![[  ]](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Flow_section_design\Images\b2dvsq.png) 
+![[  ]](Images/b2dvsq.png) 
 
 
 
@@ -94,7 +96,7 @@ The value can be set as:
 
 * lookup from a built-in table of values for Q vs FB, that can be represented as the following chart. The value for a given discharge is determined using non-linear interpolation.
 
-![[   ] q vs fb chart](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Flow_section_design\Images\fbvsq.PNG)
+![[   ] q vs fb chart](Images/fbvsq.PNG)
 
 
 
@@ -122,17 +124,19 @@ The three linings are schematically presented as shown below.
 
 
 
-![[  ]](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Flow_section_design\Images\Lining0.jpg) 
+![[  ]](Images/Lining0.jpg) 
 
 *Schematic diagram of a thin lining provission for a canal section*
 
 
 
-![Schematic](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Flow_section_design\Images\Lining2.jpg) *Schematic for a thick lining provission, representing section geenerated for flat and steep canal side slopes depending on the values set for Thk and THK values.*
+![Schematic](Images/Lining2.jpg) 
+
+*Schematic for a thick lining provission, representing section geenerated for flat and steep canal side slopes depending on the values set for Thk and THK values.*
 
 
 
-![presentation](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Flow_section_design\Images\Lining3.jpg) 
+![presentation](Images/Lining3.jpg) 
 
 *Schemaric showing lining shape generated for thick lining depending on the comparative values of Thk and THK for a vertical side wall (m=0)*
 
@@ -161,36 +165,6 @@ Following these roundoff adjustments, the canal section is re-designed to determ
 
 
 END.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Solution for Construction Dimensions
 
 
 
