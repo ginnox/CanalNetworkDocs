@@ -18,7 +18,7 @@ Available guides and documentation:
 
 
 
-[1. Introducing CanalNETWORK software](Introduction.md)
+[1. Introducing CanalNETWORK software](Introduction/Introduction.md)
 
 [2. About Design Criteria](DesignCriteria/AboutDesignCriteria.md)
 
