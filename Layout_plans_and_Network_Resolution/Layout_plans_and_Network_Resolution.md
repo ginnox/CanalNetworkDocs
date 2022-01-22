@@ -71,9 +71,9 @@ The first step is to import the drawing to the CanalNETWORK environment. There a
 2. To import alignment routes drawn on a layer, go to Workflow > Pick Routes (AutoCAD Layer). This will invoke a dialog listing all the layers in the current drawing. 
    
    ![[  ] ](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Layout%20plans%20and%20Network%20Resolution\Images\Image%20007.png)
-
+   
    Pick the desired layer, and hit OK. This will import all alignment routes found on the specified layer to the plan view area.
-
+   
    Note: This method is recommended for drawings whose layers are well organized, especially for the different levels of canals expected in the project.
 
 3. One can also import a collection of canal routes at once. To do this:
@@ -246,7 +246,54 @@ The issue is resolved. Repeat the above steps for all other such nodes.
 
 Before continuing to the next step, Re run the test `Workflow > Nodes > Diagnose Multiple-Parent Nodes...`  to verify all issues are succesfully resolved, or new issues are not created in the process.
 
-## 
+## Network Preferences
+
+Much of the work carried out above, and some that will follow, are dictated by settings in the network preferences variable set. As such, it is important to understand how they are used. The variable set is accessible from `Workspace > Edit Preferences `
+
+The meaning and use of each variable setting is described below.
+
+ 
+
+|       |                                  |                                                                                                                                                                                                                                                                                                                                  |               |
+| ----- | -------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- |
+| S.No. | Variable Name                    | Description                                                                                                                                                                                                                                                                                                                      | Default Value |
+|       | **Network_Prefs_Template**       | <br>                                                                                                                                                                                                                                                                                                                             | <br>          |
+| 1     | Parent Canal Invert(m)           | Desired invert level of the primary level canal                                                                                                                                                                                                                                                                                  | -0.8          |
+| 2     | Farm Duty(l/sec/ha)              | Designed duty for the farm area. This is overriden by settings in the design criteria.                                                                                                                                                                                                                                           | 1.2           |
+| 3     | Node Invert Levels(m)            | Default invert levels for positioning nodes (or controls) defined relative to OGL at location.                                                                                                                                                                                                                                   | -0.5          |
+| 4     | Max.Tolerance to compare FSL(m)  | Maximum tolerance value to be used in comparing FSL values, especially used in flow test tasks. Please refer to relevant material on flow test tool.                                                                                                                                                                             | 0.005         |
+| 5     | Max. Distance b/n Merge Nodes(m) | Any nodes found with in this distance range are merged together, and will be treated as one node.                                                                                                                                                                                                                                | 5             |
+| 6     | Control Branch Invert(-)         | Position of invert levels for branch canals at node location. There are two options:<br>0: Lock with Node – the branch invert is set to parent invert, or hydraulically determined level, which ever is minimum.<br>1: Free from Node: branch invert is fixed based on hydraulic calculations regardless of parent invert level. | 1             |
+| 7     | Associated Canal on Import(-)    | Import associated canal flow section on each route during import. Applicable only in older versions.                                                                                                                                                                                                                             | 0             |
+| 8     | Route Extension Length(m)        | Extension length for beginning of routes, while attempting to establish intersection with other canals.                                                                                                                                                                                                                          | 0.1           |
+| 9     | Extrapolate Profile Data(-)      | Allow or deny extrapolation of transverse profile data beyond the limits of the offset range, if needed.                                                                                                                                                                                                                         | 1             |
+| 10    | Bottom Width Value (-)           | Rounding value for bottom width of canal flow sections. Value >=0.05 affects design results for canal sections, drop heights applied.                                                                                                                                                                                            | 0.05          |
+| <br>  | **NodeGraphic_Template**         | <br>                                                                                                                                                                                                                                                                                                                             | <br>          |
+| 1     | Display Height of Node bar(m)    | Height of nodes or control markers in the profile view area.                                                                                                                                                                                                                                                                     | 2.5           |
+| 2     | In-Route Node Marker symbol(-)   | Marker to be used for representing junction nodes.                                                                                                                                                                                                                                                                               | o             |
+| 3     | Max. Marker Size for Nodes(Pnts) | Largest size of markers in layout view area                                                                                                                                                                                                                                                                                      | 15            |
+| 4     | Min. Marker Size for Nodes(Pnts) | Smallest size of markers                                                                                                                                                                                                                                                                                                         | 10            |
+| 5     | End-of-Canal Marker symbol(-)    | Markers to be used for representing End-of-Canal Markers                                                                                                                                                                                                                                                                         | s             |
+| 6     | Marker Size for EOC(pts)         | Size of EoC markers                                                                                                                                                                                                                                                                                                              | 10            |
+| 7     | Available Head Margin(%)         | Percent of flow head to be considered during flow test tasks, when determining available heads. (Please refer to flow test tool details)                                                                                                                                                                                         | 1             |
+| 8     | Text Font Height (-)             | Font height to be used in display of text information in graphic display areas of the main interface.                                                                                                                                                                                                                            | 10            |
+| 9     | Color template(-)                | Color template to be used in creation of profile, plan and section details. The colors are also used in generating AutoCAD drawings.                                                                                                                                                                                             | Default       |
+| <br>  | **control_BoQSettings**          | <br>                                                                                                                                                                                                                                                                                                                             | <br>          |
+| 1     | B/H ratio (wall)                 | Ration of width to height of vertical structures (eg., drop falls), to be used in calculating volume of concrete/massonry.                                                                                                                                                                                                       | 0.65          |
+| 2     | Excavation cut slope             | Cut slopes to be assumed for controls (turnouts, divisionboxes) and drops, when determining excavation volumes.                                                                                                                                                                                                                  | 0.25          |
+| 3     | Working space(m)                 | Amounf of working space to consider in volume calculations for above,                                                                                                                                                                                                                                                            | 0.3           |
+| 4     | Compacted fill Ht(m)             | Height of compacted fill to be considered in determining both cut and fill volumes for above.                                                                                                                                                                                                                                    | 0.1           |
+| 5     | BoQ List of Items(-)             | The level of detail desired for BoQ report gerneration: could be set to either detailed (default) or summarized.                                                                                                                                                                                                                 | Detailed      |
+
+
+
+> Note: Invert levels -0.5 denotes, to use the OGL level at the begining of the canal less 0.5m. It is defined relative to the OGL at the point of interest.
+
+Bottom width roundup value also forces minimum allowable width to 0.30m.
+
+
+
+
 
 ## Generating Canal Naming for the Resolved Network
 
@@ -313,9 +360,9 @@ To create names for each route in the canal network, based on the naming style j
 3. Choose *Tag* on the dialog, and hit `OK`. 
    
    ![s](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Layout%20plans%20and%20Network%20Resolution\Images\Image%20038.png)
-
+   
    A naming style is generated per specifications, and applied to each route. A table also lists the naming applied to each route ID.
-
+   
    ![s](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Layout%20plans%20and%20Network%20Resolution\Images\Image%20039.png)
 
 **A network data is accepted as fully resolved if all routes are succesfully named with appropriate level indices. **
@@ -326,8 +373,6 @@ Beware of ** strings. These indicate routes whose connections have not been reso
 
 Use `Ctrl` + `F` keyboard combination to search for such texts in large networks. If found, they will be highlighted for easily locating them.
 
-
-
 ### Rendering Names to AutoCAD
 
 The canal namimng generated as described above can be exported to the AutoCAD environment to label each source alignment object of the canal network accordingly. To export naming:
@@ -335,15 +380,11 @@ The canal namimng generated as described above can be exported to the AutoCAD en
 1. Make sure the desired text is displayed on the layout view area. Toggle the text view button on if not already. Use `View > Route Text > Select and Shot Text...` menu command if not already.
    
    ![dasd ](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Layout%20plans%20and%20Network%20Resolution\Images\Image%20041.png)*Sample Layout map with Canal naming displayed.*
-   
-   
 
 2. Choose `View > Route Text > Generate to AutoCAD` menu command. This will invoke the *Sample Text* dialog.
    
    ![s](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Layout%20plans%20and%20Network%20Resolution\Images\Image%20042.png)
-   
-   
-   
+
    ![s](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Layout%20plans%20and%20Network%20Resolution\Images\Image%20043.png)
 
 3. Choose `Continue` button. AutoCAD environment is now in select mode waiting for user input. Pick a sample text. 
@@ -351,7 +392,5 @@ The canal namimng generated as described above can be exported to the AutoCAD en
    ![s](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Layout%20plans%20and%20Network%20Resolution\Images\Image%20044.png)
    
    All texts are generated to AutoCAD environemnt using the text height of the sample text selected above. Other similar information, for instance Area and Discharge capacity, can also be generated using this method.
-   
-   
 
 END.
