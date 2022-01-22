@@ -24,11 +24,11 @@ Available guides and documentation:
 
 [3. Creating & Manageing Design Criteria](DesignCriteria/CreatingAndManagingDesignCriteria.md)
 
-[4. Layout Plans and Netowrk Resolution](Layout%20plans%20and%20Network%20Resolution/Layout%20plans%20and%20Network%20Resolution)
+[4. Layout Plans and Netowrk Resolution](Layout_plans_and_Network_Resolution/Layout_plans_and_Network_Resolution)
 
-[5. Farm Blocks ans Netowrk Sizing]()
+[5. Farm Blocks ans Netowrk Sizing](Farm%20Blocks%20and%20Network%20Sizing/Farm%20Blocks%20and%20Network%20Sizing.md)
 
-[6. Longitudinal Design of Canals](LongitudinalDesignOfRoutes.md)
+[6. Longitudinal Design of Canals](Longitudinal_Design_of_Routes/LongitudinalDesignOfRoutes.md)
 
 [7. Design Production (Content under development)]()
 
