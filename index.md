@@ -37,7 +37,7 @@ Additional technical details are available in below list:
 
 [1. Surface Modelling and Profile Calauctions in iCAD](Surface_Modelling/Surface%20modelling%20and%20interpolation.md)
 
-[2. Flow section design in CanalNETWORK](Flow_section_design/Flow_section_design.md)
+[2. Flow section design in CanalNETWORK](Flow_section_design/Flow_section_Design.md)
 
 More technical documents will be posted soon.
 
