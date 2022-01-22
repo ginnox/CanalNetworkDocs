@@ -24,7 +24,7 @@ Available guides and documentation:
 
 [3. Creating & Manageing Design Criteria](DesignCriteria/CreatingAndManagingDesignCriteria.md)
 
-[4. Layout Plans and Netowrk Resolution](Layout_plans_and_Network_Resolution/Layout_plans_and_Network_Resolution)
+[4. Layout Plans and Netowrk Resolution](Layout_plans_and_Network_Resolution/Layout_plans_and_Network_Resolution.md)
 
 [5. Farm Blocks ans Netowrk Sizing](Farm%20Blocks%20and%20Network%20Sizing/Farm%20Blocks%20and%20Network%20Sizing.md)
 
