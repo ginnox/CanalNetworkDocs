@@ -42,3 +42,5 @@ Additional technical details are available in below list:
 More technical documents will be posted soon.
 
 
+For information visit Our website at [www.quanomic.co](www.quanomic.co).
+
