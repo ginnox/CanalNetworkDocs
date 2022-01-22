@@ -36,7 +36,7 @@ The iCAD product is modified for the following features:
   
   *Screenshot of plan view generated with option of a drawing window.*
 
-### Canal Network
+## Canal Network
 
 ### User Interaction
 
