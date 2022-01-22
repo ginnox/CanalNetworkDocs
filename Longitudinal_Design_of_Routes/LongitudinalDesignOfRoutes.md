@@ -42,7 +42,7 @@ It is important to note that, all values displayed for a control node, are an ex
 
 Select a control node in the profile view. Then: 
 
-![](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Longitudinal%20Design%20of%20Routes\Images\Image%20012.png)
+![](Images/Image%20012.png)
 
 To change the invert level upstream of the control:
 
@@ -52,7 +52,7 @@ To change the invert level upstream of the control:
 
 > Note: The algorithm maintains the settings in the design criteria regardless of the the user inputs. Hence, there is a limit to how high or low the invert can be raised or lowered. For instance, any control can not be raised above the level that is maintained by the bed slope of the upstream canal section.
 
-![](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Longitudinal%20Design%20of%20Routes\Images\Image%20013.png)
+![](Images/Image%20013.png)
 
 There are two ways to change invert level downstream of the control:
 
@@ -60,7 +60,7 @@ There are two ways to change invert level downstream of the control:
 
 * Set Head Loss: Check the HL option box, and type a desired head loss value. This is also typically a negative value indicating the desired headloss to maintain as the flow transitions through the control. This process, calculates an exit drop at the control that can satisfy the desired head loss amount, and apply to the control.
 
-![](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Longitudinal%20Design%20of%20Routes\Images\Image%20014.png)
+![](Images/Image%20014.png)
 
 Change how drops are located upstream of the selected control, by:
 
@@ -74,7 +74,7 @@ Change how drops are located upstream of the selected control, by:
 
 * Check the `Fit DBL for No Drop` option to set *fitHt* to -99.
 
-![](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Longitudinal%20Design%20of%20Routes\Images\Image%20015.png)
+![](Images/Image%20015.png)
 
 To Change the bed slope upstream of the control,
 
@@ -82,7 +82,7 @@ To Change the bed slope upstream of the control,
 
 * Click on the drop down menu at the right of the edit box, to pick from a set of default values.
 
-![](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Longitudinal%20Design%20of%20Routes\Images\Image%20016.png)
+![](Images/Image%20016.png)
 
 Finally, to change the functions of the control:
 
@@ -90,15 +90,15 @@ Finally, to change the functions of the control:
 
 * This will throw the confirm dialog shown below.
   
-  ![d](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Longitudinal%20Design%20of%20Routes\Images\Image%20001.png)
+  ![d](Images/Image%20001.png)
 
 * If user resonds with Yes button, then, this will invoke hydraulic calculation and design algorithm to size and position the control along with its branch canal(s) appropriately.
 
 * One can view the results of the hydraulic analysis by clicking on the R button next to the Division box check box. A report of the following form will be generated informing the user of the hydraulic analysis carried out, and the adjustments made to the inverts of the offtaking canals.
   
-  ![d](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Longitudinal%20Design%20of%20Routes\Images\Image%20002.png)
+  ![d](Images/Image%20002.png)
   
-  ![d](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Longitudinal%20Design%20of%20Routes\Images\Image%20003.png)
+  ![d](Images/Image%20003.png)
 
 * The same button also redesigns the division box currently selected, for any changes that may have been made to invert levels, flow depths, or similar. A new report, and a new set of invert levels are calculated and applied to the offtaking canals corresponding to the modification made.
 
@@ -110,15 +110,15 @@ Drops are created automatically following the variation of the ground level. The
 
 For many reasons, the automated design output will not satisfy the engineers desires. Each drop can be edited and adjusted as follows:
 
-![](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Longitudinal%20Design%20of%20Routes\Images\Image%20017.png)
+![](Images/Image%20017.png)
 
 To change the location of the drop:
 
 * Click on the desired drop. An interactive tool appears reading station location for the new locatio of the drop. Click at the desired new location, and the drop is repositioned to a new station.
 
-![](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Longitudinal%20Design%20of%20Routes\Images\Image%20018.png)
+![](Images/Image%20018.png)
 
-![](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Longitudinal%20Design%20of%20Routes\Images\Image%20019.png)
+![](Images/Image%20019.png)
 
 To manually change the location and/or height of the drop:
 
@@ -132,11 +132,11 @@ To manually change the location and/or height of the drop:
 
 Some times the last drop inserted in a canal segment can have odd values (not suitable for construction.) In such cases the user can make fine adjustment by typing in numeric expressions in the `Edit Node Invert` edit box inside the Node Panel.
 
-![](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Longitudinal%20Design%20of%20Routes\Images\Image%20030.png)
+![](Images/Image%20030.png)
 
 In above snapshot, the drop height of 0.836 can be adjusted to 0.800 by adding 0.036 to the invert level of the downstream control. The result is shown below.
 
-![](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Longitudinal%20Design%20of%20Routes\Images\Image%20031.png)
+![](Images/Image%20031.png)
 
 ### Adjust Canal Assembly for Segments
 
@@ -146,13 +146,13 @@ The last area of control for the user to guide and influence longitudinal canal 
 
 The user can interact with the canal assembly informaiton in many ways. Select ((click on the OGL profile line) a canal segment or reach in the profile view that you want to edit and follow below guideline:
 
-![](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Longitudinal%20Design%20of%20Routes\Images\Image%20021.png)
+![](Images/Image%20021.png)
 
 To change the flow section, drop design or construction parameters:
 
 * click on `Edit Assembly` drop down menu, and choose the relevant design option. This will open up a dialog to edit corresponding variables fot the canal segment. See [Design Criteria Setting and Use]() for details on each variable and their design implication.
 
-![](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Longitudinal%20Design%20of%20Routes\Images\Image%20022.png)
+![](Images/Image%20022.png)
 
 To redesign the flow section by adjusting the slope within allowable performance criteria:
 
@@ -170,7 +170,7 @@ There are multiple ways to explore and interact with the solutions of a longitud
 
 Users can create and manage various annotations to keep track of the changes happening, as well as ensure key criteria are met.
 
-![](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Longitudinal%20Design%20of%20Routes\Images\Image%20024.png)
+![](Images/Image%20024.png)
 
 To show drop heights,  FSL-OGL value at controls, 
 
@@ -182,7 +182,7 @@ To show hydraulic annotations such as OGL, CBL, FSL inforation:
 
 * click on the appropriate annotator from `Explore Solutions > Annotators` and interactively position the cursor line. The results will be displayed.
 
-![](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Longitudinal%20Design%20of%20Routes\Images\Image%20025.png)
+![](Images/Image%20025.png)
 
 An other imporant annotation available is cut and fill volume annotator. This tool can cumulate volumes of earth work for entire reach or between selected stations giving an insight in to the cost of the design. To view volume informaiton:
 
@@ -190,7 +190,7 @@ An other imporant annotation available is cut and fill volume annotator. This to
 
 Yet another helpful annotation is available from `Explore Solutions > Annotatiors > LSec Details`. This will display details of the longitudinal design including station range and flow section details for each segment of route. In addition it also annotates canal curve information if avaiilable.
 
-![f](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Longitudinal%20Design%20of%20Routes\Images\Image%20040.png) 
+![f](Images/Image%20040.png) 
 
 The above described annotations provide a quick and reliable overview of the hydraulic status of the canal. Some of the annotations also vary dynamically along with design changes by the user, to help decide whether design objectives are met.
 
@@ -198,7 +198,7 @@ The above described annotations provide a quick and reliable overview of the hyd
 
 The other group of tools to explore solutions is viewing tabular data. The solution for longitudinal design of routes incorporates tabular data. These are accessible from Explore Solutions > Data Tables. There are five table data available for viewing.
 
-![d](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Longitudinal%20Design%20of%20Routes\Images\Image%20041.png)
+![d](Images/Image%20041.png)
 
 #### LSec Profile Data
 
@@ -206,15 +206,15 @@ This table shows extensive detail of profile data along with canal bed level and
 
 Note: The data are tabulated at exactly the same incremental stations generated during profile extraction.
 
-![d](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Longitudinal%20Design%20of%20Routes\Images\Image%20042.png)
+![d](Images/Image%20042.png)
 
 The table headers are explained in below schematics.
 
-![s](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Longitudinal%20Design%20of%20Routes\Images\Image044.jpg)
+![s](Images/Image044.jpg)
 
 *Schematic of a typical canal cross-section, showing details for unlined canal.*
 
-![s](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Longitudinal%20Design%20of%20Routes\Images\Image%20043.jpg)
+![s](Images/Image%20043.jpg)
 
 *Schematics of a typical canal cross-section, showing details for thin (left) and Thick (right) lined canals.*
 
@@ -230,11 +230,11 @@ Hence, all results of the table can be considered an accurate representation of 
 
 Bill of quantitiy estimates for earth works are estimated by cummulating areas of cut and fill at each succesive station, and applying the trapezoidal method. This method utilizes the approximation used for 'numerical integration', that breaks down areas in to trapezoids with more easily computable areas. 
 
-![s](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Longitudinal%20Design%20of%20Routes\Images\Image%20043.png)
+![s](Images/Image%20043.png)
 
 The trapezoidal method of volume estimation generalizes to:
 
-![c](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Longitudinal%20Design%20of%20Routes\Images\Image%20044.png)
+![c](Images/Image%20044.png)
 
 where x1, x2,... xn represent the station locations for the corresponding aCut and aFil funtion values. 
 
@@ -244,7 +244,7 @@ Note: Cart away volumes reported on BoQ table represent the total excavated/Cut 
 
 This command generates the hydraulic design results for flow sections corresponding to each segment in the canal route.
 
-![s](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Longitudinal%20Design%20of%20Routes\Images\Image%20045.png)
+![s](Images/Image%20045.png)
 
 In the table, 
 
@@ -270,7 +270,7 @@ Some practitioners recommend to accept design sections whose value for velocity 
 
 This menu command generates a list of all the controls in the canal route, that define the connection between succesive segments, as well as junction with brnach canals - if any.
 
-![d](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Longitudinal%20Design%20of%20Routes\Images\Image%20046.png)
+![d](Images/Image%20046.png)
 
 In the table, the following defintions apply to the terms listed:
 
@@ -292,7 +292,7 @@ FSL: the full supply level just before the control location.
 
 Similar to above commands, this command list all the vertical fall structures for the route.
 
-![d](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Longitudinal%20Design%20of%20Routes\Images\Image%20047.png)
+![d](Images/Image%20047.png)
 
 The table contains a rather long list of parameters for each drop:
 
@@ -326,7 +326,7 @@ Station: Location of the drop structure
 
 This option specifically lists the relevant construction dimensions for each turnout structure found on the route. 
 
-![s](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Longitudinal%20Design%20of%20Routes\Images\Image%20048.png)
+![s](Images/Image%20048.png)
 
 The symbols for the dimensions are explained in the accompanying drawing below.
 
@@ -340,7 +340,7 @@ The symbols for the dimensions are explained in the accompanying drawing below.
 
 Similar to turnouts, this command specifically lists the relevant contruction dimensions for each division box structure found on the route.
 
-![s](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Longitudinal%20Design%20of%20Routes\Images\Image%20049.png)
+![s](Images/Image%20049.png)
 
 
 
@@ -356,7 +356,7 @@ The symbols for each dimension heading is described in the below drawing.
 
 All the data presented in the form of a table can be used in other applications, e.g., report writing in MS Word or further data processing in MS Excel. The `Copy Table` button provided at the bottom of the table display interface just helps do that. To copy the data content of the table view interface, click on the button.
 
-![d](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Longitudinal%20Design%20of%20Routes\Images\Image%20050.png)
+![d](Images/Image%20050.png)
 
 
 
@@ -406,7 +406,7 @@ This tool is availiable for a single segment in the profile view, and accesible 
 
 To start it, select a desired segment from the profile view. The `Performance Indicator Button` will be active. Click on it. The *Canal Section Design* interface will pop up.
 
-![](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Longitudinal%20Design%20of%20Routes\Images\Image%20023.png)
+![](Images/Image%20023.png)
 
 > Note: this interface starts with the hydraulic design parameters for the selected segement, and no data entry is required.
 
@@ -426,7 +426,7 @@ The Solver function offers a convenient and automatic tool to determine the best
 
 In both cases, the results are generated accordingly.
 
-![](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Longitudinal%20Design%20of%20Routes\Images\Image%20027.png)
+![](Images/Image%20027.png)
 
 Upon satisfactory design, close the dialog, and accept the Apply request in the dialog that appears.
 
@@ -462,7 +462,7 @@ Canal routes, every time they are refreshed, refer to the design criteria corres
 
 Instead, users can over ride the entire design criteria for a canal route and allow specific criteria for a route. 
 
-![](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Longitudinal%20Design%20of%20Routes\Images\Image%20006.png)
+![](Images/Image%20006.png)
 
 To set override values and apply to the current route:
 
@@ -480,7 +480,7 @@ Important: Exception design criteria EXCLUDE all variables in the command criter
 
 ## AutoDesigning a Selection of Routes
 
-![](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Longitudinal%20Design%20of%20Routes\Images\Image%20007.png)
+![](Images/Image%20007.png)
 
 AutoDesign tool can be applied to a selection of routes in one go. To start the tool:
 
@@ -493,3 +493,6 @@ This will start the process for all selected routes sequentially.
 Important: It is important to revisit the designs for each route designed with the Auto tool, and make any adjustments before production.
 
 *Note: AutoDesign task can not be undone. To reset to original tentative settings, select the route, apply Resize. Design parameters are reapplied. To view the updated view, click on the route in plan view, which will refresh the view in Profile View Axis.*
+
+
+END.

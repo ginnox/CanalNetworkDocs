@@ -6,7 +6,7 @@ This is official site for documentation and guide of CanalNetwork software, and 
 
 We will continually update this site to provide information on progress and latest developments.
 
-Learn about latest updates and feature enhancements for Nov 2021 [here](updatenotesNov2021.md)
+Learn about latest updates and feature enhancements for Jan 2022 [here](Updates/Update%20Jan22/Update%20Jan22.md)
 
 This site will also be the platform for online documentation. Contents relevant to software users will soon be available with a link on this page.
 
@@ -18,12 +18,27 @@ Available guides and documentation:
 
 
 
-[1. Introducing CanalNETWORK software](Introduction.md)
+[1. Introducing CanalNETWORK software](Introduction/Introduction.md)
 
 [2. About Design Criteria](DesignCriteria/AboutDesignCriteria.md)
 
 [3. Creating & Manageing Design Criteria](DesignCriteria/CreatingAndManagingDesignCriteria.md)
 
-[4. Layout Plans and Netowrk Resolution](Layout%20plans%20and%20Network%20Resolution/Layout%20plans%20and%20Network%20Resolution)
+[4. Layout Plans and Netowrk Resolution](Layout_plans_and_Network_Resolution/Layout_plans_and_Network_Resolution.md)
 
-[5. Longitudinal Design of Canals](LongitudinalDesignOfRoutes.md)
+[5. Farm Blocks ans Netowrk Sizing](Farm%20Blocks%20and%20Network%20Sizing/Farm%20Blocks%20and%20Network%20Sizing.md)
+
+[6. Longitudinal Design of Canals](Longitudinal_Design_of_Routes/LongitudinalDesignOfRoutes.md)
+
+[7. Design Production (Content under development)]()
+
+
+Additional technical details are available in below list:
+
+[1. Surface Modelling and Profile Calauctions in iCAD](Surface_Modelling/Surface%20modelling%20and%20interpolation.md)
+
+[2. Flow section design in CanalNETWORK](Flow_section_design/Flow_section_Design.md)
+
+More technical documents will be posted soon.
+
+

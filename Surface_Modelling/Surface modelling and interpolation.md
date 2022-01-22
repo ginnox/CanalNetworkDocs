@@ -8,7 +8,7 @@ Surface fitting and interpolation, as applied in the context of topographic data
 
 To estimate the surface model for a given set of x,y,z data, iCAD builds on scattered interpolation algorithm in matlab. This algorithm performs Delauney triangulation over the data set, with the aim of creating a surface fit made up of small triangles. A Delaunay Triangulation maximizes  the smallest occuring triangle over all triangulations og the point set. In other words, any other triangulation will have a smaller angle at vertices.
 
-![d](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Surface%20Modelling\Images\Screenshot_20220118-111908_Gallery.jpg)
+![d](Images/2.png)
 
 It is important to note that the method:
 
@@ -32,13 +32,13 @@ The surface data extraction algorithm in iCAD and CanalNETWORK software products
 
 - Profile Extraction: The fundamental input to profile extraction is an alignment path object defined in AutoCAD environment. This object provides the  x, y data at fixed intervals along the path object. The same function is applied on x,y data set to return corresponding elevation values. 
   
-  ![[  ] ](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Surface%20Modelling\Images\Fig1.jpg)
+  ![[  ] ](Images/Fig1.jpg)
   
   *Fig: Alignmnet route, vertices and querry points*
   
   When extracting strip elevation data for an alignment object, normal lines are generated at fixed intervals. In addition to x,y data at center line - i.e., on the alignment route - other x,y data are created at offset locations specified by the user along these normal lines. The offset locations are applied on both sides of the alignmnet. The resulting x,y data set forms a strip area along the alignment route. The elevation data at this data set is calculated from z= f(x,y).
   
-  ![[  ]](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Surface%20Modelling\Images\Fig3.jpg) 
+  ![[  ]](Images/Fig3.jpg) 
   
   *Schematic showing Alignment route, normals and querry points*
 
@@ -50,7 +50,7 @@ Note: The intervals for extracting profile data are specified by the user. The a
 
 The implementation of the surface interpolant function in above described querry methods of either iCAD or CanalNETWORK product, allows extrapolation to determine elevation data ouside the area covered by input x,y data set. This meanse, the implementation can estimate elevation values for points outside the boundary area defined by the inpit data set. 
 
-![[  ]](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Surface%20Modelling\Images\Fig2.jpg) 
+![[  ]](Images/Fig2.jpg) 
 
 *Schematic showing point data set, boundary area defined by the data set, and querry points for extrapolaiton.*
 
@@ -61,3 +61,5 @@ It is important to note that:
 - the reliability of the values returned decreases significantly as the querry points move away from the boundary area, original data set. 
 
 Hence, the extrapolation capability is to be considered as only a complimentary feature to obtain a crude estimate of terrain variation beyond the boundary area. There is no guarantee that designs based on extrapolated data will be of acceptable quality and accuracy.
+
+END.

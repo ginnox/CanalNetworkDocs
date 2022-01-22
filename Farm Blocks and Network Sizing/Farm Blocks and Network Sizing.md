@@ -30,25 +30,25 @@ To read farmblock area data from AutoCAD, first create the farm blocks using pol
 
 * Field canal irrigating to both sides: Draw ensclosing polyline objects around the area served by the field canal. 
   
-  ![s](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Farm%20Blocks%20and%20Network%20Sizing\Images\Image%20001.png)
+  ![s](Images/Image%20001.png)
 
 * Field canal irrigating only either to the left or to the right: creat a polygon area covering the area served by the canal, and add a zero area extension at a location convenient to cross with the feeded canal.
   
   To add a zero area extenaion, click on the boundary and hover over the vertex you want to edit and choose `Add Vertex` menu item.
   
-  ![s](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Farm%20Blocks%20and%20Network%20Sizing\Images\Image%20003.png)
+  ![s](Images/Image%20003.png)
   
   
   
   Pick a location over the other side of the canal.
   
-  ![s](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Farm%20Blocks%20and%20Network%20Sizing\Images\Image%20004.png)
+  ![s](Images/Image%20004.png)
   
   Finally modify the resulting geometry by moving the next vertes to over lap with the previous vertex.
   
-  ![s](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Farm%20Blocks%20and%20Network%20Sizing\Images\Image%20005.png)
+  ![s](Images/Image%20005.png)
   
-  ![s](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Farm%20Blocks%20and%20Network%20Sizing\Images\Image%20006.png)
+  ![s](Images/Image%20006.png)
   
   The final geometry is shown above. This ensures the the area crosses the desired canal route, with out any change on the area of the block area delineated (hence the term zero-area extension.)
   
@@ -64,21 +64,21 @@ Once these are ready:
 
 2. To import from a host instance object go to `Workflow > Farm Blocks > (Re)Import Farm Blocks...` menu command. To import from layer go to `Workflow > Farm Blocks> (Re)Import Farm Blocks By Layer...` Both methods are valid.
    
-   ![s](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Farm%20Blocks%20and%20Network%20Sizing\Images\Image%20007.png)
+   ![s](Images/Image%20007.png)
    
    This will start the *Choose* dialog. 
    
-   ![s](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Farm%20Blocks%20and%20Network%20Sizing\Images\Image%20008.png)
+   ![s](Images/Image%20008.png)
    
    
    
    If importing for the first time, or desire to overwrite all existing associated data, choose `Reset All`. If you want to append the current collection to the existing data, choose `Update Only`.  For the case under consideration, Reset All would be the right choice, so hit the corresponding button.
    
-   ![s](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Farm%20Blocks%20and%20Network%20Sizing\Images\Image%20009.png)
+   ![s](Images/Image%20009.png)
    
    Confirm the action in the dialog.
    
-   ![s](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Farm%20Blocks%20and%20Network%20Sizing\Images\Image%20010.png)
+   ![s](Images/Image%20010.png)
    
    The *Done* dialog completes import process. The farmblocks imported are shown in the layout view area overlapping the network elements.
 
@@ -86,21 +86,21 @@ Once these are ready:
 
 At this stage you can view the quantities of areas associated to each serving canal route, by using `View > Route Text > Select & Show Text...` and picking `A` field in the dialog.
 
-![s](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Farm%20Blocks%20and%20Network%20Sizing\Images\Image%20014.png)
+![s](Images/Image%20014.png)
 
 You can also generate a table from `View > Workflow > Farm Blocks > Edit Blocks...` , and selecting `Current` when prompted.
 
 
 
-![s](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Farm%20Blocks%20and%20Network%20Sizing\Images\Image%20017.png)
+![s](Images/Image%20017.png)
 
 
 
-![s](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Farm%20Blocks%20and%20Network%20Sizing\Images\Image%20015.png)
+![s](Images/Image%20015.png)
 
 
 
-![s](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Farm%20Blocks%20and%20Network%20Sizing\Images\Image%20016.png)
+![s](Images/Image%20016.png)
 
 
 
@@ -118,7 +118,7 @@ One can modify the block data for any one route at any time, in one of two ways:
 
 3. simply start editing in the table, and hit `Apply`.
    
-   ![s](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Farm%20Blocks%20and%20Network%20Sizing\Images\Image%20019.png)
+   ![s](Images/Image%20019.png)
 
 
 
@@ -132,7 +132,7 @@ You can see that, the area corresponding to the parent canal is 0.00. This is be
 
 3. The table data is updated to show the cummulated area each route is serving, as shown below. Hit `Apply` to continue to the next step.
    
-   ![s](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Farm%20Blocks%20and%20Network%20Sizing\Images\Image%20018.png)
+   ![s](Images/Image%20018.png)
 
 
 
@@ -156,15 +156,15 @@ Sizing networks is a quick process, that fully relies on the farm block data pre
 
 2. Start the menu command from `Workflow > Network Rating/Capacity`.  
    
-   ![s](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Farm%20Blocks%20and%20Network%20Sizing\Images\Image%20020.png)
+   ![s](Images/Image%20020.png)
    
-   ![s](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Farm%20Blocks%20and%20Network%20Sizing\Images\Image%2021.png)
+   ![s](Images/Image%2021.png)
 
 3. Choose `Resize All` This will do the calculation for the entire network, and display the resulting information in the layout view area. If no information is shown, toggle the text comonent from `View > Route Text > Toggle Text On/Off` .
    
    
 
-![s](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Farm%20Blocks%20and%20Network%20Sizing\Images\Image%2022.png)
+![s](Images/Image%2022.png)
 
 > Note that text label for canal capacities follow the notation  X+YYY, where X denotes capacity in cubic meters per second, and YYY denotes capcity in litres per second.
 

@@ -12,7 +12,7 @@ The AutoCAD layout maps must fulfil certain conventions to be used in the CanalN
 
 3. All canal routes start and end with a stratight segment of at least 20m. 
    
-   ![[  ]](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Layout%20plans%20and%20Network%20Resolution\Images\Image%20001.png) *Maintain straight segments at begining and end of canal alignments*
+   ![[  ]](Images/Image%20001.png) *Maintain straight segments at begining and end of canal alignments*
 
 4. All canal routes are drawn to scale of 1:1, and referenced to world coordinate system (WCS) of AutoCAD.
 
@@ -26,16 +26,19 @@ Best practices for layout drawings include, but are not limited to:
    
    * Where two canals offtake from a single parent canal, make sure they do not intersect themselves any where other than the point where they intersect the parent canal. This may be the case where the starting segments of the branch canals are either parallel, or the cross the parent canal at slighly different locaitons. If necessary edit the first or second vertext of one of the canal routes to avoid parallel.
    
-   ![[  ]](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Layout%20plans%20and%20Network%20Resolution\Images\Image%20002.png) * Intersection of branch canals with a parent canal*
+   ![[  ]](Images/Image%20002.png) 
+   * Intersection of branch canals with a parent canal*
 * If possible avoid curves on a parent canal where it intersects with branch canals.
 
 * Except where brnaching is needed, avoid extending the end of canals anywhere close to other canals, and certainly not with in the extension distance (specified in Network Preferences). Failure to observe this will result in unintended junctions leading to significant time in correcting the connectivity of the network.
   
-  ![[  ]](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Layout%20plans%20and%20Network%20Resolution\Images\Image%20003.png) 
+  ![[  ]](Images/Image%20003.png) 
   
   *Desired network relation ship.*
   
-  ![[](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Layout%20plans%20and%20Network%20Resolution\Images\Image%20004.png) *Unintended Junction at a canal end potentially confusing canal parent-child relation ships*
+  ![[]](Images/Image%20004.png) 
+  
+  *Unintended Junction at a canal end potentially confusing canal parent-child relation ships*
 3. All routes should end at sufficient distance from other canal routes. (Sufficiently farther than the extension length and node merge distance parameter values in `Network Preferences`, which are often set at 2m and 5m respectively.) 
 
 > Note: The amount of time spent to resolve a network analysis, depends little on the size of the irrigation area or the number of canals. Rather it greately depends on how strictly the above guideline is adhered to in preapring the layout map.
@@ -66,11 +69,11 @@ The first step is to import the drawing to the CanalNETWORK environment. There a
 
 1. To import a individual routes - i.e., a single route at a time - Go to `Workspace > Pick Route (AutoCAD)` .
    
-   ![s](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Layout%20plans%20and%20Network%20Resolution\Images\Image%20005.png)
+   ![s](Images/Image%20005.png)
 
 2. To import alignment routes drawn on a layer, go to Workflow > Pick Routes (AutoCAD Layer). This will invoke a dialog listing all the layers in the current drawing. 
    
-   ![[  ] ](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Layout%20plans%20and%20Network%20Resolution\Images\Image%20007.png)
+   ![[  ] ](Images/Image%20007.png)
    
    Pick the desired layer, and hit OK. This will import all alignment routes found on the specified layer to the plan view area.
    
@@ -82,15 +85,15 @@ The first step is to import the drawing to the CanalNETWORK environment. There a
    
    * Then go to `Workspace > Pick Rotue (AutoCAD)` menu command, and when prompted pick the host object.
      
-     ![s](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Layout%20plans%20and%20Network%20Resolution\Images\Image%20006.png)
+     ![s](Images/Image%20006.png)
      
      This will import all the canal routes instanced in the host object. 
      
-     ![s](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Layout%20plans%20and%20Network%20Resolution\Images\Image%20009.png)
+     ![s](Images/Image%20009.png)
 
 > Note: A complete canal route data consists an alignment data (x, y) and a profile data. The below $Partial Import?$ prompt may apear when importing canal routes whose profile data is not yet extracted. This is perfectly acceptable, and proceed by hitting `Partial` button. Partial meanse that only the alignment data will be available with out the profile data. Also, note that routes imported with partial are represented with broken lines in the plan veiw area of the interface.
 
-![[  ]](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Layout%20plans%20and%20Network%20Resolution\Images\Image%20010.png) 
+![[  ]](Images/Image%20010.png) 
 
 *Routes in plan view area showing canal routes with complete data set, and partial data set.*
 
@@ -106,9 +109,11 @@ Unwanted polyline objects may be imported to the plan view area during the proce
 
 2. Use `Edit > Remove Route` menu command.
    
-   ![s](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Layout%20plans%20and%20Network%20Resolution\Images\Image%20008.png)
+   ![s](Images/Image%20008.png)
 
-![[  ]](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Layout%20plans%20and%20Network%20Resolution\Images\Image%20011.png) *Delete dialog requesting confirmation for selected routes.*
+![[  ]](Images/Image%20011.png) 
+
+*Delete dialog requesting confirmation for selected routes.*
 
 Once all the canal routes are imported, the next step is Node Identification.
 
@@ -122,7 +127,7 @@ The term Node is used to represent a location on a layout map that represents ke
 
 3. Floating Nodes: are created by the user to represent any changes in physical or hydraulic, or other information along a canal route. This types of nodes are not relevant for the current topic of Network Resolution, but are discussed in detail in the section [Longitudinal Design of Routes](). 
 
-![[  ]](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Layout%20plans%20and%20Network%20Resolution\Images\Image%20012.png) 
+![[  ]](Images/Image%20012.png) 
 
 *Figure showing appearance of Junction Nodes and End-of-Canal nodes in layout view area.*
 
@@ -134,7 +139,7 @@ CanalNETWORK can automatically analyze all imported canals to identify and inser
 
 1. To identify nodes for selected routes, first select the desired routes and start the command.
    
-   ![[   ]](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Layout%20plans%20and%20Network%20Resolution\Images\Image%20014.png) 
+   ![[   ]](Images/Image%20014.png) 
    
    *Figure showing the confirm dialog before Node Identification process.*
    
@@ -142,7 +147,7 @@ CanalNETWORK can automatically analyze all imported canals to identify and inser
 
 2. To Identify nodes for the entire network of canals, make sure there are no selected routes in layout view area (right click and hit `Clear Selection` ). Then start the command. 
    
-   ![[  ]](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Layout%20plans%20and%20Network%20Resolution\Images\Image%20015.png) 
+   ![[  ]](Images/Image%20015.png) 
    
    *Figure showiing confirm dialog before Node Identification process for entire network.*
    
@@ -160,7 +165,7 @@ The user may expect two types of isses with the connectivity established from ab
 
 The first common issue is locations where End-of-Canal nodes are inserted, instead of a Junction node. This condition misses to understand that there is a branch canal leaving from the end of the parent canal, impairing further work during canal design. It must be resolved.
 
-![[  ]](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Layout%20plans%20and%20Network%20Resolution\Images\Image%20016.png) 
+![[  ]](Images/Image%20016.png) 
 
 *Wrongly created EOC Node instead of a Junction node.*
 
@@ -170,29 +175,29 @@ There are two approaches to resolve such issues. Manual and Automatic methods. T
 
 2. Then left-click on the EOC node to be corrected. This will invoke the *Edit Node* dialog, detailing the current connectivity status at the specific node.
    
-   ![[  ]](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Layout%20plans%20and%20Network%20Resolution\Images\Image%20017.png) 
+   ![[  ]](Images/Image%20017.png) 
    
    *Edit Node Dialog for the EoC node*
 
 3. Click on the` To Current Node` button to link the picked route to the node. This will correct the issue, also changing the square node marker to a circle node marker correctly representing a canal junction.
    
-   ![[  ]](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Layout%20plans%20and%20Network%20Resolution\Images\Image%20018.png) 
+   ![[  ]](Images/Image%20018.png) 
    
    *Resolved Junction Node at End of Canal.*
 
 Oftern however, there are too many EoC nodes that must be corrected or resolved in a network. This is especially true after the first attempt to ID nodes for a complete network of routes. The automatic tool is helpful in this situation. To use it, go to `Workflow > Nodes > Convert EoC Nodes `menu command. 
 
-![s](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Layout%20plans%20and%20Network%20Resolution\Images\Image%20019.png)
+![s](Images/Image%20019.png)
 
-![[  ] ](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Layout%20plans%20and%20Network%20Resolution\Images\Image%20020.png)
+![[  ] ](Images/Image%20020.png)
 
 *Confirm Operation dialog.*
 
 This will identify all wrongly positioned EoC Nodes in the entire network database, and correct the issue one-by-one, also informing the user of the progress. 
 
-![s](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Layout%20plans%20and%20Network%20Resolution\Images\Image%20021.png)
+![s](Images/Image%20021.png)
 
-![[  ]](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Layout%20plans%20and%20Network%20Resolution\Images\Image%20022.png)
+![[  ]](Images/Image%20022.png)
 
 *Progress bar and message at end of operation informing the user of how many EoC nodes are succesfully converted.*
 
@@ -204,15 +209,15 @@ CanalNETWORK can automatically locate these nodes in the network. The user must 
 
 To identify nodes where multiple parent condition may be an issue, go to Workflow > Nodes > Diagnose Multiple-Parent Nodes. If found, the command will list such locations in a table.
 
-![[  ]](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Layout%20plans%20and%20Network%20Resolution\Images\Image%20023.png) 
+![[  ]](Images/Image%20023.png) 
 
-![s](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Layout%20plans%20and%20Network%20Resolution\Images\Image%20024.png)
+![s](Images/Image%20024.png)
 
 *Menu command and resulting table for Multiple Parent Node issue identification. The table shows both First and Second Nodes refering to the same branch canal (not shown in the table)*
 
 Once this is ready, the user can navigate to each location and resolve the issue. To go to a particular node listed in the table:
 
-![[  ] ](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Layout%20plans%20and%20Network%20Resolution\Images\Image%20025.png)
+![[  ] ](Images/Image%20025.png)
 
 *Go to Route menu command*
 
@@ -220,17 +225,17 @@ Select the row for the node, and use` View > Go To Route...` menu command (Ctrl 
 
 In the table list of nodes shown above, both nodes refer to the one branch canal. This can be noted by left-clicking on each node, one at a time. It can be seen that the *Edit Node* dialog lists the same branch canal to each node. 
 
-![s](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Layout%20plans%20and%20Network%20Resolution\Images\Image%20026.png)
+![s](Images/Image%20026.png)
 
-![s](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Layout%20plans%20and%20Network%20Resolution\Images\Image%20027.png)
+![s](Images/Image%20027.png)
 
 Obviously, the lower-right node is the issue. This is because, it is the end of a canal and no branch is expected or implied in the drawing. What caused this issue is the fact that the canal in question ends very close to the begining of the other canal. The AutoCAD drawing measurement confirms this.
 
-![s](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Layout%20plans%20and%20Network%20Resolution\Images\Image%20028.png)
+![s](Images/Image%20028.png)
 
  *AutoCAD measured distance between end of a canal and begining of another canal. Based on the preference (shown to the right) search radius for a neighbouring canal is 2x2meters (4meters) locating the wrong canal as a parent canal.*
 
-![s](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Layout%20plans%20and%20Network%20Resolution\Images\Image%20029.png)
+![s](Images/Image%20029.png)
 
 To resolve the issue:
 
@@ -240,7 +245,7 @@ To resolve the issue:
 
 3. Click on the `Remove Cur` button. This action will do two things: detach the branch canal from the node, and convert the node to EoC node.
 
-![s](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Layout%20plans%20and%20Network%20Resolution\Images\Image%20030.png)
+![s](Images/Image%20030.png)
 
 The issue is resolved. Repeat the above steps for all other such nodes.
 
@@ -305,19 +310,19 @@ To create a desired naming for the network of canals just resolved, first a nami
 
 There are multiple styles available to generate a canal naming, depending on the project type, scale and user preference. To create a naming style go to `Workspace  > Manage Design Criteria > New Namiing..`.  
 
-![s](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Layout%20plans%20and%20Network%20Resolution\Images\Image%20031.png)
+![s](Images/Image%20031.png)
 
 This will start the *Edit Variables* Dialog, set each variable to desired values as follows:
 
 1. Canal Network Naming: This prescribes the exact sequence of naming to be followed begining from the primary level (1st generation) canal all the way to the last level of of canals. 
    
-   ![s](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Layout%20plans%20and%20Network%20Resolution\Images\Image%20032.png)
+   ![s](Images/Image%20032.png)
    
    *Available options for Canal Naming*
 
 2. Level II Desc. Text: Defines the text to be used 2nd level (2nd generation) canal rotues in the network. 
    
-   ![s](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Layout%20plans%20and%20Network%20Resolution\Images\Image%20033.png)
+   ![s](Images/Image%20033.png)
    
    *Available Options for Descriptive texts*
 
@@ -333,7 +338,7 @@ As a best practice, it is always recommended to use a naming with sufficient lev
 
 Upon completion, hit the `Apply` button. This will invoke the Get Design Criteria? dialog. It is essential to confirm to this dialog with the `Yes` button.
 
-![s](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Layout%20plans%20and%20Network%20Resolution\Images\Image%20034.png)
+![s](Images/Image%20034.png)
 
 *Get Design Criteria dialog*
 
@@ -347,23 +352,23 @@ To create names for each route in the canal network, based on the naming style j
 
 1. Select the primary level canal for the project by left-clicking on it in the layout view area.
    
-   ![s](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Layout%20plans%20and%20Network%20Resolution\Images\Image%20036.png)
+   ![s](Images/Image%20036.png)
    
    If a naming style is not defined yer, the below dialog will terminate the process. Define a naming style and try again.
    
-   ![s](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Layout%20plans%20and%20Network%20Resolution\Images\Image%20035.png)
+   ![s](Images/Image%20035.png)
 
 2. Go to View > Route Text > Create New Text...  A process dialog such as shown below may apear. Choose `AutoStack and Repeat` until all issues are handled, or the number of issued does not reduce any more.
    
-   ![s](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Layout%20plans%20and%20Network%20Resolution\Images\Image%20037.png)
+   ![s](Images/Image%20037.png)
 
 3. Choose *Tag* on the dialog, and hit `OK`. 
    
-   ![s](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Layout%20plans%20and%20Network%20Resolution\Images\Image%20038.png)
+   ![s](Images/Image%20038.png)
    
    A naming style is generated per specifications, and applied to each route. A table also lists the naming applied to each route ID.
    
-   ![s](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Layout%20plans%20and%20Network%20Resolution\Images\Image%20039.png)
+   ![s](Images/Image%20039.png)
 
 **A network data is accepted as fully resolved if all routes are succesfully named with appropriate level indices. **
 
@@ -379,17 +384,19 @@ The canal namimng generated as described above can be exported to the AutoCAD en
 
 1. Make sure the desired text is displayed on the layout view area. Toggle the text view button on if not already. Use `View > Route Text > Select and Shot Text...` menu command if not already.
    
-   ![dasd ](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Layout%20plans%20and%20Network%20Resolution\Images\Image%20041.png)*Sample Layout map with Canal naming displayed.*
+   ![dasd ](Images/Image%20041.png)
+   
+   *Sample Layout map with Canal naming displayed.*
 
 2. Choose `View > Route Text > Generate to AutoCAD` menu command. This will invoke the *Sample Text* dialog.
    
-   ![s](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Layout%20plans%20and%20Network%20Resolution\Images\Image%20042.png)
+   ![s](Images/Image%20042.png)
 
-   ![s](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Layout%20plans%20and%20Network%20Resolution\Images\Image%20043.png)
+   ![s](Images/Image%20043.png)
 
 3. Choose `Continue` button. AutoCAD environment is now in select mode waiting for user input. Pick a sample text. 
    
-   ![s](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Layout%20plans%20and%20Network%20Resolution\Images\Image%20044.png)
+   ![s](Images/Image%20044.png)
    
    All texts are generated to AutoCAD environemnt using the text height of the sample text selected above. Other similar information, for instance Area and Discharge capacity, can also be generated using this method.
 
