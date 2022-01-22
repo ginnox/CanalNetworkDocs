@@ -26,4 +26,19 @@ Available guides and documentation:
 
 [4. Layout Plans and Netowrk Resolution](Layout%20plans%20and%20Network%20Resolution/Layout%20plans%20and%20Network%20Resolution)
 
-[5. Longitudinal Design of Canals](LongitudinalDesignOfRoutes.md)
+[5. Farm Blocks ans Netowrk Sizing]()
+
+[6. Longitudinal Design of Canals](LongitudinalDesignOfRoutes.md)
+
+[7. Design Production (Content under development)]()
+
+
+Additional technical details are available in below list:
+
+[1. Surface Modelling and Profile Calauctions in iCAD]()
+
+[2. Flow section design in CanalNETWORK]()
+
+More technical documents will be posted soon.
+
+
