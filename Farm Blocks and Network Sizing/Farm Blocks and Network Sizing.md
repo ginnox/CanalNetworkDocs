@@ -169,45 +169,4 @@ Sizing networks is a quick process, that fully relies on the farm block data pre
 > Note that text label for canal capacities follow the notation  X+YYY, where X denotes capacity in cubic meters per second, and YYY denotes capcity in litres per second.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+END.
