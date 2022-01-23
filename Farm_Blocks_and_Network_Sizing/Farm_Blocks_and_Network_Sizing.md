@@ -2,7 +2,7 @@
 
 One of the key strengths of CanalNETWORK software is high level of task automation avaiable for time consuming and error prone tasks. Once a network of canals is succesully imported and resolved, subsequent tasks are easy to manage, giving users a quick turnarround time for their projects. Farmblock analysis functionality is one of such many features.
 
-Farmblock tools assist to identify and calculate farmblock for the lowest level(s) of canals in a given netowrk, and cummulate the values towards the primary level canals. This process facilitates two important stages of the design:
+Farmblock tools assist to identify and calculate irrigation areas for the lowest level(s) of canals in a given netowrk, and cummulate the values towards the primary level canals. This process facilitates two important stages of the design:
 
 1. Accurately determine the net irrigable area of the network, or its sub-networks, or any other level of canal.
 
