@@ -13,7 +13,7 @@ This site will also be the platform for online documentation. Contents relevant 
 
 ## Online documentation (Under Development)
 
-This section is under devekiopment. New contents will be added frequently, so visit frequently.
+This online resource site is under continuous devekiopment and enhancement. New contents will be added frequently, and additions and enhancements are published often. Please make sure you always have the most uptodate reference to our products by directly accessing this resource site.
 
 Available guides and documentation:
 
