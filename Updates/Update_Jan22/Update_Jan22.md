@@ -135,6 +135,8 @@ greater value to users.
 
 - Edited menu item on Canal Editor/Solver from Min Lin to Min Pw
 
+- Adjusted seed function to canal section solver algorithm to accomodate larger discharges
+
 - fixed labeling of branch canals in detail view axis for canal indexs exceeding 9
 
 - fixed subnetwork data creation and view in partly taged networks
