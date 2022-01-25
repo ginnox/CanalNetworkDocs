@@ -18,7 +18,10 @@ To update your software to the recent version, down load these resources and fol
 
 [Download iCAD bridge 4.4.2](https://drive.google.com/file/d/12XkeziKqElVQOz8NLDLhB0ogHpi247mp/view?usp=sharing)
 
-[Donaload CanalNetwork 1.5.2.1250](https://drive.google.com/file/d/1ft42jrHtuhivBdtHgFCA_Gvtc-mq0kPK/view?usp=sharing)
+[Donaload CanalNetwork 1.5.2.1250](https://drive.google.com/file/d/1sVR5lGiLOB0cQXD9QE2mqofvLbZsz7Uo/view?usp=sharing)
+NB: CanalNETWORK is updated for few fixes on 25th Jan. Please see notes below. Please make sure to use the latest version in your work(s).
+
+
 
 ## iCAD Product:
 
@@ -126,6 +129,10 @@ The iCAD product is modified for the following features:
 The following bugs are fixed in this version, providing better overall performance to users.
 
 greater value to users.
+
+- fixed sum error for cummulating farm areas 
+
+- Edited menu item on Canal Editor/Solver from Min Lin to Min Pw
 
 - fixed labeling of branch canals in detail view axis for canal indexs exceeding 9
 
