@@ -40,6 +40,9 @@ Additional technical details are available in below list:
 
 [2. Flow section design in CanalNETWORK](Flow_section_design/Flow_section_Design.md)
 
+[3. Design of Drops](DesignOfDrops/DropDesign.md)
+
+
 More technical documents will be posted soon.
 
 
