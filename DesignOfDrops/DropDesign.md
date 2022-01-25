@@ -186,4 +186,4 @@ A sample BoQ for a drop structure contains the below informaiton in the standard
 
 END.
 
-
+Reference: A Guide for Irrigation and Drainage Canal Structures Design - Drop Structures, Water Works Design and Supervission Entrepreise, Irrigation Drainage Land Reclamation and Flood Protection Design Team, May 2015, Addis Ababa.
