@@ -46,6 +46,8 @@ Additional technical details are available in below list:
 
 [3. Design of Drops](DesignOfDrops/DropDesign.md)
 
+[4. Hydraulic Jumps and Energy Dessipation Mechanisms (Under Development)]()
+
 
 More technical documents will be posted soon.
 
