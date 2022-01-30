@@ -27,6 +27,7 @@ Best practices for layout drawings include, but are not limited to:
    * Where two canals offtake from a single parent canal, make sure they do not intersect themselves any where other than the point where they intersect the parent canal. This may be the case where the starting segments of the branch canals are either parallel, or the cross the parent canal at slighly different locaitons. If necessary edit the first or second vertext of one of the canal routes to avoid parallel.
    
    ![[  ]](Images/Image%20002.png) 
+   
    * Intersection of branch canals with a parent canal*
 * If possible avoid curves on a parent canal where it intersects with branch canals.
 
@@ -257,8 +258,6 @@ Much of the work carried out above, and some that will follow, are dictated by s
 
 The meaning and use of each variable setting is described below.
 
- 
-
 |       |                                  |                                                                                                                                                                                                                                                                                                                                  |               |
 | ----- | -------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- |
 | S.No. | Variable Name                    | Description                                                                                                                                                                                                                                                                                                                      | Default Value |
@@ -272,7 +271,7 @@ The meaning and use of each variable setting is described below.
 | 7     | Associated Canal on Import(-)    | Import associated canal flow section on each route during import. Applicable only in older versions.                                                                                                                                                                                                                             | 0             |
 | 8     | Route Extension Length(m)        | Extension length for beginning of routes, while attempting to establish intersection with other canals.                                                                                                                                                                                                                          | 0.1           |
 | 9     | Extrapolate Profile Data(-)      | Allow or deny extrapolation of transverse profile data beyond the limits of the offset range, if needed.                                                                                                                                                                                                                         | 1             |
-| 10    | Bottom Width Value (-)           | Rounding value for bottom width of canal flow sections. Value >=0.05 affects design results for canal sections, drop heights applied.                                                                                                                                                                                            | 0.05          |
+| 10    | Round Dims for Construction (-)  | Rounding value for bottom width of canal flow sections, and drop provission.<br/> Value >=0.05 rounds B values to Value specified, and drop heights applied will be limited to allowable increments specified in CBL_designSettings assembly parameter.                                                                          | 0             |
 | <br>  | **NodeGraphic_Template**         | <br>                                                                                                                                                                                                                                                                                                                             | <br>          |
 | 1     | Display Height of Node bar(m)    | Height of nodes or control markers in the profile view area.                                                                                                                                                                                                                                                                     | 2.5           |
 | 2     | In-Route Node Marker symbol(-)   | Marker to be used for representing junction nodes.                                                                                                                                                                                                                                                                               | o             |
@@ -290,15 +289,9 @@ The meaning and use of each variable setting is described below.
 | 4     | Compacted fill Ht(m)             | Height of compacted fill to be considered in determining both cut and fill volumes for above.                                                                                                                                                                                                                                    | 0.1           |
 | 5     | BoQ List of Items(-)             | The level of detail desired for BoQ report gerneration: could be set to either detailed (default) or summarized.                                                                                                                                                                                                                 | Detailed      |
 
-
-
 > Note: Invert levels -0.5 denotes, to use the OGL level at the begining of the canal less 0.5m. It is defined relative to the OGL at the point of interest.
 
 Bottom width roundup value also forces minimum allowable width to 0.30m.
-
-
-
-
 
 ## Generating Canal Naming for the Resolved Network
 
@@ -391,7 +384,7 @@ The canal namimng generated as described above can be exported to the AutoCAD en
 2. Choose `View > Route Text > Generate to AutoCAD` menu command. This will invoke the *Sample Text* dialog.
    
    ![s](Images/Image%20042.png)
-
+   
    ![s](Images/Image%20043.png)
 
 3. Choose `Continue` button. AutoCAD environment is now in select mode waiting for user input. Pick a sample text. 

@@ -34,9 +34,15 @@ B= 0.55 x d ^(1/2)
 
 where d is the drop size.
 
-The overflow discharge capacity is given by:
+The overflow discharge capacity is given by the governing equation:
 
-Q= 1.835 x L x H^(3/2) x (H/B)^(1/6)
+For Q<14m3/sec
+
+* Q= 1.835 x L x H^(3/2) x (H/B)^(1/6) 
+
+For Q>=14m3/sec
+
+* Q=1.99 x L x H^(3/2) (H/B)^(1/6)
 
 where L is the length of the crest (across the flow direction), and H is the hydraulic head over the crest. See the figure below.
 
@@ -44,13 +50,15 @@ where L is the length of the crest (across the flow direction), and H is the hyd
 
 *Typical hydraulic conditions over a drop structure.*
 
-
-
-
-
 ![im1](Images/Image%20001.png)
 
 *Crests of fall structures and upstream ydraulic conditions*
+
+
+
+> Note: For Q>=14m3/sec the guideline recommends the use of a trapezoidal crest for the overflow section, hence the correponding modification in the discharge coeficient in the governing equation above.
+
+
 
 Based on the above solutions, the critical flow depth, overflow depth are determined from:
 
@@ -62,27 +70,17 @@ Ho= 1.5 x yc
 
 This completes the upstream crest design, and establishes the parameters for the design of the energy dessipation provission below.
 
-
-
 ## Design of Energy Dessipator
 
 The design of energy dessipator provssion in Chows method relies on the Drop Number, calculated from:
 
-
-
 D= q^2/(9.801 x h^3
-
-
 
 where
 
 h= d + ds, sum of the fall height and depth of sill
 
-
-
 ![[  ]](Images/Image%20002.png) 
-
-
 
 Then, the upstream and downstream flow depth is dtermined from
 
@@ -90,13 +88,9 @@ y1= d x 0.54 D ^0.425
 
 y2= d x 1.66 D^0.27
 
-
-
 Based on this, sill depth is determined from
 
 a= max (amin, y2/6)
-
-
 
 Post impact length and 'unaided' jump length are determined from
 
@@ -108,41 +102,25 @@ and
 
 L= Ld + Lj
 
-
-
 The width of the basin is determined by providing a fixed amount of 0.10m (aplit on both sides) to provide for aeration.
 
-
-
 Wb = Bw+0.10
-
-
 
 Finally, the appron thickness is determined from considering the maxium uplift pressure magnitude and a unit weitgh massonry or concrete taken as 2.2;
 
 Tb= (Ho + d + a)/2.2
 
-
-
 Nominal downstream and upstream cutoff depths are provided as follows.
 
 du= dd=  0.30
-
-
 
 Upstream and downstream protection lengths are provided usinhg
 
 L1= L2 = 1.2 + 1.5 q^(1/2).
 
-
-
 > All dimensions for basin length, basin width, appron thickness, and protection length are rounded to 0.05 meters.
 
-
-
 A typical output table for drop design data is extracted from `Explore Solutions > Data Tables > Explore Drops` as shown below.
-
-
 
 ![c](Images/Image%20006.png)
 
@@ -152,13 +130,9 @@ A typical output table for drop design data is extracted from `Explore Solutions
 
 For the calcualtion of volumes of work for drops, the following procedures are implemented. The starting points are user provided values for Control BoQ Settings in `Workspace > Edit Preferences`. 
 
-
-
 ![im](Images/Image%20004.png)
 
 *Contents of the Control BoQ Settings variable group*
-
-
 
 where:
 
@@ -170,20 +144,8 @@ Working space: desired space to maintain for working space, set by default to 0.
 
 Compacted fill Ht: Height of compacted back filll material required on excavated bottom, and below the foundation block.
 
-
-
 A sample BoQ for a drop structure contains the below informaiton in the standard report for the same.
-
-
 
 ![d](Images/Image005.jpg)
 
-
-
-
-
-
-
 END.
-
-

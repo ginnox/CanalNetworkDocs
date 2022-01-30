@@ -286,8 +286,6 @@ FSD: Flow depth for the flow section corresponding to the segment upstream of th
 
 FSL: the full supply level just before the control location.
 
-
-
 ### Exploring Drops
 
 Similar to above commands, this command list all the vertical fall structures for the route.
@@ -322,6 +320,10 @@ Station: Location of the drop structure
 
 
 
+![sddf](Images/CDSWC_str/Image%20008.png)
+
+*Figure: Details of a Drop Structure from ECDSWC, and some of dimensions included in the standard output of Explore command.*
+
 ### Exploring Turnouts
 
 This option specifically lists the relevant construction dimensions for each turnout structure found on the route. 
@@ -338,24 +340,13 @@ The symbols for the dimensions are explained in the accompanying drawing below.
 
 *Figure: Tunrout Structure detail drawings from ECDSWC, with dimension detail corresponding to the symbols in the explore output table.*
 
-
-
-
-
-
-
-
 ### Exploring Division Boxes
 
 Similar to turnouts, this command specifically lists the relevant contruction dimensions for each division box structure found on the route.
 
 ![s](Images/Image%20049.png)
 
-
-
 The symbols for each dimension heading is described in the below drawing.
-
-
 
 ![d1](Images/CDSWC_str/Image%20001.png)
 
@@ -363,19 +354,13 @@ The symbols for each dimension heading is described in the below drawing.
 
 *Fig: Drawing for a typical division box from CDSWC, showing the deginition of symbols used in the table listing.*
 
-
-
 ### Copying table data and using in other applications
 
 All the data presented in the form of a table can be used in other applications, e.g., report writing in MS Word or further data processing in MS Excel. The `Copy Table` button provided at the bottom of the table display interface just helps do that. To copy the data content of the table view interface, click on the button.
 
 ![d](Images/Image%20050.png)
 
-
-
 Choose your preference as shown above, and jit Ok. The data is copied to the Windows Clipboard. You can now paste the data to your desired application and use it.
-
-
 
 # Using Advanced tools for longitudinal design
 
@@ -506,6 +491,5 @@ This will start the process for all selected routes sequentially.
 Important: It is important to revisit the designs for each route designed with the Auto tool, and make any adjustments before production.
 
 *Note: AutoDesign task can not be undone. To reset to original tentative settings, select the route, apply Resize. Design parameters are reapplied. To view the updated view, click on the route in plan view, which will refresh the view in Profile View Axis.*
-
 
 END.
