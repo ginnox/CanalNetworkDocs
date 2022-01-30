@@ -11,7 +11,7 @@ We will continually update this site to provide information on progress and late
 
 This site will also be the platform for online documentation. Contents relevant to software users will soon be available with a link on this page.
 
-## Online documentation (Under Development)
+## Online documentation
 
 This online resource site is under continuous devekiopment and enhancement. New contents will be added frequently, and additions and enhancements are published often. Please make sure you always have the most uptodate reference to our products by directly accessing this resource site.
 
@@ -46,7 +46,7 @@ Additional technical details are available in below list:
 
 [3. Design of Drops](DesignOfDrops/DropDesign.md)
 
-[4. Hydraulic Jumps and Energy Dessipation Mechanisms (Under Development)]()
+[4. Hydraulic Jumps and Energy Dessipation Mechanisms (In progress)]()
 
 
 More technical documents will be posted soon.
