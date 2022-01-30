@@ -80,7 +80,7 @@ The above solution depends on a setting for the variable b-to-d ratio. This valu
 
 ![[  ]](Images/b2dvsq.png) 
 
-
+> Note: For any discharge values exceeding the limits of the above chart, B-to-D ratio is estimated by non-linear extrapolation.
 
 The algorithm returns a the flow depth y, and the bottom width of the canal section B, to the calling functions. This establishes the size of the wetted flow area in the canal section.
 
@@ -98,6 +98,7 @@ The value can be set as:
 
 ![[   ] q vs fb chart](Images/fbvsq.PNG)
 
+> Note: For any discharge values exceeding the limits of the above chart, FB magntitude is estimated by non-linear extrapolation.
 
 
 The value determined from this value is added to the earlier determined flow depth, to specifiy the total height of the canal designed.

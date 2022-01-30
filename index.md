@@ -34,6 +34,8 @@ Available guides and documentation:
 [7. Design Production (Content under development)]()
 
 
+## Technical Information
+
 Additional technical details are available in below list:
 
 [1. Surface Modelling and Profile Calauctions in iCAD](Surface_Modelling/Surface_modelling_and_interpolation.md)
@@ -46,5 +48,32 @@ Additional technical details are available in below list:
 More technical documents will be posted soon.
 
 
+## How To Articles
+Below you will find short articles that provide guidance to tackle specific design tasks usung iCAD and/ or CanalNETWORK product. Using the techniques and tips included in this article can increase productivity significantly. The contents may not be included in the user guides listed above (under the section Online Documentation).
+
+[1. Using ProfileJET tool](https://docs.google.com/document/d/1no0ma14PHBeYvTgVaHcUNWvUm17cwhDAJKSM6lXWEzI/edit?usp=sharing)
+
+[2. Partial Import for Layout Prepration](https://docs.google.com/document/d/1GNsLIhaI3wnscL1bH9OTICLZbz3E1vtto5NMTLGwoH8/edit?usp=sharing)
+
+[3. Creating a Design Criteria File](https://docs.google.com/document/d/1Vl3bd5dyFQv-2LWlqV_XWLibCPkRZV7rLPQPQNpdmKI/edit?usp=sharing)
+
+[4. Managing Your Work Space](https://docs.google.com/document/d/11ioyYbow15pJYOi9j7HVHQcsvE8OM4w5A8nQOjCGKqE/edit?usp=sharing)
+
+[5. Using Alternative Data Source](https://docs.google.com/document/d/1aEDDOWKBUMy0M74H07-eg0ixApwYM3u6rXi7C5mo2FQ/edit?usp=sharing)
+
+[6. Profile Extraction for Network of Canals](https://docs.google.com/document/d/1VdqBEigWM_XrKYrMueF51kNFAwpH4_qRvhmj3TfZG14/edit?usp=sharing)
+
+[7. Collaborating on Large Projects](https://docs.google.com/document/d/1gYwRNdLo_9uG-xG24RNo_pDW1aMs5tgX/edit?usp=sharing&ouid=102474812384847533321&rtpof=true&sd=true)
+
+[8. Design of Canal Structures using Floating Nodes](https://docs.google.com/document/d/1ywZ02JvbcUlRRO3mwWogG4ZTRjwKy4x2pbU4MAhgZFw/edit?usp=sharing)
+
+[9. Understanding FLow Check in CanalNETWORK](https://docs.google.com/document/d/1jr9SPyF_zM2eyNAKcefduKt1Rzi2wtrKuiuOtSVA830/edit?usp=sharing)
+
+
+
+
+Stay tuned for more content on techniques and tips to tackle complex design tasks with ease and efficiency using out products.
+
+---------------------------------------------------------------------------------------
 For information visit Our website at [www.quanomic.co](https://www.quanomic.co).
 
