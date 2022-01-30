@@ -178,6 +178,22 @@ Click on any bold (green or red) colored graphic element, and you will find an i
 
 *Interactive sizing tool showing drag feature for downstream cutoff depth.*
 
+
+
+### Changing views
+
+The module undertakes design works in longitudinal and transverse views. To access these views simply go to `Workflow > Next View`. This menu command will change the view as follows:
+
+- if current view is transverse section view (face upstream), the the command will change the view to longitudinal section view.
+
+- if current view is longitudinal section view, the command will change the view to transverse seciton view. 
+
+A third view is the plan view. In this view, the arrangement of the different components of the structure in the x-y direction (from top view) are displayed. To generate the plan view, go to `Workflow > Plan View`.
+
+Sample views are inclued in following section.
+
+
+
 ### Changing Energy Dessipation Mechanism
 
 This is important as the performance of the structure depends largely on the abiilty of the provisions for the structure to efficiently and adquately dessipate any excess energy with in the confines of the structure. Depending on the amount of excess energy reaching and leaving the stilling pool, the user can vary the provissions to come to an acceptable design.
@@ -274,7 +290,7 @@ The plan view tool provides a complete detaii of the components of the structure
 
 
 
-![gdhg](Images/Image%20025.png)
+![ytry](Images/Image%20025a.png)
 
 *Plan views generated showing for North-UP, and North-Free options of the same structure.*
 
@@ -298,4 +314,40 @@ A complete BoQ listing can be generated from `Workflow > Estimate BoQ...` menu c
 
 ### Generating Drawings
 
-The user can export the different views of the structure, and along with it the designed elevations, to AutoCAD.
+The user can export the different views of the structure, and along with it the designed elevations, to AutoCAD. The procedures are documented in iCAD product documentation in detail.
+
+1. Change to the view you want to generate, either longitudinal, transverse or plan view. Zoom and Pan as desired to focus the output to the drawing area.
+
+2. Then go to `Workflow > Render to AutoCAD`. 
+   
+   ![ggh](Images/Image%20028.png)
+   
+   
+
+3. Choose *Copy BBox*, and hit `Ok`. 
+   
+   ![jjgh](Images/Image%20029.png)
+
+4. Choose *Plot to BBox* option, and hit `Continue`.
+   
+   ![lukjg](Images/Image%20030.png)
+
+5. Choose *Plot Extents* option, and set the desired plotting scale. Do not leave this to the default value of *All*, or the generated drawing may not be of equal scaling in x and y direction.
+   
+   This will generate the plot area corresponding to the positioning in iCAD interface view.
+   
+   ![iyt](Images/Image%20031.png)
+
+6. Repeat the step from `Workflow > Render to AutoCAD`, and this time select the elements you want to generate. You can also use the `Select All` button to select all components. Also make sure to check *Limit Plot to Range* box. Then hit `OK` button.
+   
+   ![yre](Images/Image%20032.png)
+
+7. AutoCAD will be in select mode. Pick the diagonal object created in step 6 as a reference object. The drawing will be recreated in AutoCAD environemnt.
+   
+   ![yert](Images/Image%20033.png)
+
+
+
+To generate the other views, repeat the same steps.
+
+END.
