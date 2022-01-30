@@ -31,7 +31,9 @@ Available guides and documentation:
 
 [6. Longitudinal Design of Canals](Longitudinal_Design_of_Routes/LongitudinalDesignOfRoutes.md)
 
-[7. Design Production (Content under development)]()
+[7. Design of Canal Structures using Floating Nodes.](DesignOfRegulatingStructures/DesignOfRegulatingStructures.md)
+
+[8. Design Production (Content under development)]()
 
 
 ## Technical Information
