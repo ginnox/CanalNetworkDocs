@@ -14,19 +14,21 @@ To update your software to the recent version, down load these resources and fol
 
 *Note: The download links will take you to a goole drive link. Go to the top right of the page, and choose download to get the files.*
 
-[Download iCAD 2.2.8.7515](https://drive.google.com/file/d/1t8iI7plaJql4Jq2RpYrl_l6qEZW_W5Rt/view?usp=sharing)
+* [Download iCAD 2.2.8.7515b](https://drive.google.com/file/d/1sYUX8Zl1YuW9804b_buxHZUrhYYef71r/view?usp=sharing)
 
-[Download iCAD bridge 4.4.2](https://drive.google.com/file/d/12XkeziKqElVQOz8NLDLhB0ogHpi247mp/view?usp=sharing)
+* [Download iCAD bridge 4.4.2](https://drive.google.com/file/d/12XkeziKqElVQOz8NLDLhB0ogHpi247mp/view?usp=sharing)
 
-[Donaload CanalNetwork 1.5.2.1250b](https://drive.google.com/file/d/1oaCFWLqDdCFwf_JNR9-oFhAgmJFcbwFz/view?usp=sharing)
+* [Donaload CanalNetwork 1.5.2.1250c](https://drive.google.com/file/d/16csyADmZsFEyvNe9Uo_S7lJX4h678_3e/view?usp=sharing)
 
-NB: CanalNETWORK is updated for few fixes on 26th Jan. Please see notes below. Please make sure to use the latest version in your work(s).
+NB: Both CanalNETWORK and iCAD products are updated for few fixes on 30th Jan. Please see notes below. Please make sure to use the latest version in your work(s).
 
 
 
 ## iCAD Product:
 
 The iCAD product is modified for the following features:
+
+* Fixed error for surface flow calculation in TypeII desipating mechanisms (in CanalStructuresJET module)
 
 * Improved Canal Schedule plotting algorithm to identify OGL (xOfst=0.0) line plots and render the appropriate color in the color template of choice.
   
@@ -43,6 +45,8 @@ The iCAD product is modified for the following features:
 ## Canal Network
 
 ### User Interaction
+
+- Canacel Network Open operation improved with a time lag of 1.5 seconds (useful for large data files).
 
 - Progress bar introduced for data opening operation, helpful while dealing with large size files.
 
@@ -130,6 +134,10 @@ The iCAD product is modified for the following features:
 The following bugs are fixed in this version, providing better overall performance to users.
 
 greater value to users.
+
+- output issues when exploring drops for discharges >15m3/sec
+
+- fixed sum error for cummulating discharge during a resize funciton
 
 - fixed sum error for cummulating farm areas 
 
