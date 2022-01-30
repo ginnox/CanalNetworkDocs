@@ -69,21 +69,20 @@ To start the design process for canal strucrues defined as above, start iCAD if 
    ![fddsg](Images/Image%20006.png)
 
 3. Click on the space for *Network Host Object* variable, and AutoCAD will be in select mode promoting to select a network host object. Pick the host object where the network data, including the definition of structures, is saved to and hit the continue button `>>`.
-
+   
    Note: Step 2 and 3 may be skipped by using the *Next Action* variable setting discussed earlier (Defining the structure) to *Point to Current*.
 
 4. The *Choose Structure* dialog will apear. In the dialog,  you will see a list of structures saved to the current host object. Choose your desired structure, and click `OK` to proceed with design. 
-
+   
    ![[  ] ](Images/Image%20007.png)
-
+   
    *Dialog to choose a strucure, to contunue with design work.*
-
+   
    If the structure is called for the first time, iCAD will begin the design session by using the set default values. Else, a *Choose Startup Option* dialog apears to allow users to decide how they want to proceed. Users can start design process afresh, or continue from previous design work.
-
+   
    ![[ ]](Images/Image%20008.png) 
-
+   
    *Start-up option dialog.*
-
 * Use Design Data option to continue from previous design data saved to the data base.
 
 * Start New Design option to start the design process afresh.
@@ -107,24 +106,28 @@ The module allows you to work on your design in transverse view, in longitudinal
    ![[  ]](Images/Image%20010.png) 
    
    *View Variable Editor menu command.*
-
+   
    This will invoke the variable editor dialog with detailed variables relevant to the current view.
-
+   
    ![[  ]](Images/Image%20012.png)
-
+   
    *Variable Editor for transverse view*
-
+   
    <u>Coeficient of Discharge</u>:  The value of Cd in governing equation, set by default to 1.710. A value greater or equal to 1.0 is expected.
-
+   
    Q= C L H^(3/2)
-
+   
    <u>Calculation Method</u>: The method of overflow rating curve calculation. Please see technical details for more on this. By default, this is set to *Use User Input Cd*
 
 > Note: You can only specify the Ogee method for Hear Regulator (HR) Structures. This is because the crest height is set to zero by default for CR and ID.
 
    <u>US/DS Angle and Length of Abutment</u>: Specify the layout of the structure in plan view, dictating how long and wide the abutment provisions must continue upstream and downstream
 
-   [  ] *Layout of a typical canal structure showing dimensions for abutment provissions.*
+   ![[  ]](Images/Screenshot_20220127-151419_Concepts.jpg) 
+
+*Layout of a typical canal structure showing dimensions for abutment provissions.*
+
+
 
    <u>Total Longitudinal Length</u>: The total length of the structure measurered from begining of upstream appron, to end of downstream appron.
 
@@ -132,7 +135,11 @@ The module allows you to work on your design in transverse view, in longitudinal
 
    <u>Abut. Wall Width</u>: The top thickness of the abutment wall to be provided, and B/H ratio to use in determining the thickness of the wall at the foundation level (applied for BoQ estimation.)
 
-   [  ] *Abutment wall dimensions for structures*
+ ![da ](Images/Screenshot_20220127-151747_Concepts.jpg)
+
+
+
+*Abutment wall dimensions for structures*
 
    Applying the changes to the variable editor, will make the necessary adjustments on the transverse view. It also recalculates the overflow rating curve in preparation for the design and analysis involved in the longitudinal view.
 
@@ -141,9 +148,9 @@ The module allows you to work on your design in transverse view, in longitudinal
    Yes, the next step is also to edit more variables. This time, it will be for the longitudinal view. Change the view from `Workflow > Next View`. The longitudinal view of the structre is diplayed, again using default settings. Edit variables as needed.
    
    ![[  ]](Images/Image%20013.png) *Variable Editor listing the variables relevant to the longitudinal view*
-
+   
    <u>Minimum Appron Thickness</u>: The minimum applicable appron thickness for the structure, set by default to 0.40m.
-
+   
    <u>Jump Mechanism</u>: This specifies what type of energy dessipating mechanism to use in the stilling basin area of the structure. There are three options: (a) SImple basisn, (b) USBR Type II and (c) USBR Type IV basins. 
 
 > Note: Changing the eneergy dessipating mechanism will automatically force some changes on the stilling pool depth.
@@ -172,13 +179,9 @@ Click on any bold (green or red) colored graphic element, and you will find an i
 
 * Inflection point for bottom profile of downstream appron (available only for HR/CR, and where adequate variations in unbalanced hydraulic gradient exist.)
 
-
-
 ![[  ]](Images/Image%20019.png) 
 
 *Interactive sizing tool showing drag feature for downstream cutoff depth.*
-
-
 
 ### Changing views
 
@@ -192,8 +195,6 @@ A third view is the plan view. In this view, the arrangement of the different co
 
 Sample views are inclued in following section.
 
-
-
 ### Changing Energy Dessipation Mechanism
 
 This is important as the performance of the structure depends largely on the abiilty of the provisions for the structure to efficiently and adquately dessipate any excess energy with in the confines of the structure. Depending on the amount of excess energy reaching and leaving the stilling pool, the user can vary the provissions to come to an acceptable design.
@@ -202,13 +203,9 @@ Every time, the mechanism is changed, the longitudinal view will also change to 
 
 > Note: Type I stilling basin provides a suitable pool depth value. When changed to Type II, the pool depth will be fixed to a prescribed value that depends on the unit discharge and energy difference. Accordingly, baffle blocks and pool-end blocks are provided. When changed to Type IV, the pool depth is forced to zero, and baffle blocks are provided at downstream end of the glacis.
 
-
-
 The following schematics show the resulting flow profile and stilling basin arrangement for the three types of energy dessipating mechanisms.
 
 ![[  ]](Images/Image%20020.png) *Schematic of a simple (Type I) Energy dessipating mechanism.*
-
-
 
 ![[  ]](Images/Image%20021.png)
 
@@ -216,17 +213,11 @@ The following schematics show the resulting flow profile and stilling basin arra
 
 *Schematic of USBR Type II Energy dessipating mechanism, showing longitudinal section and plan views respectively.*
 
-
-
 ![sds](Images/Image%20023.png)
-
-
 
 ![dasdasa](Images/Image%20024.png)
 
 *Schematic of USBR Type IV Energy dessipating mechanism, showing longitudinal section and transverse face-upstream view*
-
-
 
 ## Changing Hydraulic and Location conditions
 
@@ -288,8 +279,6 @@ The plan view tool provides a complete detaii of the components of the structure
 
 ![dsa](Images/Image%20022.png)
 
-
-
 ![ytry](Images/Image%20025a.png)
 
 *Plan views generated showing for North-UP, and North-Free options of the same structure.*
@@ -302,15 +291,11 @@ Design work can be saved at any stage during the design process. Simply go to `S
 
 The next time the project is opened, the user has the option to continue from the existing design data, or start afresh.
 
-
-
 ### Generating BoQ
 
 A complete BoQ listing can be generated from `Workflow > Estimate BoQ...` menu command.
 
 ![htht](Images/Image%20027.png)
-
-
 
 ### Generating Drawings
 
@@ -321,8 +306,6 @@ The user can export the different views of the structure, and along with it the 
 2. Then go to `Workflow > Render to AutoCAD`. 
    
    ![ggh](Images/Image%20028.png)
-   
-   
 
 3. Choose *Copy BBox*, and hit `Ok`. 
    
@@ -345,8 +328,6 @@ The user can export the different views of the structure, and along with it the 
 7. AutoCAD will be in select mode. Pick the diagonal object created in step 6 as a reference object. The drawing will be recreated in AutoCAD environemnt.
    
    ![yert](Images/Image%20033.png)
-
-
 
 To generate the other views, repeat the same steps.
 
