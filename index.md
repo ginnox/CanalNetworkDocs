@@ -46,7 +46,9 @@ Additional technical details are available in below list:
 
 [3. Design of Drops](DesignOfDrops/DropDesign.md)
 
-[4. Hydraulic Jumps and Energy Dessipation Mechanisms (In progress)]()
+[4. Design of Division Box Structures](DivisionBoxDesign/DivisionBoxDesign.md)
+
+[5. Hydraulic Jumps and Energy Dessipation Mechanisms (In progress)]()
 
 
 More technical documents will be posted soon.
