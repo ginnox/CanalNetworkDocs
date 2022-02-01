@@ -53,6 +53,12 @@ Additional technical details are available in below list:
 
 More technical documents will be posted soon.
 
+Also review below technical materials.
+
+[Validation of Key iCAD modules and functions](https://drive.google.com/file/d/1K38jjh0SFBZiFCOiaqf_8n-RDvc3V4gb/view?usp=sharing)
+
+[Modelling Capability of iCAD modules]()
+
 
 ## How To Articles
 Below you will find short articles that provide guidance to tackle specific design tasks usung iCAD and/ or CanalNETWORK product. Using the techniques and tips included in this article can increase productivity significantly. The contents may not be included in the user guides listed above (under the section Online Documentation).
