@@ -53,11 +53,11 @@ Additional technical details are available in below list:
 
 More technical documents will be posted soon.
 
-Also review below technical materials.
+Also review below technical materials. Note, the links will take you to a private space in google drive and use google docs to view the document. Feel free to download and use the matierials at convenience.
 
-[Validation of Key iCAD modules and functions](https://drive.google.com/file/d/1K38jjh0SFBZiFCOiaqf_8n-RDvc3V4gb/view?usp=sharing)
+[+   Validation of Key iCAD modules and functions](https://drive.google.com/file/d/1K38jjh0SFBZiFCOiaqf_8n-RDvc3V4gb/view?usp=sharing)
 
-[Modelling Capability of iCAD modules]()
+[+   Modelling Capability of iCAD Modules](https://drive.google.com/file/d/15iZLkyAoFJM9jCSqfBpkTJrZhTMYknst/view?usp=sharing)
 
 
 ## How To Articles
