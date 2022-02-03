@@ -26,12 +26,6 @@ While the approaches commonly used for crest design are fairly similar, there ar
 
 This guideline is primarily prepared to guide validation works with in our partners workflow, namely Ethiopian Construction Design and Supervision Works Corporation. In line with this, the discussion on design of energy dessipator focuses only on Chows method. 
 
-
-
-$$
-A=3 sqrt{5}
-$$
-
 ## Upstream Crest Design
 
 A rectangular crest is used for drops designed using this method. For this condition, the Top Width of the crest B is given by:
@@ -145,6 +139,48 @@ Excavation Cut Slope: Slope of vertical excavation from surface to foundation le
 Working space: desired space to maintain for working space, set by default to 0.30m
 
 Compacted fill Ht: Height of compacted back filll material required on excavated bottom, and below the foundation block.
+
+The calculation of quantities is carried out based on the following schematic diagrams:
+
+![fd](Images/photo_2022-02-03_10-31-13.jpg)
+
+*Isometric view of a drop structure as used for estimation of quantities in CanalNETWORK product.*
+
+
+
+![dsds](Images/photo_2022-02-03_10-31-38.jpg)
+
+*Section view of a drop structure for quantity estimation.*
+
+
+
+Where:
+
+WThk is  the crest thickness, or the lininj thickness(Thk) of the canal, which ever is maxisum
+
+aF= ()dHt + hSil) x b2h
+
+Then:
+
+wTotal= 2*(WThk + mxh)+b
+
+Wb= b+2xmxh + 2xThk or Wb+2xWThk, which ever is maximum
+
+The structural volumes are estimated for:
+
+- the approach or inlet canal at upstream end
+
+- the exit canal
+
+- upstream, and downstream notch wall(s)
+
+- The stilling basin, which also consists the foundation slab and the stilling basin walls,
+
+- for upstream and downstream cutoff walls, as a function of WThk and WTotal.
+
+Lining work quantity is also included for inlet and exit canals.
+
+
 
 A sample BoQ for a drop structure contains the below informaiton in the standard report for the same.
 
