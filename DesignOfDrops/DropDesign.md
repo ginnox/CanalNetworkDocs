@@ -26,6 +26,12 @@ While the approaches commonly used for crest design are fairly similar, there ar
 
 This guideline is primarily prepared to guide validation works with in our partners workflow, namely Ethiopian Construction Design and Supervision Works Corporation. In line with this, the discussion on design of energy dessipator focuses only on Chows method. 
 
+
+
+$$
+A=3 sqrt{5}
+$$
+
 ## Upstream Crest Design
 
 A rectangular crest is used for drops designed using this method. For this condition, the Top Width of the crest B is given by:
@@ -54,11 +60,7 @@ where L is the length of the crest (across the flow direction), and H is the hyd
 
 *Crests of fall structures and upstream ydraulic conditions*
 
-
-
 > Note: For Q>=14m3/sec the guideline recommends the use of a trapezoidal crest for the overflow section, hence the correponding modification in the discharge coeficient in the governing equation above.
-
-
 
 Based on the above solutions, the critical flow depth, overflow depth are determined from:
 
