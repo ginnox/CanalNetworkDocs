@@ -15,6 +15,9 @@ This site will also be the platform for online documentation. Contents relevant 
 
 This online resource site is under continuous devekiopment and enhancement. New contents will be added frequently, and additions and enhancements are published often. Please make sure you always have the most uptodate reference to our products by directly accessing this resource site.
 
+> For the best experience while browing contents, we recommend using Chrome Browser, and installing a *Table of Contents* extension. This will automatically provide a navigation side bar that can help to quickly locate content on differnt pages.
+
+
 Available guides and documentation:
 
 

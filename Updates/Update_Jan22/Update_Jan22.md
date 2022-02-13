@@ -18,7 +18,13 @@ Alwats make sure you are working with the updated versions of our products. To u
 
 * [Download iCAD bridge 4.4.2](https://drive.google.com/file/d/12XkeziKqElVQOz8NLDLhB0ogHpi247mp/view?usp=sharing)
 
-* [Donaload CanalNetwork 1.5.2.1250c](https://drive.google.com/file/d/16csyADmZsFEyvNe9Uo_S7lJX4h678_3e/view?usp=sharing)
+* [Donaload CanalNetwork 1.5.2.1250d](https://drive.google.com/file/d/1yGzcNLbyJDuZDvna4Jy0DrzjgzCtT-ze/view?usp=sharing)
+
+> NEW UPDATES: CanalNETWORK(d) above is improved for the following reporeted issues on 3Feb22.
+> * Explore drops upstream of floating Nodes.
+> * Go to option for Annotation funciton
+> * Improved Cut/fill section generation for VERY high cut or fill depths.
+
 
 NB: Both CanalNETWORK and iCAD products are updated for few fixes on 13TH FEB.
 
