@@ -10,7 +10,7 @@ We are pleased to bring to you many enhanced features and functionalities to our
 
 ## Download files:
 
-To update your software to the recent version, down load these resources and follow the usual procedure.
+Alwats make sure you are working with the updated versions of our products. To update your software to the recent version, down load these resources and follow the usual procedure.
 
 *Note: The download links will take you to a goole drive link. Go to the top right of the page, and choose download to get the files.*
 
@@ -20,9 +20,15 @@ To update your software to the recent version, down load these resources and fol
 
 * [Donaload CanalNetwork 1.5.2.1250c](https://drive.google.com/file/d/16csyADmZsFEyvNe9Uo_S7lJX4h678_3e/view?usp=sharing)
 
-NB: Both CanalNETWORK and iCAD products are updated for few fixes on 30th Jan. Please see notes below. Please make sure to use the latest version in your work(s).
+NB: Both CanalNETWORK and iCAD products are updated for few fixes on 13TH FEB.
 
-
+-   Major updates in this sub-deployment include:
+  
+  - Enhancement for Alignmentrofile module for iCAD to correct for curve lengths, and report on skipped curves
+  
+  - Bug fix for construction variables (invalid use of Smf values)
+    
+    
 
 ## iCAD Product:
 
