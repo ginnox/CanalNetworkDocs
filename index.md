@@ -6,7 +6,6 @@ This is official site for documentation and guide of CanalNetwork software, and 
 
 We will continually update this site to provide information on progress and latest developments.
 
-
 [Learn about latest updates and feature enhancements for Jan 2022 here](Updates/Update_Jan22/Update_Jan22.md)
 
 This site will also be the platform for online documentation. Contents relevant to software users will soon be available with a link on this page.
@@ -17,10 +16,7 @@ This online resource site is under continuous devekiopment and enhancement. New 
 
 > For the best experience while browing contents, we recommend using Chrome Browser, and installing a *Table of Contents* extension. This will automatically provide a navigation side bar that can help to quickly locate content on differnt pages.
 
-
 Available guides and documentation:
-
-
 
 [1. Introducing CanalNETWORK software](Introduction/Introduction.md)
 
@@ -38,7 +34,6 @@ Available guides and documentation:
 
 [8. Design Production (Content under development)]()
 
-
 ## Technical Information
 
 Additional technical details are available in below list:
@@ -53,7 +48,6 @@ Additional technical details are available in below list:
 
 [5. Hydraulic Jumps and Energy Dessipation Mechanisms (In progress)]()
 
-
 More technical documents will be posted soon.
 
 Also review below technical materials. Note, the links will take you to a private space in google drive and use google docs to view the document. Feel free to download and use the matierials at convenience.
@@ -62,8 +56,8 @@ Also review below technical materials. Note, the links will take you to a privat
 
 [+   Modelling Capability of iCAD Modules](https://drive.google.com/file/d/15iZLkyAoFJM9jCSqfBpkTJrZhTMYknst/view?usp=sharing)
 
-
 ## How To Articles
+
 Below you will find short articles that provide guidance to tackle specific design tasks usung iCAD and/ or CanalNETWORK product. Using the techniques and tips included in this article can increase productivity significantly. The contents may not be included in the user guides listed above (under the section Online Documentation).
 
 [1. Using ProfileJET tool](https://docs.google.com/document/d/1no0ma14PHBeYvTgVaHcUNWvUm17cwhDAJKSM6lXWEzI/edit?usp=sharing)
@@ -84,11 +78,8 @@ Below you will find short articles that provide guidance to tackle specific desi
 
 [9. Understanding FLow Check in CanalNETWORK](https://docs.google.com/document/d/1jr9SPyF_zM2eyNAKcefduKt1Rzi2wtrKuiuOtSVA830/edit?usp=sharing)
 
-
-
-
 Stay tuned for more content on techniques and tips to tackle complex design tasks with ease and efficiency using out products.
 
 ---------------------------------------------------------------------------------------
-For information visit Our website at [www.quanomic.co](https://www.quanomic.co).
 
+For information visit Our website at [www.quanomic.co](https://www.quanomic.co).

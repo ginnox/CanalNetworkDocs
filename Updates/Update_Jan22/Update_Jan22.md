@@ -14,27 +14,18 @@ Alwats make sure you are working with the updated versions of our products. To u
 
 *Note: The download links will take you to a goole drive link. Go to the top right of the page, and choose download to get the files.*
 
-* [Download iCAD 2.2.8.7515b](https://drive.google.com/file/d/1sYUX8Zl1YuW9804b_buxHZUrhYYef71r/view?usp=sharing)
+* [Download iCAD 2.2.8.7515c](https://drive.google.com/file/d/1-29PJMMykjruufdho6lkpRTRTTPfEXBH/view?usp=sharing)
 
-* [Download iCAD bridge 4.4.2](https://drive.google.com/file/d/12XkeziKqElVQOz8NLDLhB0ogHpi247mp/view?usp=sharing)
+* [Download iCAD bridge 4.4.4](https://drive.google.com/file/d/1LX2mwWGFLmVjbJnTV4gbGgwhonddMcQx/view?usp=sharing)
 
-* [Donaload CanalNetwork 1.5.2.1250d](https://drive.google.com/file/d/1yGzcNLbyJDuZDvna4Jy0DrzjgzCtT-ze/view?usp=sharing)
+* [Donaload CanalNetwork 1.5.2.1250e](https://drive.google.com/file/d/1-4_Ic_DBmNVlljmj7VYLhrVPEj2MDOu7/view?usp=sharing)
 
-> NEW UPDATES: CanalNETWORK(d) above is improved for the following reporeted issues on 3Feb22.
-> * Explore drops upstream of floating Nodes.
-> * Go to option for Annotation funciton
-> * Improved Cut/fill section generation for VERY high cut or fill depths.
+> NEW UPDATES: CanalNETWORK(e) above is improved for the following reporeted issues on 13TH FEB 2022
+> 
+> * CanalNETWORK(e): Bug-fix for construciton variables (invalid use of Smf values)
+> * iCAD(c) Enhancement for Alignmentrofile module for iCAD to correct for curve lengths, and report on skipped curves. iCAD Bridge must be updated for this enhancement to work.
 
-
-NB: Both CanalNETWORK and iCAD products are updated for few fixes on 13TH FEB.
-
--   Major updates in this sub-deployment include:
-  
-  - Enhancement for Alignmentrofile module for iCAD to correct for curve lengths, and report on skipped curves
-  
-  - Bug fix for construction variables (invalid use of Smf values)
-    
-    
+![im](Images/Image%204.png)
 
 ## iCAD Product:
 

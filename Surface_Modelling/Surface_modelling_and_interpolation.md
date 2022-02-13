@@ -62,4 +62,60 @@ It is important to note that:
 
 Hence, the extrapolation capability is to be considered as only a complimentary feature to obtain a crude estimate of terrain variation beyond the boundary area. There is no guarantee that designs based on extrapolated data will be of acceptable quality and accuracy.
 
+## Curve Handling During profile extraction
+
+Curves, if found in the AutoCAD alignment object, will be considered while extracting prorfile data. The requirements for succesful data extraction are:
+
+- the begining and ending segments of the alignment route must be straight segments of at least 20meters.
+
+- Curve radius of 20m or larger
+
+
+
+The schematic below shows detailed curve information extracted.
+
+![curve](Images/Image%20curve2.png)
+
+
+
+For straight segments, the incremental distance specified will be used. Where curve arcs are encountered an incremental distance of 5meters (or close) is used to extract profile data at finer resolutions. This will allow adequate representation of key points along the alignment in creating plan views and accurate bill-of-quantity estimates at a latter stage.
+
+
+
+> Note: Curves must be at least 20m radius, and have a curve length of at least 25 meters to be considered for detailed extraction. This is hard-codded in the software, considering the constructable range of curve sizes.
+
+
+
+Short curves will still be approximated by about 5m increments, but the curve information will not be captured. Only curves whose information is succesfully extracted are shown in profile views.
+
+
+
+After extracting profile information in iCAD, the data table will display information related to curves, if available.
+
+![im](Images/Image%204.png)
+
+
+
+* Curves (233/187) show that 187 of 233 arcs are extracted for curve information.
+
+* del L= -0.20480m indicates the station variation to be expected as a result of the arcs that do not meet the curve size specification, and hence are approximated using ~5m small segments of straight lines.
+
+> Note: the curve information in above dialog is available only after extraction of profile data. It is not shown when viewing existing data.
+
+
+
+A typical profile data is represented as follows:
+
+![im](Images/Image%20006.png)
+
+
+
+Cross-section views from `Workflow>Show Section` show a transverse variation of ground level at the station of choice.
+
+![im](Images/Image%20007.png)
+
+
+
+
+
 END.
