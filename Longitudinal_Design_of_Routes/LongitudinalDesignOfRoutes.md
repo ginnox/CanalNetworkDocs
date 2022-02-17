@@ -318,8 +318,6 @@ Station: Location of the drop structure
 
 <u>Protection Length</u>: Recommended length of protection layer to be provided both upstream and downstream of the drop structure.
 
-
-
 ![sddf](Images/CDSWC_str/Image%20008.png)
 
 *Figure: Details of a Drop Structure from ECDSWC, and some of dimensions included in the standard output of Explore command.*
@@ -339,6 +337,34 @@ The symbols for the dimensions are explained in the accompanying drawing below.
 ![sec2](Images/CDSWC_str/Image%20005.png)
 
 *Figure: Tunrout Structure detail drawings from ECDSWC, with dimension detail corresponding to the symbols in the explore output table.*
+
+<u>Notes on BoQ calculation for Turnouts</u>
+
+The calculation of quantity items for turnout structures is based on the sizes of the canals involved, and sime fixed parameters in the reference resource. The following parameters are key paramters used, also indicated in the drawing above.:
+
+Thickness of lining and cutoff walls (upstream and downstream) set to 0.40m
+
+Thickness of notch wall is set to 0.25m
+
+The depth of cut for earth excavation calculation is calculated from:
+
+dFloor= OGL at control location (centerline) - lowest excavation level, where
+
+lowest excavation level is estimated from bed level of lowest canal bed (upstream od downstream, especially for turnouts with falls), less 0.40m thickness of bed lining, less compacted backfill height provided in Control_BoQSettings (under network preferences).
+
+The cut volume is calculated using:
+
+- dFloor
+
+- Ltotal=6.0m
+
+- BTotal=2*(THK + b1) + B1;
+
+- Working space, and m values from control_boqSettings
+
+Thus:
+
+Vcut= dFloor x (LTotal+mxdFloor) x (BTotal + mxdFloor)  
 
 ### Exploring Division Boxes
 
