@@ -52,13 +52,9 @@ The steps implemented are summarized as below:
 
 The algorithm will not accept parent canal capacities exceeding 80litres per second, or the throws the following error message:
 
-
-
 ![gfh](Images/Image%20013.png)
 
 *Error message for parent canal capcity Q=0.939m3/sec*
-
-
 
 There are certain conditions that a node must fulfil to be hydraulically solved. Incoming and outgoing discharges must be comparable. Specifically
 
@@ -95,6 +91,16 @@ The actual dimension tables and designed invert levels for the parent and branch
 ![[dsfs]](Images/Image%20006.png)
 
 *Typical table report generated for the design of a division box.*
+
+Where: 
+
+- all symbols in the dimension table are defined in the below drawings
+
+- W1, H1 are the notch opening dimensions to the branch canal
+
+- W2, H2 are the notch opening dimensions to the continuing canal
+
+
 
 Note: The above results are for a two way divison box, where a parent canal feeds water to a branch canal, and a continuing canal. Where merged nodes exist, the division box is a three way structure. In such cases, an other line of results is generated indicating dimensions for outlet to the remaining branch canal.
 
