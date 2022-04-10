@@ -1,12 +1,12 @@
-# Update Jan-Feb22
+# Update Jan-Apr22
 
 Hi Everyone,
 
-We are pleased to bring to you many enhanced features and functionalities to our products, based on UX feedbacks we have recieved over the past few months. The update in this period, includes - among others - the following key features that were also an extension to the previous update of Nov21.
+We are pleased to bring to you many enhanced features and functionalities to our products, based on UX feedbacks we have recieved over the past few months. The update in this period, includes - among others - the following key features:
 
-- ability to enforce construction dimensions on canal sections and drops,
-- ability to generate drawing by using different color templates, and
-- and improved design capability for automatic design of canal routes.
+- ability to define any number of drops at desired locations manually
+- Improved flexibility and accuracy of BoQ listing for eacth works, allowing to consider structures and clearing depth
+- Improved drop insertion and addition in small length canal segments.
 
 ## Download files:
 
