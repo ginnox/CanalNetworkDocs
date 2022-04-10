@@ -128,7 +128,7 @@ A typical output table for drop design data is extracted from `Explore Solutions
 
 Many of the design tasks carried out to size the different components of the drop depend on *drop_designSettings* in Preferences. These can be adjusted to fit specific site conditions. 
 
-![fid](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\DesignOfDrops\Images\Image%2009.png)
+![fid](Images/Image%2009.png)
 
 
 
