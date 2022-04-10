@@ -124,8 +124,6 @@ Note in the above figure that:
 
 Refer to relevant guide lines on how to proceed with each of the above stages, or final production of construction drawings.
 
-
-
 ## How to use Online Documentation
 
 The online documents available for reference are organized in to chapters that users can get the most out of. The recommended way, especially for those who are learning the software, is to cover the materials sequentially - as outlined below. This is also the structure adopted in the home page of this guide  (here)
@@ -145,9 +143,5 @@ The online documents available for reference are organized in to chapters that u
 Additional technical informaiton is available as below:
 
 1. Surface Modelling in iCAD and CanalNETWORK products
-   
-   
-
-
 
 END.

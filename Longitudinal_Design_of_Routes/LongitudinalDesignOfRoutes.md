@@ -176,7 +176,15 @@ To do this:
 
 3. Hit `Apply` when done.
 
-This will create a new CBLinformation for the segment that accomodates the prescribed drop heights and locations. 
+This will create a new CBLinformation for the segment that accomodates the prescribed drop heights and locations.
+
+
+
+> Note: The invert of the control at the downstream end of the segment will adjust automatically to a corresponding elevation.
+
+
+
+
 
 > Note: There are no limits to the size of the data length to be provided for such prescrptions. However, both the height and locaiotn data must be of the same length, and respect the data input expectations. Otherwise, the action will not take effect.
 
