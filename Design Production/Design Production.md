@@ -34,19 +34,19 @@ Before BoQ can be extracted accurately, all elements of the canal route - i.e., 
 
  This can be easily achieved by invoking the batch process from `Explore Solutions > Batch Processes > Batch Explore SubRoutes`.
 
-![fig6](file://C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Design Production\Images\Image%20017.png)
+![fig6](Images/Image%20017.png)
 
 This will invoke the following dialog, indicating which level is selected currently (in this case TC) and to confirm which levels of canals to automatically explore and update.
 
 Once can choose a single level, or multiple levels. In either case, a confirmation is requested that lists the name and number of canals that will be processed.
 
-![fig7](Images\Image%20018.png)
+![fig7](Images/Image%20018.png)
 
-![fig8](Images\Image%20019.png)
+![fig8](Images/Image%20019.png)
 
 Confirm `Go` and all relevant canal routes are auotmatically updated for the latest design data. The following dialog confirms the actions taken.
 
-![fig8](Images\Image%20026.png)
+![fig8](Images/Image%20026.png)
 
 Note: BoQ created with out updated control and structures data can be incomplete, or inaccurate.
 
@@ -124,7 +124,7 @@ Sometimes, extracting BoQ for selected group of canals may be needed. For this a
    
    Confirming Open Report will display the data extracted. Notice the title for the report indicating multiple routes are selected for the listing.
    
-   ![figz](images/Image%20049.png)
+   ![figz](Images/Image%20049.png)
    
    Notice the title indicating multiple canals are selected for the BoQ listing.
 
@@ -148,7 +148,7 @@ These parameters cab be set flexibly by the user from `Workspace > Edit Preferen
    
    Summarized: Using this option creates a listing that summarizes Canal Segments, Drops, Turnouts, and Division Boxes separately.
    
-   ![figzx](images/Image%20069.png)
+   ![figzx](Images/Image%20069.png)
    
    The above snapshot shows a summarized listing. Notice the description column for Canal, and Drops, explicitly listing summary for a number of segments and structures respectively.
 
@@ -162,9 +162,9 @@ These parameters cab be set flexibly by the user from `Workspace > Edit Preferen
    
    (b) Account for specified depth of clearing, when calculating cut and fill areas at each station.
    
-   ![figxsec](images/Image%20070.png)
+   ![figxsec](Images/Image%20070.png)
    
-   ![figxm](images/Image%20072.png)
+   ![figxm](Images/Image%20072.png)
    
    This schematic shows how clearing depth is considered for improving the accuracy of earth work estimates. Note also that, the clearing depth is exagerated for demonstration purposes. The shaded region represents area deductions and contributions to cut and fill data, respectively, extracted in Profile Data listing. 
    
@@ -172,7 +172,7 @@ These parameters cab be set flexibly by the user from `Workspace > Edit Preferen
    
    Below example shows the difference in quantity for d=0, and d=20cm. Notice the highlighed difference in listed clearing depth, and corresponding volumes for Excavation, Cartaway, and Fill works.
    
-   ![fig2](images/Image%20071.png)
+   ![fig2](Images/Image%20071.png)
 
 3. Structure Reaches
    
@@ -212,21 +212,21 @@ Similar to Flow Sections generation method described above, a plan view is is ge
 
 2. Populate the longitudinal profile with design data from canal network, by using `Workflow > Reload Alignment` then choose `Network Nodes`.  Choose the network host object in AutoCAD. 
    
-   ![[  ]](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Design%20Production\Images\Image%20003.png) 
+   ![[  ]](Images/Image%20003.png) 
    
    This will read the existing design data in the host, corresponding to the route in question, and populate the graphic area with controls, drops and other details as needed.
    
-   ![[  ] ](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Design%20Production\Images\Image%20004.png)
+   ![[  ] ](Images/Image%20004.png)
    
    *Note: There is no need to try and alter design data in iCAD environment, as the end result with not be compatible with CanalNETWORK design and can not be saved. Simply proceed to plan view generation as described below.*
 
 3. Start a cross-section view from `Workflow > Cross-Section View.` and pick any location. This will create a cross-section view at the selected station. To create the necessary details for plan view generation to desired range of stations:
    
-   ![[  ]](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Design%20Production\Images\Image%20005.png) *Screenshot showing a cross-section view at a tentative station along a canal route.*
+   ![[  ]](Images/Image%20005.png) *Screenshot showing a cross-section view at a tentative station along a canal route.*
    
    a) Use` Workflow > Go to Station` or `Ctrl + G`, and input the starting station for plan view. This will create a cross-section at the newly specified station.
    
-   ![[  ]](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Design%20Production\Images\Image%20006.png) 
+   ![[  ]](Images/Image%20006.png) 
    
    b) Invoke liveiew from `Workflow > Cross-Section Liveiew`. This will automatically generate cross-sections at each incremental station downstream of the starting station provided above, until `Ctrl + Q` is pressed or the end of the canal station is reached.
    
@@ -238,7 +238,7 @@ Similar to Flow Sections generation method described above, a plan view is is ge
 
 4. Start the plan view generation from Workflow > Plan View. A dialog will apear requesting specifics for the desired plan view.
    
-   ![[  ] ](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Design%20Production\Images\Image%20007.png)
+   ![[  ] ](Images/Image%20007.png)
    
    Contour Intervals: 
    
@@ -254,21 +254,21 @@ Similar to Flow Sections generation method described above, a plan view is is ge
 
 5. Upon hitting Apply, the plan view will be generated per specifications. The following two screenshots show drawing created using different options for Fit BBox.
    
-   ![t](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Design%20Production\Images\Image%20008.png)
+   ![t](Images/Image%20008.png)
    
    *Fig: Plan view with out a BBox specified, showing view oriented on North upwards..*
    
-   ![f](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Design%20Production\Images\Image%20009.png)
+   ![f](Images/Image%20009.png)
    
    *Fig: Plan view generated with a bounding box specified in AutoCAD for plotting, showing rotation and scaling to fit.*
 
 6. To generate the drawings to AutoCAD, use the standard tool from `Workflow > Render To AutoCAD` or `Ctrl + P`,  The first step would be to copy the axes information to the region of plot in AutoCAD, hence choose *Copy BBox*. 
    
-   ![[  ]](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Design%20Production\Images\Image%20010.png) 
+   ![[  ]](Images/Image%20010.png) 
    
    Then selct Plot to BBox (AutoCAD) option, and upon prompt in AutoCAD, pick the object that defines the drawing area. 
    
-   ![[  ]](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Design%20Production\Images\Image%20011.png) 
+   ![[  ]](Images/Image%20011.png) 
    
    On On the `uiPlotOption`s dialog box, choose:
    
@@ -276,19 +276,19 @@ Similar to Flow Sections generation method described above, a plan view is is ge
    
    b) specify a plot scale, otherwise.
    
-   ![[  ] ](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Design%20Production\Images\Image%20012.png)
+   ![[  ] ](Images/Image%20012.png)
    
    *Choose Plot scaling depending on the type of plan view drawing desired*
    
-   ![[  ]](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Design%20Production\Images\Image%20013.png) *Axis reference information created to AutoCAD environment*
+   ![[  ]](Images/Image%20013.png) *Axis reference information created to AutoCAD environment*
    
    Once the axis information is created in AutoCAD, along with a referenced starting object, use `Workflow > Render to AutoCAD`, select all objects, and click `Apply`. Upon prompt, choose the referenced object, and follow the dialogs to complete generating all groups of objects to AutoCAD.
    
-   ![[  ] ](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Design%20Production\Images\Image%20014.png)
+   ![[  ] ](Images/Image%20014.png)
    
    *Use Select All button to choose all groups of objects.*
    
-   ![[  ] ](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Design%20Production\Images\Image%20015.png)
+   ![[  ] ](Images/Image%20015.png)
    
    *Fig AutoCAD drawing, after few edits on line colors, and text annotation creation.*
 
