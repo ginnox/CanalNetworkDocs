@@ -26,7 +26,7 @@ Alwats make sure you are working with the updated versions of our products. To u
 > * Improved accuracy for BoQ listing, to account for structures and clearing works in reported earth cut and fill works
 > * Ability to specify drops at desired stations and heights for any segment.
 
-> For more information on the updated features and how to use them, refer to the online documentation.
+> **For more information on the updated features and how to use them, refer to the online documentation. An all new content is added on Design Production.**
 
 > Previous Updates(Mar22): CanalNETWORK(f) above is improved for the following reporeted issues on 20TH FEB 2022
 > * iCAD(d) Improved CanalStructures module funcitonality for Q>-0.10m3/sec, plan view generation with description and lateral exageration
