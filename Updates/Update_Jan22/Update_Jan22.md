@@ -18,14 +18,22 @@ Alwats make sure you are working with the updated versions of our products. To u
 
 * [Download iCAD bridge 4.4.4](https://drive.google.com/file/d/1LX2mwWGFLmVjbJnTV4gbGgwhonddMcQx/view?usp=sharing)
 
-* [Donaload CanalNetwork 1.5.2.1250h](https://drive.google.com/file/d/1b65p8z5Hys_Nifj8Hbrs2ZGTC-Wb67x5/view?usp=sharing)
+* [Donaload CanalNetwork 1.5.2.1250i](https://drive.google.com/file/d/1IcH5K-DX1Lr-prM4xD7tB1nDHJZADcw2/view?usp=sharing)
 
-> NEW UPDATES: CanalNETWORK(f) above is improved for the following reporeted issues on 20TH FEB 2022
+
+> NEW UPDATES: CanalNETWORK (i) above is improved as follows:
+> * Reload ALignment features are supporessed temporarily, to maintain compatibility with iCAD's enhanced profile extraction algorithm.
+> * Improved accuracy for BoQ listing, to account for structures and clearing works in reported earth cut and fill works
+> * Ability to specify drops at desired stations and heights for any segment.
+
+> For more information on the updated features and how to use them, refer to the online documentation.
+
+> Previous Updates(Mar22): CanalNETWORK(f) above is improved for the following reporeted issues on 20TH FEB 2022
 > * iCAD(d) Improved CanalStructures module funcitonality for Q>-0.10m3/sec, plan view generation with description and lateral exageration
 > * CanalNETWORK (h) Experimental feature to defunct CBL force to Fit-for-no-drop.
 > * Enhanced division box design capability for Q<=0.08m3/sec, and bug fixes on BoQ
 >
-> Previous (15th Feb) updates included below fixes:
+> Older Updates (15th Feb) updates included below fixes:
 > * CanalNETWORK(f): Buf fix on cummulating error while reporting BoQ for canal reach cut volume; Tunrout BoQ details
 > * CanalNETWORK(e): Bug-fix for construciton variables (invalid use of Smf values)
 > * iCAD(c) Enhancement for Alignmentrofile module for iCAD to correct for curve lengths, and report on skipped curves. iCAD Bridge must be updated for this enhancement to work.
