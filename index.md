@@ -32,7 +32,7 @@ Available guides and documentation:
 
 [7. Design of Canal Structures using Floating Nodes.](DesignOfRegulatingStructures/DesignOfRegulatingStructures.md)
 
-[8. Design Production (Content under development)](DesignProduction/DesignProduction.md)
+[8. Design Production (**NEW**)](DesignProduction/DesignProduction.md)
 
 ## Technical Information
 
