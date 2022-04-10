@@ -148,7 +148,7 @@ In the above instance, the user wanted to adjust the first drop, and left-cliked
 
 Upon clicking (to accept the new location), the *Invalid Input* dialog appears, with recommendation to change values in *CBL_designSettings*. The corresponding setting for this particular instance are as follows:
 
-![figy2](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Longitudinal_Design_of_Routes\Images\Image%20053.png)
+![figy2](Images/Image%20053.png)
 
 It can be seen that, the drop can only be located before the first control when attempting to maintain *Min. Control Spacing* settings. This is because, the set minimum control spacing of 15 meters can not be achieved in the current segment. Note the distance between the contols is 17m. To accomodate a drop, a segment length of 25m (5+15+5) is required, that is not available.
 
@@ -158,7 +158,7 @@ There are two ways to resolve this issue:
 
 (2). Change the allowbale minimum distance between controls (as shown in row 4 of above figure.) Changing the first value to 2.5m for instance (i.e, dictating to observe only 2.5meters between controls) allows to re-position the drop feasibly in the segment range.
 
-![figy3](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Longitudinal_Design_of_Routes\Images\Image%20054.png)
+![figy3](Images/Image%20054.png)
 
 > Note: The minimum acceptable spacing between structures is sligthly greater than 5.0meters. In line with this, it is strongly recommended that the available distance between any two controls in the network is at least 20meters.
 
@@ -170,7 +170,7 @@ To do this:
 
 1. Right click on any one drop of the desired segment, and choose `Edit Segment Drops...`. This will invoke the drop adjust dialog.
    
-   ![figkk](images/Image%20055.png)
+   ![figkk](Images/Image%20055.png)
 
 2. Input the drop heights in the first row, and thier stations in the second row. 
 
