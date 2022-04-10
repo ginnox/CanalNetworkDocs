@@ -40,13 +40,13 @@ This will invoke the following dialog, indicating which level is selected curren
 
 Once can choose a single level, or multiple levels. In either case, a confirmation is requested that lists the name and number of canals that will be processed.
 
-![fig7](file://C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Design Production\Images\Image%20018.png)
+![fig7](Images\Image%20018.png)
 
-![fig8](file://C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Design Production\Images\Image%20019.png)
+![fig8](Images\Image%20019.png)
 
 Confirm `Go` and all relevant canal routes are auotmatically updated for the latest design data. The following dialog confirms the actions taken.
 
-![fig8](file://C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Design Production\Images\Image%20026.png)
+![fig8](Images\Image%20026.png)
 
 Note: BoQ created with out updated control and structures data can be incomplete, or inaccurate.
 
@@ -192,13 +192,9 @@ These parameters cab be set flexibly by the user from `Workspace > Edit Preferen
    
    - Length after station= 2.25*Drop Height
 
-4. 
-   
-   As may be expected, cut and fill volumes to canal segments reduce with this option enables.
-   
-   
-   
-   > Note: Only turnouts and drops are included in the recent version. Future versions will be updated to account division boxes as well.
+4. As may be expected, cut and fill volumes to canal segments reduce with this option enables.
+
+> Note: Only turnouts and drops are included in the recent version. Future versions will be updated to account division boxes as well.
 
 ### Longitudinal Profile Design
 
