@@ -122,6 +122,22 @@ A typical output table for drop design data is extracted from `Explore Solutions
 
 *Typical output of drop design data*
 
+
+
+## Drop Design Settings
+
+Many of the design tasks carried out to size the different components of the drop depend on *drop_designSettings* in Preferences. These can be adjusted to fit specific site conditions. 
+
+![fid](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\DesignOfDrops\Images\Image%2009.png)
+
+
+
+> Note: These settings apply for the entire network of canals.
+
+
+
+ 
+
 ## BoQ calaculation for drops
 
 For the calcualtion of volumes of work for drops, the following procedures are implemented. The starting points are user provided values for Control BoQ Settings in `Workspace > Edit Preferences`. 
@@ -146,13 +162,9 @@ The calculation of quantities is carried out based on the following schematic di
 
 *Isometric view of a drop structure as used for estimation of quantities in CanalNETWORK product.*
 
-
-
 ![dsds](Images/photo_2022-02-03_10-31-38.jpg)
 
 *Section view of a drop structure for quantity estimation.*
-
-
 
 Where:
 
@@ -179,8 +191,6 @@ The structural volumes are estimated for:
 - for upstream and downstream cutoff walls, as a function of WThk and WTotal.
 
 Lining work quantity is also included for inlet and exit canals.
-
-
 
 A sample BoQ for a drop structure contains the below informaiton in the standard report for the same.
 

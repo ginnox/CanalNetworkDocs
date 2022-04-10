@@ -138,17 +138,13 @@ In above snapshot, the drop height of 0.836 can be adjusted to 0.800 by adding 0
 
 ![](Images/Image%20031.png)
 
-
-
 ### Invalid Drop Locations
 
-In rare instances, the sum effect of the drop location parameters specified by the user is not actionable. As a result, the user may get unexpected layouts.
+In rare instances, the sum effect of the drop location parameters specified by the user is not actionable. As a result, it may not be straight forward to position some drops. Also, the `Explore Drops` command may not collect and report drops in such segments.
 
 ![figy](images/Image%20052.png)
 
 In the above instance, the user wanted to adjust the first drop, and left-cliked on it. The Auto-Locator moves to an invalid station reading. This is often the case when working with short length segments, common to the first segment of all distributary canals.
-
-
 
 Upon clicking (to accept the new location), the *Invalid Input* dialog appears, with recommendation to change values in *CBL_designSettings*. The corresponding setting for this particular instance are as follows:
 
@@ -156,25 +152,35 @@ Upon clicking (to accept the new location), the *Invalid Input* dialog appears, 
 
 It can be seen that, the drop can only be located before the first control when attempting to maintain *Min. Control Spacing* settings. This is because, the set minimum control spacing of 15 meters can not be achieved in the current segment. Note the distance between the contols is 17m. To accomodate a drop, a segment length of 25m (5+15+5) is required, that is not available.
 
-
-
 There are two ways to resolve this issue: 
 
 (1) Increase the segment length available: this must be avoided, because it entials chaning the layout design to create more space between the controls.
 
 (2). Change the allowbale minimum distance between controls (as shown in row 4 of above figure.) Changing the first value to 2.5m for instance (i.e, dictating to observe only 2.5meters between controls) allows to re-position the drop feasibly in the segment range.
 
-
-
 ![figy3](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\Longitudinal_Design_of_Routes\Images\Image%20054.png)
 
+> Note: The minimum acceptable spacing between structures is sligthly greater than 5.0meters. In line with this, it is strongly recommended that the available distance between any two controls in the network is at least 20meters.
 
+### Provide predefined list of drops
 
-> Note: The minimum allowable spacing between structures is sligthly greater than 5.0meters.
+Once can also override the entire list of drop heights and their stations in a canal segment, to replace with own predefined list. This may be particularly helpful when modeling existing projects.
 
+To do this:
 
+1. Right click on any one drop of the desired segment, and choose `Edit Segment Drops...`. This will invoke the drop adjust dialog.
+   
+   ![figkk](images/Image%20055.png)
 
-### Adjust Canal Assembly for Segments
+2. Input the drop heights in the first row, and thier stations in the second row. 
+
+3. Hit `Apply` when done.
+
+This will create a new CBLinformation for the segment that accomodates the prescribed drop heights and locations. 
+
+> Note: There are no limits to the size of the data length to be provided for such prescrptions. However, both the height and locaiotn data must be of the same length, and respect the data input expectations. Otherwise, the action will not take effect.
+
+## Adjust Canal Assembly for Segments
 
 The last area of control for the user to guide and influence longitudinal canal is the `Canal Assembly` panel. In this panel, information regarding the parameters that determine the shape and size of the canal section and its flow parameters can be adjusted. 
 
@@ -206,19 +212,13 @@ Information for hydraulic and formation design in segments may require updating 
 
 - Non-conformance with OGL and (beg/end) control inverts
 
-
-
 The below picures demonstrates one such instance. Here, the control level and the CBL level at the control do not much. In this particular instance, it resulted from adjusting drop heights for the specific segment.
 
 ![figx](Images/Image%20051.png)
 
-
-
 To resolve these issues, DO NOT USE ReDraw Node DBL button, as shown at bottom right. This will erase all drop station and heigh information, and create a new data set. Instead, refresh the profile view by clicking the canal route in plan view.
 
 > Note: ReDraw Nod DBL button, resets ALL drop information (i.e. station and fall heights) to null, and re-create them based on automatic settings. Beware, that this action, aslo does the same for the immediate downstream segment (if any). Use this button with descrition.
-
-
 
 In above note, you notice that the reDraw button also creates an auto-generated data set for drop location in the immediate-next segment of the control. This is mandatory process, to ensure that any changes in invert level of the control node, is accomodated with respect to the downstream setment.
 
