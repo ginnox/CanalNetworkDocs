@@ -20,7 +20,9 @@ Below sections show how to generate these data.
 
 Table data are results of design work for a particular canal route that can be presented as a table listing. The following are typical table data that can be generated for a selected route.
 
-ThA number of table data can be generated from
+A number of table data can be generated from
+
+[... more content to be added soon.]
 
 ### Bill-of-Quantity
 
@@ -198,9 +200,14 @@ These parameters cab be set flexibly by the user from `Workspace > Edit Preferen
 
 ### Longitudinal Profile Design
 
+[... more content to be added soon.]
+
 ### Flow Sections
+[... more content to be added soon.]
 
 ### Cross Section Drawings
+
+[... more content to be added soon.]
 
 ### Plan View
 
@@ -292,20 +299,3 @@ Similar to Flow Sections generation method described above, a plan view is is ge
    
    *Fig AutoCAD drawing, after few edits on line colors, and text annotation creation.*
 
-## Table Data
-
-There are different types of data that a user can generate as tables, concerning the design work on a given canal. These are all available from `Explore Solutons > Data Tables menu`.
-
-### Profile Data
-
-### Flow Seciton Data
-
-### Schedule Data
-
-For Drops, Turnouts, DIvision Boxes, and 
-
-### Setout Data
-
-After generating a plan view, a corresponding setting out data is generated and displayed in the table view editor.
-
-BoQ
