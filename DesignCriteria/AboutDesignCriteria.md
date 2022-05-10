@@ -262,7 +262,37 @@ The built in table is represented as a chart as follows. (Source: USBR Recommend
 
 #### Limiting Velocity(m/sec)
 
-Limiting velocity prescribe the minimum and maximum allowable velocities, consequtively, in any given segment. These are used to guide design of flow sections, along with Shear stress value prescriptions. (See below)
+Limiting velocity prescribe the minimum and maximum allowable velocities, consequtively, in any given segment. These are used to guide design of flow sections, along with Shear stress value prescriptions. (See below table on *Default Design Criteria*)
+
+
+
+The drop down list for setting limiting velocity looks similar to the below figure.
+
+
+
+![fig](Imagesabout/Image%20025.png)
+
+
+
+Note that, upon user choice the minimum velocity is always set to a default of 0.30m/sec. The user chooses the maximum allowable velocity. The value is set based on the average of the range indicated in the dropdown list.
+
+
+
+For instance, in the figure, a user chooses values for *Firm Clay Loom* soil type with a range of 0.90-1.15, the average value of 1.0 is set, as shown in the table. The dropdown range options and associated values are shown here.
+
+
+
+| Soil Type         | Range Value | Set Value |
+| ----------------- | ----------- | --------- |
+| Sandy Soil        | 0.3-0.60    | 0.45      |
+| Black Cotton Soil | 0.6-0.90    | 0.75      |
+| Firm Clay Loom    | 0.9-1.15    | 1         |
+| Gravel            | 1.2-2.0     | 1.6       |
+| Hard Rock         | >3.0        | 4         |
+| Concrete          | ~6          | 6         |
+| Steel Lining      | 10          | 10        |
+
+
 
 #### Max. All. Shear Stress (Kg/m2)
 
