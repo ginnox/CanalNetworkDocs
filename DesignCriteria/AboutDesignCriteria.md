@@ -270,7 +270,7 @@ The drop down list for setting limiting velocity looks similar to the below figu
 
 
 
-![fig](Imagesabout/Image%20025.png)
+![fig](ImagesAbout/Image%20025.png)
 
 
 
