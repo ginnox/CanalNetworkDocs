@@ -16,7 +16,7 @@ The following topics are discussed:
 
 Refer to other sections of this documentation to learn more about specific usage and application of the software to tackle day to day design tasks.
 
-If you have any comments about this document, we will appreciate if you drop us an email at docs@ginnox.com
+If you have any comments about this document, we will appreciate if you drop us an email at [docs@quanomic.co](info@quanomic.co)
 
 # Uses and applicaiton of CanalNETWORK software
 

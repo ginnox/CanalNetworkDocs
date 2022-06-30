@@ -178,13 +178,7 @@ To do this:
 
 This will create a new CBLinformation for the segment that accomodates the prescribed drop heights and locations.
 
-
-
 > Note: The invert of the control at the downstream end of the segment will adjust automatically to a corresponding elevation.
-
-
-
-
 
 > Note: There are no limits to the size of the data length to be provided for such prescrptions. However, both the height and locaiotn data must be of the same length, and respect the data input expectations. Otherwise, the action will not take effect.
 
@@ -238,6 +232,8 @@ There are multiple ways to explore and interact with the solutions of a longitud
 
 Users can create and manage various annotations to keep track of the changes happening, as well as ensure key criteria are met.
 
+
+
 ![](Images/Image%20024.png)
 
 To show drop heights,  FSL-OGL value at controls, 
@@ -261,6 +257,22 @@ Yet another helpful annotation is available from `Explore Solutions > Annotatior
 ![f](Images/Image%20040.png) 
 
 The above described annotations provide a quick and reliable overview of the hydraulic status of the canal. Some of the annotations also vary dynamically along with design changes by the user, to help decide whether design objectives are met.
+
+
+
+> Note: The above annotations can easily be accessed with the following short cuts.
+> 
+> ![fig56](Images/Image%20056.png)
+> 
+> Ctrl + 1: Display on/off drop heights
+> 
+> Ctrl+2: Display on/off Min FSL-OGL states at controls
+> 
+> Ctrl+3: Display on/off LSEc Details
+
+
+
+
 
 ### Viewing and copying table data
 
@@ -447,6 +459,58 @@ The symbols for each dimension heading is described in the below drawing.
 ![d2](Images/CDSWC_str/Image%20002.png)
 
 *Fig: Drawing for a typical division box from CDSWC, showing the deginition of symbols used in the table listing.*
+
+### Creating and Viewing Cross-section views
+
+One can easily view the cross-section at any station along the canal route. To view cross-sections, make sure the desired route is selected in plan view, and its details are presented in profile view. Then:
+
+
+
+Toggle on the `XSEC` button near the detail view area.
+
+![fig04](Images/Image%20004.png)
+
+
+
+if the Lsec data is not created yet, the following message is thrown. 
+
+
+
+![fig05](Images/Image%20005.png)
+
+Create the data from Explore Solutions > Data Tables > LSec Profile Data. Then try again.
+
+
+
+![fig06](Images/Image%20008.png)
+
+A vertical broken line is created at station 150 by default on the profile view. Click on the line to generate the cross-section on that station. The line will change to a solid line, and the cross-section is displayed.
+
+
+
+![fig09](Images/Image%20009.png)
+
+
+
+To view cross-sections at other stations, click onthe solid line. An interactive location bar will be displayed. Click on any desired station, and the cross-section at the new location is generated.
+
+
+
+![fig10](Images/Image%20010.png)
+
+
+
+The stations viewed can be saved for latter use. To save selected stations, click on the Save check box on top of the detail view. This will make sure that every station picked is saved. Such saved stations are made availble any time when clicking on the route, and can be exported to AutoCAD.
+
+![fig11](Images/Image%20011.png)
+
+ Learn more about this on documentation for Design Production.
+
+
+
+
+
+
 
 ### Copying table data and using in other applications
 
