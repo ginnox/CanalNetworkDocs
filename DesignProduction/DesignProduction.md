@@ -214,6 +214,10 @@ The command to execute this task is accessible from `Explore Solutions > Batch P
 
 ![fig073](Images/Image%20073.png)
 
+
+
+> Note. In all cases, the cross-section view is generated FUS with respect to the current route. This is in line with the convention adopted for profile data extraction.
+
 ### 1. Cross-Sections at increments
 
 To use the first method, start by switching off the XSEC toggle button at the top of the detail view area. Then start the command. You will be prompted with available options for incremental cross-section generation.
@@ -266,17 +270,11 @@ The plots are generated for each of the selected station as explained for the pr
 
 This method requires an existing set of saved stations where cross-section drawings are required. Refer to documentation on Longitdinal Design of Routes, to learn how to create and save station data for cross-section generation.
 
-
-
 To generate drawings for saved stations:
 
 Toggle-on the XSEC button. Any saved stations will be listed, and also marked on the profile view.
 
-
-
 ![fig88](Images/Image%20089.png)
-
-
 
 Click on any one station marker on the profile view, to change it to active (continuous line.)
 
@@ -284,21 +282,13 @@ Click on any one station marker on the profile view, to change it to active (con
 > 
 > ![figerr](Images/Image%20091.png)
 
-
-
 Start the command from` Workflow > Batch Process > XSection Plot to AutoCAD`. You will be promoted to confirm your desired row size for plot generation.
 
-
-
 ![fig](Images/Image%20090.png)
-
-
 
 Provide the desired array size for creating the drawings, and Click Ok. 
 
 Follow the proceedure for method one above to complete from this step onwards.
-
-
 
 ### Plan View
 

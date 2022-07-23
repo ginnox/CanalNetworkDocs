@@ -232,8 +232,6 @@ There are multiple ways to explore and interact with the solutions of a longitud
 
 Users can create and manage various annotations to keep track of the changes happening, as well as ensure key criteria are met.
 
-
-
 ![](Images/Image%20024.png)
 
 To show drop heights,  FSL-OGL value at controls, 
@@ -258,8 +256,6 @@ Yet another helpful annotation is available from `Explore Solutions > Annotatior
 
 The above described annotations provide a quick and reliable overview of the hydraulic status of the canal. Some of the annotations also vary dynamically along with design changes by the user, to help decide whether design objectives are met.
 
-
-
 > Note: The above annotations can easily be accessed with the following short cuts.
 > 
 > ![fig56](Images/Image%20056.png)
@@ -269,10 +265,6 @@ The above described annotations provide a quick and reliable overview of the hyd
 > Ctrl+2: Display on/off Min FSL-OGL states at controls
 > 
 > Ctrl+3: Display on/off LSEc Details
-
-
-
-
 
 ### Viewing and copying table data
 
@@ -418,19 +410,17 @@ The symbols for the dimensions are explained in the accompanying drawing below.
 
 *Figure: Tunrout Structure detail drawings from ECDSWC, with dimension detail corresponding to the symbols in the explore output table.*
 
-<u>Notes on BoQ calculation for Turnouts</u>
+<u>**Notes on BoQ calculation for Turnouts**</u>
 
 The calculation of quantity items for turnout structures is based on the sizes of the canals involved, and sime fixed parameters in the reference resource. The following parameters are key paramters used, also indicated in the drawing above.:
 
-Thickness of lining and cutoff walls (upstream and downstream) set to 0.40m
+* Thickness of lining and cutoff walls (upstream and downstream) set to 0.40m
 
-Thickness of notch wall is set to 0.25m
+* Thickness of notch wall is set to 0.25m
 
-The depth of cut for earth excavation calculation is calculated from:
+* The depth of cut for earth excavation calculation is calculated from:
 
-dFloor= OGL at control location (centerline) - lowest excavation level, where
-
-lowest excavation level is estimated from bed level of lowest canal bed (upstream od downstream, especially for turnouts with falls), less 0.40m thickness of bed lining, less compacted backfill height provided in Control_BoQSettings (under network preferences).
+* dFloor= OGL at control location (centerline) - lowest excavation level, where lowest excavation level is estimated from bed level of lowest canal bed (upstream od downstream, especially for turnouts with falls), less 0.40m thickness of bed lining, less compacted backfill height provided in Control_BoQSettings (under network preferences).
 
 The cut volume is calculated using:
 
@@ -445,6 +435,8 @@ The cut volume is calculated using:
 Thus:
 
 Vcut= dFloor x (LTotal+mxdFloor) x (BTotal + mxdFloor)  
+
+> Note: Tunrouts can be combined with drops. If controls for Turnout locations have drops, the stilling basing structure will be sized and provided similar to the design approach for othe drops. The results are included in BoQ quantity. This functionality is not applicable to Floating Nodes or Division Boxes.
 
 ### Exploring Division Boxes
 
@@ -464,53 +456,31 @@ The symbols for each dimension heading is described in the below drawing.
 
 One can easily view the cross-section at any station along the canal route. To view cross-sections, make sure the desired route is selected in plan view, and its details are presented in profile view. Then:
 
-
-
 Toggle on the `XSEC` button near the detail view area.
 
 ![fig04](Images/Image%20004.png)
 
-
-
 if the Lsec data is not created yet, the following message is thrown. 
-
-
 
 ![fig05](Images/Image%20005.png)
 
 Create the data from Explore Solutions > Data Tables > LSec Profile Data. Then try again.
 
-
-
 ![fig06](Images/Image%20008.png)
 
 A vertical broken line is created at station 150 by default on the profile view. Click on the line to generate the cross-section on that station. The line will change to a solid line, and the cross-section is displayed.
 
-
-
 ![fig09](Images/Image%20009.png)
-
-
 
 To view cross-sections at other stations, click onthe solid line. An interactive location bar will be displayed. Click on any desired station, and the cross-section at the new location is generated.
 
-
-
 ![fig10](Images/Image%20010.png)
-
-
 
 The stations viewed can be saved for latter use. To save selected stations, click on the Save check box on top of the detail view. This will make sure that every station picked is saved. Such saved stations are made availble any time when clicking on the route, and can be exported to AutoCAD.
 
 ![fig11](Images/Image%20011.png)
 
  Learn more about this on documentation for Design Production.
-
-
-
-
-
-
 
 ### Copying table data and using in other applications
 
