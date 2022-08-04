@@ -162,6 +162,30 @@ Most of these connectivity issues can be identified automatically, as discussed 
 
 The user may expect two types of isses with the connectivity established from above step.
 
+### Missing Junction Nodes
+
+Rarely, the algorithm seems to miss nodes where there should be one. Apparently intersecting canals may not have nodes after the NodeID process described above. Such a case is shown below.
+
+![fig40](Images/Image%20046.png)
+
+ In this case the user can introduce nodes manually. 
+
+1. Relax the *Route Extension Length* parameter in `Work Space > Edit Preferences` to a reasonable figure depending on the distance bewtween the begining of the branch canal and the apparent intersection point with the parent canal. Usually a value of 2 meters gives good results. (Note: Max allowes is 5m)
+   
+   ![fig 41](Images/Image%20047.png)
+
+2. Select the parent and branch canals. Make sure to enable multi-select from `Edit MultiSelect (Routes)`, to be able to make two route selections.
+
+3. Run the Node ID process from `Workflow > Nodes > ID Nodes` . This will automatically prompt you for possible actions. 
+   
+   ![fig43](Images/Image%20048.png)
+   
+   Choose `Manual Add`.
+
+4. If succesfully found, a dialog will display the location for the newly found node as shown below. Hit insert, and node will be inserted.
+   
+   ![fig48](Images/Image%20049.png)
+
 ### Unresolved EoC nodes
 
 The first common issue is locations where End-of-Canal nodes are inserted, instead of a Junction node. This condition misses to understand that there is a branch canal leaving from the end of the parent canal, impairing further work during canal design. It must be resolved.
@@ -216,13 +240,13 @@ To identify nodes where multiple parent condition may be an issue, go to Workflo
 
 *Menu command and resulting table for Multiple Parent Node issue identification. The table shows both First and Second Nodes refering to the same branch canal (not shown in the table)*
 
-Once this is ready, the user can navigate to each location and resolve the issue. To go to a particular node listed in the table:
+Once this is ready, the user can navigate to each location and resolve the issue. To go to a particular node listed in the table, select it in the table, then use `View > Go To Route...` menu command, or simply click on the interface and use `Ctrl + G` keyboard shortcut:
 
 ![[  ] ](Images/Image%20025.png)
 
 *Go to Route menu command*
 
-Select the row for the node, and use` View > Go To Route...` menu command (Ctrl + G for keyboard short cut.) The layout view will pan and zoon in to the desired node location.
+ The layout view will pan and zoon in to the desired node location.
 
 In the table list of nodes shown above, both nodes refer to the one branch canal. This can be noted by left-clicking on each node, one at a time. It can be seen that the *Edit Node* dialog lists the same branch canal to each node. 
 
@@ -263,13 +287,13 @@ The meaning and use of each variable setting is described below.
 | S.No. | Variable Name                    | Description                                                                                                                                                                                                                                                                                                                      | Default Value |
 |       | **Network_Prefs_Template**       | <br>                                                                                                                                                                                                                                                                                                                             | <br>          |
 | 1     | Parent Canal Invert(m)           | Desired invert level of the primary level canal                                                                                                                                                                                                                                                                                  | -0.8          |
-| 2     | Farm Duty(l/sec/ha)              | Designed duty for the farm area. This is overriden by settings in the design criteria.                                                                                                                                                                                                                                           | 1.2           |
+| 2     | Farm Duty(l/sec/ha)              | Designed duty for the farm area. <br/>**Note: This is overriden by settings in the design criteria.**<br/>In latest releases (Version 1.5) this variable can be set to 0 to force node invert location to always meet downgrade conditions wrt to upstream nodes.                                                                | 1.2           |
 | 3     | Node Invert Levels(m)            | Default invert levels for positioning nodes (or controls) defined relative to OGL at location.                                                                                                                                                                                                                                   | -0.5          |
 | 4     | Max.Tolerance to compare FSL(m)  | Maximum tolerance value to be used in comparing FSL values, especially used in flow test tasks. Please refer to relevant material on flow test tool.                                                                                                                                                                             | 0.005         |
 | 5     | Max. Distance b/n Merge Nodes(m) | Any nodes found with in this distance range are merged together, and will be treated as one node.                                                                                                                                                                                                                                | 5             |
 | 6     | Control Branch Invert(-)         | Position of invert levels for branch canals at node location. There are two options:<br>0: Lock with Node – the branch invert is set to parent invert, or hydraulically determined level, which ever is minimum.<br>1: Free from Node: branch invert is fixed based on hydraulic calculations regardless of parent invert level. | 1             |
 | 7     | Associated Canal on Import(-)    | Import associated canal flow section on each route during import. Applicable only in older versions.                                                                                                                                                                                                                             | 0             |
-| 8     | Route Extension Length(m)        | Extension length for beginning of routes, while attempting to establish intersection with other canals.                                                                                                                                                                                                                          | 0.1           |
+| 8     | Route Extension Length(m)        | Extension length for beginning of routes, while attempting to establish intersection with other canals.<br/>**In latest releases (Ver 1.5 and latter) with the modified Node ID algorithm this is used to create the buffer zone arround canal routes to locate intersecting routes.**                                           | 0.1           |
 | 9     | Extrapolate Profile Data(-)      | Allow or deny extrapolation of transverse profile data beyond the limits of the offset range, if needed.                                                                                                                                                                                                                         | 1             |
 | 10    | Round Dims for Construction (-)  | Rounding value for bottom width of canal flow sections, and drop provission.<br/> Value >=0.05 rounds B values to Value specified, and drop heights applied will be limited to allowable increments specified in CBL_designSettings assembly parameter.                                                                          | 0             |
 | <br>  | **NodeGraphic_Template**         | <br>                                                                                                                                                                                                                                                                                                                             | <br>          |

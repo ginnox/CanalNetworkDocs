@@ -12,8 +12,6 @@ Sizing of canal segments, refers to the determination of amount of discharge pas
 
 These, otherwise time consuming tasks can be completed in a matter of a few seconds in CanalNETWORK software, with quality and speed.
 
-
-
 ## Working with Farm Blocks
 
 First, let's see ways to create farm block information. There are two methods:
@@ -37,30 +35,24 @@ To read farmblock area data from AutoCAD, first create the farm blocks using pol
   To add a zero area extenaion, click on the boundary and hover over the vertex you want to edit and choose `Add Vertex` menu item.
   
   ![s](Images/Image%20003.png)
-  
-  
-  
+
   Pick a location over the other side of the canal.
-  
+
   ![s](Images/Image%20004.png)
-  
+
   Finally modify the resulting geometry by moving the next vertes to over lap with the previous vertex.
-  
+
   ![s](Images/Image%20005.png)
-  
+
   ![s](Images/Image%20006.png)
-  
+
   The final geometry is shown above. This ensures the the area crosses the desired canal route, with out any change on the area of the block area delineated (hence the term zero-area extension.)
-  
-  
 
 > Note: Each farmblock area should cross ONLY one serving canal. The converse is also true, i.e., each canal should only be crossed by one farmblock boundary. Otherwsie, the first canal that is found to cross with a given farmblock is assigned the area of the farmblock. 
 
-
-
 Once these are ready:
 
-1.  Collect all farm blocks to fascilitate easy import. This can be done in either of two ways. Either instantiate all the farm blocks in to one or few host objects, or construct/ move all farm block boundaries to a separate layer.
+1. Collect all farm blocks to fascilitate easy import. This can be done in either of two ways. Either instantiate all the farm blocks in to one or few host objects, or construct/ move all farm block boundaries to a separate layer.
 
 2. To import from a host instance object go to `Workflow > Farm Blocks > (Re)Import Farm Blocks...` menu command. To import from layer go to `Workflow > Farm Blocks> (Re)Import Farm Blocks By Layer...` Both methods are valid.
    
@@ -69,20 +61,16 @@ Once these are ready:
    This will start the *Choose* dialog. 
    
    ![s](Images/Image%20008.png)
-   
-   
-   
+
    If importing for the first time, or desire to overwrite all existing associated data, choose `Reset All`. If you want to append the current collection to the existing data, choose `Update Only`.  For the case under consideration, Reset All would be the right choice, so hit the corresponding button.
-   
+
    ![s](Images/Image%20009.png)
-   
+
    Confirm the action in the dialog.
-   
+
    ![s](Images/Image%20010.png)
-   
+
    The *Done* dialog completes import process. The farmblocks imported are shown in the layout view area overlapping the network elements.
-
-
 
 At this stage you can view the quantities of areas associated to each serving canal route, by using `View > Route Text > Select & Show Text...` and picking `A` field in the dialog.
 
@@ -90,21 +78,11 @@ At this stage you can view the quantities of areas associated to each serving ca
 
 You can also generate a table from `View > Workflow > Farm Blocks > Edit Blocks...` , and selecting `Current` when prompted.
 
-
-
 ![s](Images/Image%20017.png)
-
-
 
 ![s](Images/Image%20015.png)
 
-
-
 ![s](Images/Image%20016.png)
-
-
-
-
 
 One can modify the block data for any one route at any time, in one of two ways:
 
@@ -120,13 +98,9 @@ One can modify the block data for any one route at any time, in one of two ways:
    
    ![s](Images/Image%20019.png)
 
-
-
 You can see that, the area corresponding to the parent canal is 0.00. This is because it does not serve a particular farm block. The area it serves shall be determined from cummlative of the areas that the sub-canals serve individually. To do this, 
 
 1. First select the primary most canal for the network, to indicate the final direction of cummulation.
-   
-   
 
 2. Then go to `Workflow > Farm Blocks > Edit Block Areas...` and choose `Cummulate` button.
 
@@ -134,25 +108,105 @@ You can see that, the area corresponding to the parent canal is 0.00. This is be
    
    ![s](Images/Image%20018.png)
 
-
-
 > Note: Area served is shown as a label in the layout view area ONLY for canals associated with Farm Blocks. Other canal routes will show Canal capacities as available.
-
-
-
- 
 
 > Note: If farm block data is updated, DO NOT forget to cummulate areas again to reflect the changes in the table, and `Apply` the new figures to the data base.
 
 
 
+### Automatically created farm parcels
+
+Where fast estimates are required, the auto estimator tool can be used. The tool is available from `Workflow > Farm Blocks > Auto Estimate...` as shown below.
+
+![fig50](Images/Image%20021.png)
+
+Note: This should be applied on a fully resolved network, else errors will be encountered in the process.
+
+To use the tool:
+
+1. Start it as described above.
+   
+   Upon initiating the warning dialog appears, reiterating the results - if any is found - are approximate.
+   
+   ![fig51](Images/Image%20022.png)
+   
+   Accept the subsequent confirm action messages. 
+   
+   ![fig52](Images/Image%20023.png)
+   
+   
+
+2. Next, you are prompted to provide a bugger distance. This value is used to determine the distance beween adjacent farm blocks. Note the value is a negative value, indicating that the areas determined will be shrinked away from boundary lines determined by the algorithm.
+   
+   ![fig54](Images/Image%20024.png)
+
+3. The final result is presented as shown below, giving the sum total of farm parcel areas found for the network. You can see that the blocks are only calculated for the last generation canals.
+   
+   ![fig55](Images/Image%20025.png)
+   
+   
+   
+   The process ends with the below dialog.
+   
+   ![fig57](Images/Image%20026.png)
 
 
-## Sizing Networks
+
+The above process, has already assigned each route in the network with the corresponding estimated areas of the farm parcel area. This can be viewed from `Workflow > Farm Blocks > Edit Block Area` command. The procedure is same as that for the manual process described further above.
+
+
+
+The table will display a result similar to below snapshot.
+
+![fig65](Images/Image%20028.png)
+
+You can select/deselect parcels by left-clicking on them, and choose to delete them.
+
+> Note: Delete job can not be undone. You will have to regenerate the blocks again.
+
+
+
+ You can also view the size of selected parcels by rightclicking on them and choosing `Properties`.
+
+![fig62](Images/Image%20027.png)
+
+
+
+## Working with large networks
+
+Working with large netwroks can pose some challenges when dealing with farm blocks creation. This can be easily solved using the sub-network view feature. This feature limits the displayed network to all branches of a given route. There are two ways to start this function.
+
+1. Go to `View > Sub-Network` menu. The first time, the list contains only one item, Click on the `Re-create Sub Networks` item.  This will analyze and group your network in hirarchies. 
+   
+   ![fig65](Images/Image%20029.png)
+   
+   To view this, restart the command again. You will now see a list of items, and sub items.
+   
+   ![fig68](Images/Image%20030.png)
+   
+   Click on any one item, only the corresponding routes will be displayed.
+   
+   ![fig69](Images/Image%20031.png)
+   
+   
+
+2. The other method is to use `View > Go to Route...` menu or `Ctrl+G` for short. Select the desired route on plan view, and start the command. 
+   
+   ![fig70](Images/Image%20033.png)
+   
+   Accept OK on the dialog, and this will retain only relevant canal routes in the view.
+
+
+
+You can work on any sub-network, as you would on the entire network. The changes will only affect the network in view.
+
+
+
+# Sizing Networks
 
 Sizing networks is a quick process, that fully relies on the farm block data prepared using the above steps. It determines the amount of water discharge that must be transported in each segment of the each route of the canal network. To start the fully automatic process:
 
-1.  Make sure there are no selection(s) in the plan view, by right clicking on the layout view area and selecting `Clear Selection`.
+1. Make sure there are no selection(s) in the plan view, by right clicking on the layout view area and selecting `Clear Selection`.
 
 2. Start the menu command from `Workflow > Network Rating/Capacity`.  
    
@@ -161,12 +215,9 @@ Sizing networks is a quick process, that fully relies on the farm block data pre
    ![s](Images/Image%2021.png)
 
 3. Choose `Resize All` This will do the calculation for the entire network, and display the resulting information in the layout view area. If no information is shown, toggle the text comonent from `View > Route Text > Toggle Text On/Off` .
-   
-   
 
 ![s](Images/Image%2022.png)
 
 > Note that text label for canal capacities follow the notation  X+YYY, where X denotes capacity in cubic meters per second, and YYY denotes capcity in litres per second.
-
 
 END.
