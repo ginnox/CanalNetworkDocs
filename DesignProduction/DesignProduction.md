@@ -214,11 +214,11 @@ The command to execute this task is accessible from `Explore Solutions > Batch P
 
 ![fig073](Images/Image%20073.png)
 
-
-
 > Note. In all cases, the cross-section view is generated FUS with respect to the current route. This is in line with the convention adopted for profile data extraction.
 
-### 1. Cross-Sections at increments
+
+
+#### 1. Cross-Sections at increments
 
 To use the first method, start by switching off the XSEC toggle button at the top of the detail view area. Then start the command. You will be prompted with available options for incremental cross-section generation.
 
@@ -248,7 +248,7 @@ The resulting AutoCAD drawing looks similar to below, as specified a 2 x 4 array
 
 ![img077](Images/Image%20077.png)
 
-### 2. Cross-Sections for custom list
+#### 2. Cross-Sections for custom list
 
 You can also generate cross-sections at select stations. To do this:
 
@@ -266,7 +266,7 @@ The plots are generated for each of the selected station as explained for the pr
 
 > Note: Stations are rounded upon rendering. For instance station value 24.987 is drawn to AutoCAD with annotation 0+24.90.
 
-### 3. Cross-sections at saved locations
+#### 3. Cross-sections at saved locations
 
 This method requires an existing set of saved stations where cross-section drawings are required. Refer to documentation on Longitdinal Design of Routes, to learn how to create and save station data for cross-section generation.
 
@@ -291,6 +291,26 @@ Provide the desired array size for creating the drawings, and Click Ok.
 Follow the proceedure for method one above to complete from this step onwards.
 
 ### Plan View
+
+> Note: Starting from Release 1.5.3, users can access this tool right with in CanalNETWORK interface from `Workflow > Plot to AutoCAD` . The procedure is the same. 
+> 
+> A complete documentation will be included soon.
+
+> ![fig92](Images/Image%20092.png)
+> 
+> 
+> 
+> Flexible tools are included allowing to:
+> 
+> - generate complete plan view, including curve, station, control and cross-section markers for selected segments, or entire route length, or user specified range.
+> 
+> - as well as capability to generate plan views for adjacently running canal routes (MCs and TCs for instance.)
+> 
+> - generate North-Free layout maps to fit selected area in AutoCAD environment, suited for the newly introduced standard of presentation.
+> 
+> - generate and save cross-sections for multiple stations while in plan view, using `Ctrl+G ` key combination.
+
+
 
 Similar to Flow Sections generation method described above, a plan view is is generated using CanalStructures module in iCAD.
 
@@ -328,17 +348,31 @@ Similar to Flow Sections generation method described above, a plan view is is ge
    
    ![[  ] ](Images/Image%20007.png)
    
-   Contour Intervals: 
+   <u>Contour Intervals</u>: the inverval value to be used to generate contour lines with the plan view. a value of <0.5 indicates, no contour is needed. Default is set to 0.
    
-   Length of Control Markers:
+   <u>Length of Control Markers</u>: The length of control markers on the plan view. This will also determine the length of station/curve markers. 
    
-   Lateral Exageration Scale:
+   Note: Providing 0 value supresses all markers. Providing too large a value could result in curve markers crossing each other, giving poor presentation quality. Recommended values are:
    
-   Station Range:
+   - Large canals 20-40units
    
-   Show Route Geometry:
+   - small canals 5-10 units
    
-   Fit BBox:
+   <u>Lateral Exageration Scale</u>: Often canal layouts appear as narrow and to conjusted, making it difficult to view details and poor presentation. To aid this, an exageration scale can be set between 1 to 10. Usually, 3 to 5 gives good drawings. 
+   
+   Note: When exageration scale is applied, the distance normal to the route center line is multiplied by the specified scale factor. True ground distance is obtained by dividing the measuered distance in AutoCAD environment to the product of  this scale value and that of the plot scale.
+   
+   Note: too large exageration values may distort true appearance of the layout components on edge, and RoW markers, as well as on contour lines - especially on curve locations. 
+   
+   Note: On posed plan view generation (generating plans of adjacent routes) the exageration scale is set to 1.0.
+   
+   <u>Station Range</u>: The range of values to generate plan view for. These are automatically rounded to the nearest available value on the station date list.
+   
+   <u>Show Route Geometry</u>: control the visibility of route center line, and all curve and control markers.
+   
+   <u>Fit BBox</u>: Set to None, the plan view is generated in natural North UP orientation. When set to *Pick AutoCAD*, the user is prompted to pick a bounding object  in AutoCAD. The drawing creation attempts to automatically determine the best orientation and scaling for the drawing to fit in to the selected area.
+   
+   Tip: Upon creating the drawing to AutoCAD the exageration scale is exported along with the north symbol. Use the `Aligned Annotation` addon tool to generate this info.
 
 5. Upon hitting Apply, the plan view will be generated per specifications. The following two screenshots show drawing created using different options for Fit BBox.
    

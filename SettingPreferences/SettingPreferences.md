@@ -29,17 +29,17 @@ The variable editor interface displays avaialble preferences and their settings.
 
 The values for this group of variables determine the visual behaviour for design elements in layout, profile and cross-section views of the interface.
 
-| Variable Name                    | Remarks                                                                                                                                                     | Sample Value |
-| -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ |
-| Display Height of Node bar(m)    | Height of vertical lines representing nodes or control structures in profile view. 1 <= value <=7.5                                                         | 2.5          |
-| In-Route Node Marker symbol(-)   | Marker symbol to represent in-route node locations on layout view. O= circle, S=square                                                                      | o            |
-| Max. Marker Size for Nodes(Pnts) | Maximum size of markers for in route nodes. 5Points= small, 10Points= medium, 15Points= Large.                                                              | 15           |
-| Min. Marker Size for Nodes(Pnts) | Minimum size of markers for in route nodes. 5Points= small, 10Points= medium, 15Points= Large.                                                              | 10           |
-| End-of-Canal Marker symbol(-)    | Marker symbol to represent end-of-canal markers on layout view. O= circle, s= square                                                                        | s            |
-| Marker Size for EOC(pts)         | Marker size for End-of-Canal markers:5Points= small, 10Points= medium, 15Points= Large.                                                                     | 10           |
-| Available Head Margin(%)         | Margin of available head for flow check task. Nodes will be marked red, if the available flow head is less than required by the given percentage. 0<value<2 | 1            |
-| Text Font Height (-)             | Size of font height to display text in graphic areas. 8Points=Small, 10Points=medium, 12Points=Large                                                        | 10           |
-| Color template(-)                | Color template to use when creating graphic contents in all views.Note: The colors are also used when generating drawings to AutoCAD environment.           | Default      |
+| Variable Name                    | Remarks                                                                                                                                                                                                                                                     | Sample Value |
+| -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ |
+| Display Height of Node bar(m)    | Height of vertical lines representing nodes or control structures in profile view. 1 <= value <=7.5                                                                                                                                                         | 2.5          |
+| In-Route Node Marker symbol(-)   | Marker symbol to represent in-route node locations on layout view. O= circle, S=square                                                                                                                                                                      | o            |
+| Max. Marker Size for Nodes(Pnts) | Maximum size of markers for in route nodes. 5Points= small, 10Points= medium, 15Points= Large.                                                                                                                                                              | 15           |
+| Min. Marker Size for Nodes(Pnts) | Minimum size of markers for in route nodes. 5Points= small, 10Points= medium, 15Points= Large.                                                                                                                                                              | 10           |
+| End-of-Canal Marker symbol(-)    | Marker symbol to represent end-of-canal markers on layout view. O= circle, s= square                                                                                                                                                                        | s            |
+| Marker Size for EOC(pts)         | Marker size for End-of-Canal markers:5Points= small, 10Points= medium, 15Points= Large.                                                                                                                                                                     | 10           |
+| Available Head Margin(%)         | Margin of available head for flow check task. Nodes will be marked red, if the available flow head is less than required by the given percentage. 0<value<2                                                                                                 | 1            |
+| Text Font Height (-)             | Size of font height to display text in graphic areas. 8Points=Small, 10Points=medium, 12Points=Large                                                                                                                                                        | 10           |
+| Color template(-)                | Color template to use when creating graphic contents in all views.Note: The colors are also used when generating drawings to AutoCAD environment.<br/>Note: Axis lines and annotations, as well as text info will use the current color setting in AutoCAD. | Default      |
 
 ## control_BoQSettings
 
@@ -56,8 +56,6 @@ These variables provide key parameters for generating a representative BoQ listi
 | BoQ List of Items(-)           | Decides how BoQ table is repoted. Detailed: a standard BoQ item is created for each component of each item. Summarized: the standard BoQ item list is created for similar items together.                                                                                                                                                                                                                                                                               | Detailed     |
 
 See notes on Drop Design to see how these are used for specific conditions.
-
-
 
 A detailed presentation of each parameter and results is discussed in documentation on Design Prododuction. Please refer to it.
 

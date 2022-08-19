@@ -81,9 +81,9 @@ This method allows users to import criteria from an existing file. For this meth
    In the *Select File to Open* dialog, choose your file and hit *Open.*
    
    ![](Images/Image%20008.png)
-   
+
    If successful, the Success dialog will display status and summary of the contents of the data file.
-   
+
    ![](Images/Image%20009.png)
 
 The saved design criteria, along with the naming style used to create it is now available in the workspace. Check using `Workspace > Edit Current Naming...` The editor dialog displays the contents of the data file, with a note at the top, proving the description level for the data file that was entered during the time of creation.
@@ -92,7 +92,17 @@ The saved design criteria, along with the naming style used to create it is now 
 
 ## Overriding Design Criteria
 
-Latter in the longitudinal profile design stage, the user may want to change some design criteria values to suit specific conditions on a specific route. This option is available to automate manual override procedures that may take time. Refer to *Longitudinal Design of Routes* guide.
+Latter in the longitudinal profile design stage, the user may want to change some design criteria values to suit specific conditions on a specific route. This option is available to automate manual override procedures that may take time. Refer to *Longitudinal Design of Routes* guide for more details.
+
+## Replacing a design criteria from file
+
+For a route with complete design information, you can replace the design criteria from a stored data in a .dcf file. Simply follow the above described procedure and go to `Workspace > Manage Design Criteria > Import from File...`. Pick the file containing the criteria data. 
+
+If found, a dialog displays the criteria data set for available canal leveles. You can decide to select all, or pick just a few, and continue. The process will replace criteria data set for the selected canal level(s) from the file to the corresponding canal level in the workspace.
+
+![Fig16](Images/Image%20016.png)
+
+Note: This makes the data available to the workspace. If you were to resize canals, the new data set is used. To apply such newly imported data to already designed canals, Select the canal route in plan view, the use `Ctrl+E` to start Variable Editor with the design criteria list. For *On Apply use For* variable At the end of the list choose ** Apply to Current route**. Then hit apply.
 
 # Important Note
 
@@ -108,13 +118,9 @@ Inconsistency may also arise if the use opts to import a design criteria to a pr
 
 As a final note, it is ALWAYS recommended - and a best practice - to carefully choose and set a naming style that could best represent the project in question, and maintain it that way.
 
-
-
 ## Attempting to Solve Criteria Inconsistency
 
 If such issues arrise, there are a few ways the user can attempt to resolve the issue. However, success is not guaranteed.
-
-
 
 ### Change the Naming Style
 
@@ -128,12 +134,6 @@ Then change naming style. There are two ways to do this:
 
 This should solve the insocistency. The crietia set can now be saved. Go to Workspace > Manage Design Criteria> Edit Current Naming ... Then in the dialog, set the value for *On Apply use for* variable to *Save to File*, and hit Apply. This will allow to save data to a file in a prefered location.
 
-
-
 To use the above saved criteria set, in any open project go to `Workspace > Manage Design Criteria > Import from File...` and pick the file saved above. This will import and replace the criteria set in the project, if any, with the new one. 
-
-
-
-
 
 END. 
