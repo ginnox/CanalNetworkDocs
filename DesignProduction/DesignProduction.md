@@ -20,9 +20,13 @@ Below sections show how to generate these data.
 
 Table data are results of design work for a particular canal route that can be presented as a table listing. The following are typical table data that can be generated for a selected route.
 
-A number of table data can be generated from
+- LSec Profile Data
 
-[... more content to be added soon.]
+- FLow Section Data
+
+- Schedule of Controls, Drops, Turnouts, and Division Boxes
+
+See Exploring Solutions under Longitudinal Design of Canals Section, for details on each of these.
 
 ### Bill-of-Quantity
 
@@ -75,6 +79,10 @@ The general steps to creating a bill-of-quantity output is as follows:
    Select `Open Report` to view the report. This will invoke the necessary applicaiton to view the report.
    
    ![figk](Images/Image%20030.png)
+
+> Note: End-of-Route turnout structures are always excluded from Bill-of-quantity listing. 
+> 
+> Note: Closely spaced drops, whose placement creates an overlap during excavation, are skipped in BoQ. The user is notified accordingly, to resolve the issue and try again.
 
 Below are the different types of BoQ reports that can be generated.
 
@@ -202,10 +210,6 @@ These parameters cab be set flexibly by the user from `Workspace > Edit Preferen
 
 [... more content to be added soon.]
 
-### Flow Sections
-
-[... more content to be added soon.]
-
 ### Cross Section Drawings
 
 Cross-section views can be generated to AutoCAD in one of three ways. The first method allows to generate cross-sections at preset intervals. An other way is to select and plot desired stations only. The third method allows users to save specific locations whose cross-sections are required, and generate only those specific sections. 
@@ -215,8 +219,6 @@ The command to execute this task is accessible from `Explore Solutions > Batch P
 ![fig073](Images/Image%20073.png)
 
 > Note. In all cases, the cross-section view is generated FUS with respect to the current route. This is in line with the convention adopted for profile data extraction.
-
-
 
 #### 1. Cross-Sections at increments
 
@@ -298,8 +300,6 @@ Follow the proceedure for method one above to complete from this step onwards.
 
 > ![fig92](Images/Image%20092.png)
 > 
-> 
-> 
 > Flexible tools are included allowing to:
 > 
 > - generate complete plan view, including curve, station, control and cross-section markers for selected segments, or entire route length, or user specified range.
@@ -309,8 +309,6 @@ Follow the proceedure for method one above to complete from this step onwards.
 > - generate North-Free layout maps to fit selected area in AutoCAD environment, suited for the newly introduced standard of presentation.
 > 
 > - generate and save cross-sections for multiple stations while in plan view, using `Ctrl+G ` key combination.
-
-
 
 Similar to Flow Sections generation method described above, a plan view is is generated using CanalStructures module in iCAD.
 

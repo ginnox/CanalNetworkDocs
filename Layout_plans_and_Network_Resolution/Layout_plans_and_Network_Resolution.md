@@ -387,13 +387,15 @@ To create names for each route in the canal network, based on the naming style j
    
    ![s](Images/Image%20039.png)
 
-**A network data is accepted as fully resolved if all routes are succesfully named with appropriate level indices. **
+*A network data is accepted as fully resolved if all routes are succesfully named with appropriate level indices.*
 
-Beware of ** strings. These indicate routes whose connections have not been resolved fully in earlier node identification and resolution process.  In the screenshot above, for instance, the last route has an issue. It can be seen that the connecting node to the parent canal envisages and EoC node, and not a branch junction node. This must be resolved to get the correct naming. Pan and zoom in the entire network area to see if there are any ** labels and resolve any issues causing them.
+Beware of double astrisk (** or place holder) strings. These indicate routes whose connections have not been resolved fully in earlier node identification and resolution process.  In the screenshot above, for instance, the last route has an issue. It can be seen that the connecting node to the parent canal envisages and EoC node, and not a branch junction node. This must be resolved to get the correct naming. Pan and zoom in the entire network area to see if there are any ** labels and resolve any issues causing them.
 
 *FInd Text dialog invoked using Ctrl + F keyboard combination.*
 
 Use `Ctrl` + `F` keyboard combination to search for such texts in large networks. If found, they will be highlighted for easily locating them.
+
+> Note: Some times, you may need to change the name of a parent canal. For instance for canal exceptions.  In such cases, the branch canal naming must also change accordingly. Or you may just want to re-create the text.  You can easily achieve this by running `Edit > Route Text > Create New Text` command for the desired route.
 
 ### Rendering Names to AutoCAD
 

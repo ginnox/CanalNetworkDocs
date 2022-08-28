@@ -66,9 +66,31 @@ Hence, the extrapolation capability is to be considered as only a complimentary 
 
 Curves, if found in the AutoCAD alignment object, will be considered while extracting prorfile data. The requirements for succesful data extraction are:
 
-- the begining and ending segments of the alignment route must be straight segments of at least 20meters.
+- the begining and ending segments of the alignment route must be straight segments of at least longer than the incremental distance for profile extraction. This is set to 20meters by default.
 
-- Curve radius of 20m or larger
+- Curve radius(R), the curve length (L), and the chord length (Lc) are all greater than or equal to 20meters
+
+- The backward tangent and forward tongent lines to the curve begining and ending, respectively, align with the preceeding and following segments.
+
+
+
+> Note that these are limitations set to ensure practicality of designs, as curves of a smaller size are not encouraged in practice. If all the conditions are not met, no curve data will be extracted. 
+
+
+
+Route curvatures meeting all these requirements are succesfully extracted as curves. The data will contain curve data listing the key parameters including:
+
+- curve begining point, PC
+
+- Curve tangent point, PT
+
+- Tangent Intersection point, PI
+
+- Curve Median point, PM
+
+- Curve Center location, PC.
+
+
 
 
 
@@ -78,27 +100,19 @@ The schematic below shows detailed curve information extracted.
 
 
 
-For straight segments, the incremental distance specified will be used. Where curve arcs are encountered an incremental distance of 5meters (or close) is used to extract profile data at finer resolutions. This will allow adequate representation of key points along the alignment in creating plan views and accurate bill-of-quantity estimates at a latter stage.
+![im](images/cadCurve.png)
 
 
 
-> Note: Curves must be at least 20m radius, and have a curve length of at least 25 meters to be considered for detailed extraction. This is hard-codded in the software, considering the constructable range of curve sizes.
+If the above conditions are not met, the curve parameters will not be extracted.
 
 
-
-Short curves will still be approximated by about 5m increments, but the curve information will not be captured. Only curves whose information is succesfully extracted are shown in profile views.
-
-
-
-After extracting profile information in iCAD, the data table will display information related to curves, if available.
 
 ![im](Images/Image%204.png)
 
-
-
 * Curves (233/187) show that 187 of 233 arcs are extracted for curve information.
-
-* del L= -0.20480m indicates the station variation to be expected as a result of the arcs that do not meet the curve size specification, and hence are approximated using ~5m small segments of straight lines.
+  
+  
 
 > Note: the curve information in above dialog is available only after extraction of profile data. It is not shown when viewing existing data.
 
@@ -108,13 +122,13 @@ A typical profile data is represented as follows:
 
 ![im](Images/Image%20006.png)
 
-
-
 Cross-section views from `Workflow>Show Section` show a transverse variation of ground level at the station of choice.
 
 ![im](Images/Image%20007.png)
 
 
+
+Incremental distance can be set as low as 2.5meters. This can increase the accuracy of the design, say the calculated eatth volumes. However, the different computational processes could increase significantly.
 
 
 

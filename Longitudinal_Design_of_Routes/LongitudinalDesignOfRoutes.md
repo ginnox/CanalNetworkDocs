@@ -272,13 +272,41 @@ The other group of tools to explore solutions is viewing tabular data. The solut
 
 ![d](Images/Image%20041.png)
 
-#### LSec Profile Data
+### LSec Profile Data
 
 This table shows extensive detail of profile data along with canal bed level and embankement formation data for the entire range of stations in the route. 
 
 Note: The data are tabulated at exactly the same incremental stations generated during profile extraction.
 
 ![d](Images/Image%20042.png)
+
+In the table:
+
+**Chainage**: Station locations where data is extracted (See below note.)
+
+**xOfst=0.0: ** OGL at centerline
+
+**CBL: ** Canal Bed Level value at the station
+
+**CBL2: ** Final excavation or fill level at a station, after considering canal lining thickness (if used.) If no canal lining is used, CBL and CBL2 contain the same values for a given station.
+
+**hFil:** Height of fill caculated as CTL less OGL at centerline
+
+**hCut:** Height of cut calculated as OGL less CBL2 at centerline
+
+**aFil, aCut:** Area of fill and Cut work, respectively, at the particular station.
+
+work at the par
+
+**CTL:** Canal Top Level
+
+**FSL:** Full Supply Level
+
+**ROWL, ROWR:** End of fill or cut lines on ground surface measured from the centerline of the canal to the left, and to the right respectively.
+
+You can copy the table using the `Copy Table` button at the bottom, and paste it to an other applicaiton such as MS Excel or Word, for further processing.
+
+> Note: The station listing in the data table is extended to include control and drop locations, in addition to the station marks specified during profile extraction stage.
 
 The table headers are explained in below schematics.
 
@@ -312,6 +340,8 @@ where x1, x2,... xn represent the station locations for the corresponding aCut a
 
 Note: Cart away volumes reported on BoQ table represent the total excavated/Cut volume multiplied with hardcoded loosness factor of 1.2.
 
+See Design Production Section for  more information ob BoQ estimation, and how clearing depth is considered.
+
 ### Exploring Flow Sections
 
 This command generates the hydraulic design results for flow sections corresponding to each segment in the canal route.
@@ -319,6 +349,38 @@ This command generates the hydraulic design results for flow sections correspond
 ![s](Images/Image%20045.png)
 
 In the table, 
+
+**STA:** Station range of the flow section
+
+**Q**: Designed Dicharge capacity of the flow section, m3/sec
+
+**N**: Manning's roughness coeficient
+
+**FSD**: Full supply depth, or Flow depth calculated by solving mannings equation.
+
+**FB**: Freeboard used
+
+**So**: Design bed slope
+
+**m**: Side slope of the flow canal section
+
+**B**: Designed Bottom Width of the canal seciton
+
+**B/D ratio**: The ratio of bottom width to depth used to design the flow section
+
+**A, P, Hyd.R**: Wetted Area, Perimeter, and Hydraulic Radius of the flow section for the above dimensinos
+
+**V**: Flow velocity for the flow section
+
+**Vchzy**: Chezy's flow velocity calculated for the flow section
+
+**Vratio**: Ratio of the two velocities calculated. ECSDWC design guideline recommends that that this ratio must be close to 1.
+
+**Taw**: Calculated maximum anticipated shear stress for the flow section.
+
+> Flow sections can be generated to an AutoCAD environment as detailed drawings, by linking to iCAD's CanalManning module.
+
+Also:
 
 V: represents actual flow velocity in the canal section
 
