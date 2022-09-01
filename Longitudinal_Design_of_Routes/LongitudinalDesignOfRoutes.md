@@ -474,7 +474,7 @@ The symbols for the dimensions are explained in the accompanying drawing below.
 
 <u>**Notes on BoQ calculation for Turnouts**</u>
 
-The calculation of quantity items for turnout structures is based on the sizes of the canals involved, and sime fixed parameters in the reference resource. The following parameters are key paramters used, also indicated in the drawing above.:
+The calculation of quantity items for turnout structures is based on the sizes of the canals involved, and some fixed parameters in the reference resource. The following are key paramters used, also indicated in the drawing above.:
 
 * Thickness of lining and cutoff walls (upstream and downstream) set to 0.40m
 
