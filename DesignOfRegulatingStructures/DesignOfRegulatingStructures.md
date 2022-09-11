@@ -63,14 +63,22 @@ To start the design process for canal strucrues defined as above, start iCAD if 
    ![[  ]](Images/Image%20005.png) 
    
    *Module Browser dialog.*
+   
+   You can also start from the push menu item shown below.
+   
+   ![image34](images/Image%20034.png)
 
 2. Choose *CanalStructuresJET module* and hit `Continue`. This will invoke the *Jump Design* editor dialog. Note, all structures addressed for designed in the workflow under discussion involve the analyisis of hydraulic jumps, hence the name for the editor.
    
    ![fddsg](Images/Image%20006.png)
+   
+   **Note: You can select a flow section object in AutoCAD to start designing tentative (that is not bound to any canal route) structures.**
 
 3. Click on the space for *Network Host Object* variable, and AutoCAD will be in select mode promoting to select a network host object. Pick the host object where the network data, including the definition of structures, is saved to and hit the continue button `>>`.
    
    Note: Step 2 and 3 may be skipped by using the *Next Action* variable setting discussed earlier (Defining the structure) to *Point to Current*.
+   
+   Note: The dialog will remember previous selections of host entity, and may display an object ID. Click on it to change it.
 
 4. The *Choose Structure* dialog will apear. In the dialog,  you will see a list of structures saved to the current host object. Choose your desired structure, and click `OK` to proceed with design. 
    
@@ -127,8 +135,6 @@ The module allows you to work on your design in transverse view, in longitudinal
 
 *Layout of a typical canal structure showing dimensions for abutment provissions.*
 
-
-
    <u>Total Longitudinal Length</u>: The total length of the structure measurered from begining of upstream appron, to end of downstream appron.
 
    <u>Length of Approach Section</u>: The length of upstream impervious floor required for the structure before the control section and to the begining of the upstream appron.
@@ -136,8 +142,6 @@ The module allows you to work on your design in transverse view, in longitudinal
    <u>Abut. Wall Width</u>: The top thickness of the abutment wall to be provided, and B/H ratio to use in determining the thickness of the wall at the foundation level (applied for BoQ estimation.)
 
  ![da ](Images/Screenshot_20220127-151747_Concepts.jpg)
-
-
 
 *Abutment wall dimensions for structures*
 
@@ -297,7 +301,7 @@ A complete BoQ listing can be generated from `Workflow > Estimate BoQ...` menu c
 
 ![htht](Images/Image%20027.png)
 
-### Generating Drawings
+### Generating Longitudinal Drawings
 
 The user can export the different views of the structure, and along with it the designed elevations, to AutoCAD. The procedures are documented in iCAD product documentation in detail.
 
@@ -329,6 +333,76 @@ The user can export the different views of the structure, and along with it the 
    
    ![yert](Images/Image%20033.png)
 
-To generate the other views, repeat the same steps.
+#### Generating Plan View drawings
+
+Plan views can be generated in one of two orientations: 
+
+- North Free: This plan view drawing creates the layout of the structure in actual coordiates with reference to the canal route it is located on. The north arrow is drawn aligned to actual north on layout coordinates.
+
+- North Up: This plan view is rotated to ensure the North direction is aligned to the Up direction. 
+
+- 
+
+- 
+
+- To generate the other views (such as the plan view), repeat the same steps. 
+
+To create a plan view:
+
+1. Go to `Workflow > Draw Plan View`. When prompted, specify more details. The lateral exageration factor is useful when creating plan views for overlaying on canal route plans. In this case, this number should match the scale used to generate the plan view.
+
+
+
+![Image36](images/Image%20036.png)
+
+
+
+2. Choose the North orientation. 
+
+![Image37](images/Image%20037.png)
+
+
+
+The plan view is created. This can be plotted to AutoCAD following the same steps as above for longitudinal views.
+
+![Image038](images/Image%20038.png)
+
+### Generating BoQ for Structures
+
+BoQ can be easily generated for all structures designed using this module CanalStrucrturesJET. The first task should be to review the BoQ generation settings from `Workflow > Edit BoQ Settings...`.
+
+![Figure](images/Image%20040.png)
+
+<u>Cut Slope</u>: The cut slope to be used in estimating excavation works
+
+<u>Height Buffer</u>: Height of buffer area to consider for volume calculation
+
+<u>Working Space</u>: Space to consider arround the structure, in addition to the true footprints of the structure.
+
+
+
+Once the settings are verified, then start the estiamtor from `Workflow > Estimate BoQ`. The BoQ is generated.
+
+![Image39](images/Image%20039.png)
+
+
+
+![Image44](Images/Image%20042.png)
+
+
+
+Before exiting the module, use the `Save` button to save all the design and BoQ information. The below dialog confirms process.
+
+![image44](images/Image%2044.png)
+
+To create BoQ all structures in a host, use `Session > BoM Extract`.  When prompted, choose the network host object . 
+
+![Figure](images/Image%20041.png)
+
+ This will generate the BoQ for all structuers in the host. Notice the difference in the header texts for multiple structures.
+
+![Image](images/Image%20045.png)
+
+
 
 END.

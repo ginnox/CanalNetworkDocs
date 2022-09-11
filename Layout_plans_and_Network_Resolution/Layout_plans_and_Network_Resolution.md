@@ -419,4 +419,44 @@ The canal namimng generated as described above can be exported to the AutoCAD en
    
    All texts are generated to AutoCAD environemnt using the text height of the sample text selected above. Other similar information, for instance Area and Discharge capacity, can also be generated using this method.
 
+
+
+## Tips on Network Resolution
+
+### Swapping Canal Order for Naming
+
+The order in which canal branches are read in to a node is on first-found first-registered basis. 
+
+
+
+![Image50](images/Image%20050.png)
+
+In the above figure, the Right side (Facing downstream) canal is registered, and the left side registered last. Hence, the naming MC_1 and MC_2 respectivly. To change the order of such branches:
+
+1. Select the MC_1 route, and click on the branch node. On the *Edit Node* dialog, use `Remove (Merged)` button to remove the branch. 
+
+
+
+![Image51](images/Image%20051.png)
+
+This will leave only the other route (MC_2) connected to the node.
+
+![Image52](images/Image%20052.png)
+
+
+
+2. Then, select the MC_1 route, and click on the node again. This time, the *Edit Node* dialog offers a different option. Click on the `New Merged Node` button. 
+
+
+
+![Fig53](images/Image%20053.png)
+
+
+
+This will ensure that right side canal (facing downstream) is registered next to the left side canal. To see the changes in action, select the PC route and run `View > Route Text > Create New Text...` menu command. You can see that the names are swapped as desired.
+
+![image54](images/Image%20054.png)
+
+
+
 END.

@@ -35,17 +35,17 @@ To read farmblock area data from AutoCAD, first create the farm blocks using pol
   To add a zero area extenaion, click on the boundary and hover over the vertex you want to edit and choose `Add Vertex` menu item.
   
   ![s](Images/Image%20003.png)
-
+  
   Pick a location over the other side of the canal.
-
+  
   ![s](Images/Image%20004.png)
-
+  
   Finally modify the resulting geometry by moving the next vertes to over lap with the previous vertex.
-
+  
   ![s](Images/Image%20005.png)
-
+  
   ![s](Images/Image%20006.png)
-
+  
   The final geometry is shown above. This ensures the the area crosses the desired canal route, with out any change on the area of the block area delineated (hence the term zero-area extension.)
 
 > Note: Each farmblock area should cross ONLY one serving canal. The converse is also true, i.e., each canal should only be crossed by one farmblock boundary. Otherwsie, the first canal that is found to cross with a given farmblock is assigned the area of the farmblock. 
@@ -61,15 +61,15 @@ Once these are ready:
    This will start the *Choose* dialog. 
    
    ![s](Images/Image%20008.png)
-
+   
    If importing for the first time, or desire to overwrite all existing associated data, choose `Reset All`. If you want to append the current collection to the existing data, choose `Update Only`.  For the case under consideration, Reset All would be the right choice, so hit the corresponding button.
-
+   
    ![s](Images/Image%20009.png)
-
+   
    Confirm the action in the dialog.
-
+   
    ![s](Images/Image%20010.png)
-
+   
    The *Done* dialog completes import process. The farmblocks imported are shown in the layout view area overlapping the network elements.
 
 At this stage you can view the quantities of areas associated to each serving canal route, by using `View > Route Text > Select & Show Text...` and picking `A` field in the dialog.
@@ -112,8 +112,6 @@ You can see that, the area corresponding to the parent canal is 0.00. This is be
 
 > Note: If farm block data is updated, DO NOT forget to cummulate areas again to reflect the changes in the table, and `Apply` the new figures to the data base.
 
-
-
 ### Automatically created farm parcels
 
 Where fast estimates are required, the auto estimator tool can be used. The tool is available from `Workflow > Farm Blocks > Auto Estimate...` as shown below.
@@ -133,8 +131,6 @@ To use the tool:
    Accept the subsequent confirm action messages. 
    
    ![fig52](Images/Image%20023.png)
-   
-   
 
 2. Next, you are prompted to provide a bugger distance. This value is used to determine the distance beween adjacent farm blocks. Note the value is a negative value, indicating that the areas determined will be shrinked away from boundary lines determined by the algorithm.
    
@@ -143,18 +139,12 @@ To use the tool:
 3. The final result is presented as shown below, giving the sum total of farm parcel areas found for the network. You can see that the blocks are only calculated for the last generation canals.
    
    ![fig55](Images/Image%20025.png)
-   
-   
-   
+
    The process ends with the below dialog.
-   
+
    ![fig57](Images/Image%20026.png)
 
-
-
 The above process, has already assigned each route in the network with the corresponding estimated areas of the farm parcel area. This can be viewed from `Workflow > Farm Blocks > Edit Block Area` command. The procedure is same as that for the manual process described further above.
-
-
 
 The table will display a result similar to below snapshot.
 
@@ -164,11 +154,33 @@ You can select/deselect parcels by left-clicking on them, and choose to delete t
 
 > Note: Delete job can not be undone. You will have to regenerate the blocks again.
 
-
-
  You can also view the size of selected parcels by rightclicking on them and choosing `Properties`.
 
 ![fig62](Images/Image%20027.png)
+
+
+
+### Important Notes about Farm blocks
+
+Farm blocks are expected to meet few requirements to be succesfully imported, and linked to, network of canals.
+
+* All farm blocks must be made of polyline objects
+
+* All farm blocks are expected to cross ONLY one canal route. This will not cause an error. However, In case of multiple intersections are found, the block area is associated with the route whose intersection is found first.
+
+* It is highly recommended that they contain no Curved segments. FarmBlocks are imported as segments of straight lines, and hence all curve information will be removed. This does not cause an error. However, it may lead to unwanted confusion regarding intersecting routes. Consider the below example.
+
+
+
+![Image40](Images/Image%20040.png)
+
+Here, the Farm-block corresponding to SC_1 has a curve tracing the curve of the main canal (as shown in the highlighted area.) Upon import to network, the curve information is not considered, and the Farm block will have the geometry shown below.
+
+
+
+![Image413](Images/Image%2041.png)
+
+As a result of removing the curve, the farm block now happens to cross not only the intended SC_1 route, but also MC. This may result in linking of farm block to MC, instead of SC_1. 
 
 
 
@@ -187,8 +199,6 @@ Working with large netwroks can pose some challenges when dealing with farm bloc
    Click on any one item, only the corresponding routes will be displayed.
    
    ![fig69](Images/Image%20031.png)
-   
-   
 
 2. The other method is to use `View > Go to Route...` menu or `Ctrl+G` for short. Select the desired route on plan view, and start the command. 
    
@@ -196,11 +206,7 @@ Working with large netwroks can pose some challenges when dealing with farm bloc
    
    Accept OK on the dialog, and this will retain only relevant canal routes in the view.
 
-
-
 You can work on any sub-network, as you would on the entire network. The changes will only affect the network in view.
-
-
 
 # Sizing Networks
 
