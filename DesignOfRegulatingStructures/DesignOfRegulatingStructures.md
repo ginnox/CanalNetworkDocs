@@ -269,15 +269,21 @@ If no bridge is required after setting values, simply go to `Workflow > Clear Br
 
 The plan view tool provides a complete detaii of the components of the structure - e.g., abutment walls, overflow area, stilling pool - and their arrangements relative to each other. To generate plan view:
 
-1. Go to `Workflow > Plan VIew` 
+1. Go to `Workflow > Plan VIew` When prompted review the default title and scale. 
    
-   This will generate the plan view, and prompt for orientation.
+   Lateral exageration Scale: is used to stretch the drawing in the lateral direction when creating the componens. This may be required for overlaying the drawing on existing canal route plans.
+   
+   Hit `Ok`, and this will generate the plan view, and prompt for orientation.
+
+![figureplan](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\DesignOfRegulatingStructures\Images\Image%20036.png)
 
 2. Choose desired orientation: 
-   
-   North Free: aligns the centerline of the structure to the horizontal axis.
-   
-   North Up: aligns the north symbol to the y vertical axis.
+
+![North](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\DesignOfRegulatingStructures\Images\Image%20037.png)
+
+North Free: aligns the centerline of the structure to the horizontal axis.
+
+North Up: aligns the north symbol to the y vertical axis.
 
 > Note: each view can be exported to AutoCAD for further editing and production as needed.
 
@@ -291,15 +297,61 @@ The plan view tool provides a complete detaii of the components of the structure
 
 Design work can be saved at any stage during the design process. Simply go to `Session > Save`. This will display a progress dialog, and save the data to the host object. 
 
-![gdhd](Images/Image%20026.png)
+![gdhd](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\DesignOfRegulatingStructures\Images\Image%2044.png)
 
 The next time the project is opened, the user has the option to continue from the existing design data, or start afresh.
 
 ### Generating BoQ
 
+BoQ can be easily generated for all structures designed using this module CanalStrucrturesJET. The first task should be to review the BoQ generation settings from `Workflow > Edit BoQ Settings...`.
+
+
+
+![BoqSetting](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\DesignOfRegulatingStructures\Images\Image%20040.png)
+
+<u>Cut Slope</u>: The cut slope to be used in estimating excavation works
+
+<u>Height Buffer</u>: Height of buffer area to consider for volume calculation
+
+<u>Working Space</u>: Space to consider arround the structure, in addition to the true footprints of the structure.
+
+Once the settings are verified, then start the estiamtor from `Workflow > Estimate BoQ`. The BoQ is generated.
+
+
+
 A complete BoQ listing can be generated from `Workflow > Estimate BoQ...` menu command.
 
+![Figureboq](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\DesignOfRegulatingStructures\Images\Image%20039.png)
+
+This will extract and report the estiamated bill of works for the structure, similar to the one shown below.
+
+
+
 ![htht](Images/Image%20027.png)
+
+
+
+Often, a number of structures are designed for different canal routes in the network, and the BoQ may be required in one report. To create BoQ all structures in a host, use `Session > BoM Extract`. When prompted, choose the network host object .
+
+![figbom](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\DesignOfRegulatingStructures\Images\Image%20041.png)
+
+This will generate the BoQ for all structuers in the host. Notice the difference in the header texts for multiple structures.
+
+
+
+![bom2](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\DesignOfRegulatingStructures\Images\Image%20045.png)
+
+
+
+> Note: 
+> 
+> * For this step to work, the BoQ for all the structures must have been extracted, and saved. 
+> 
+> * Remember the network host object points to the data set of the entire network, including the structures designed using CanalStructuresJET.
+> 
+> * The JET dialog will rememeber the last host selection. To change it, click on the value cell, and select a desired host object.
+
+
 
 ### Generating Longitudinal Drawings
 
@@ -332,77 +384,5 @@ The user can export the different views of the structure, and along with it the 
 7. AutoCAD will be in select mode. Pick the diagonal object created in step 6 as a reference object. The drawing will be recreated in AutoCAD environemnt.
    
    ![yert](Images/Image%20033.png)
-
-#### Generating Plan View drawings
-
-Plan views can be generated in one of two orientations: 
-
-- North Free: This plan view drawing creates the layout of the structure in actual coordiates with reference to the canal route it is located on. The north arrow is drawn aligned to actual north on layout coordinates.
-
-- North Up: This plan view is rotated to ensure the North direction is aligned to the Up direction. 
-
-- 
-
-- 
-
-- To generate the other views (such as the plan view), repeat the same steps. 
-
-To create a plan view:
-
-1. Go to `Workflow > Draw Plan View`. When prompted, specify more details. The lateral exageration factor is useful when creating plan views for overlaying on canal route plans. In this case, this number should match the scale used to generate the plan view.
-
-
-
-![Image36](images/Image%20036.png)
-
-
-
-2. Choose the North orientation. 
-
-![Image37](images/Image%20037.png)
-
-
-
-The plan view is created. This can be plotted to AutoCAD following the same steps as above for longitudinal views.
-
-![Image038](images/Image%20038.png)
-
-### Generating BoQ for Structures
-
-BoQ can be easily generated for all structures designed using this module CanalStrucrturesJET. The first task should be to review the BoQ generation settings from `Workflow > Edit BoQ Settings...`.
-
-![Figure](images/Image%20040.png)
-
-<u>Cut Slope</u>: The cut slope to be used in estimating excavation works
-
-<u>Height Buffer</u>: Height of buffer area to consider for volume calculation
-
-<u>Working Space</u>: Space to consider arround the structure, in addition to the true footprints of the structure.
-
-
-
-Once the settings are verified, then start the estiamtor from `Workflow > Estimate BoQ`. The BoQ is generated.
-
-![Image39](images/Image%20039.png)
-
-
-
-![Image44](Images/Image%20042.png)
-
-
-
-Before exiting the module, use the `Save` button to save all the design and BoQ information. The below dialog confirms process.
-
-![image44](images/Image%2044.png)
-
-To create BoQ all structures in a host, use `Session > BoM Extract`.  When prompted, choose the network host object . 
-
-![Figure](images/Image%20041.png)
-
- This will generate the BoQ for all structuers in the host. Notice the difference in the header texts for multiple structures.
-
-![Image](images/Image%20045.png)
-
-
 
 END.
