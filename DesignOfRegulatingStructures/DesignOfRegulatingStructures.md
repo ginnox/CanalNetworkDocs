@@ -275,11 +275,11 @@ The plan view tool provides a complete detaii of the components of the structure
    
    Hit `Ok`, and this will generate the plan view, and prompt for orientation.
 
-![figureplan](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\DesignOfRegulatingStructures\Images\Image%20036.png)
+![figureplan](Images/Image%20036.png)
 
 2. Choose desired orientation: 
 
-![North](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\DesignOfRegulatingStructures\Images\Image%20037.png)
+![North](Images/Image%20037.png)
 
 North Free: aligns the centerline of the structure to the horizontal axis.
 
@@ -297,7 +297,7 @@ North Up: aligns the north symbol to the y vertical axis.
 
 Design work can be saved at any stage during the design process. Simply go to `Session > Save`. This will display a progress dialog, and save the data to the host object. 
 
-![gdhd](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\DesignOfRegulatingStructures\Images\Image%2044.png)
+![gdhd](Images/Image%2044.png)
 
 The next time the project is opened, the user has the option to continue from the existing design data, or start afresh.
 
@@ -307,7 +307,7 @@ BoQ can be easily generated for all structures designed using this module CanalS
 
 
 
-![BoqSetting](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\DesignOfRegulatingStructures\Images\Image%20040.png)
+![BoqSetting](Images/Image%20040.png)
 
 <u>Cut Slope</u>: The cut slope to be used in estimating excavation works
 
@@ -321,7 +321,7 @@ Once the settings are verified, then start the estiamtor from `Workflow > Estima
 
 A complete BoQ listing can be generated from `Workflow > Estimate BoQ...` menu command.
 
-![Figureboq](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\DesignOfRegulatingStructures\Images\Image%20039.png)
+![Figureboq](Images/Image%20039.png)
 
 This will extract and report the estiamated bill of works for the structure, similar to the one shown below.
 
@@ -333,13 +333,13 @@ This will extract and report the estiamated bill of works for the structure, sim
 
 Often, a number of structures are designed for different canal routes in the network, and the BoQ may be required in one report. To create BoQ all structures in a host, use `Session > BoM Extract`. When prompted, choose the network host object .
 
-![figbom](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\DesignOfRegulatingStructures\Images\Image%20041.png)
+![figbom](Images/Image%20041.png)
 
 This will generate the BoQ for all structuers in the host. Notice the difference in the header texts for multiple structures.
 
 
 
-![bom2](C:\Users\Dell\Documents\GitHub\CanalNetworkDocs\DesignOfRegulatingStructures\Images\Image%20045.png)
+![bom2](Images/Image%20045.png)
 
 
 
