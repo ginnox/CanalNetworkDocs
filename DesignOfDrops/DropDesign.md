@@ -122,21 +122,13 @@ A typical output table for drop design data is extracted from `Explore Solutions
 
 *Typical output of drop design data*
 
-
-
 ## Drop Design Settings
 
 Many of the design tasks carried out to size the different components of the drop depend on *drop_designSettings* in Preferences. These can be adjusted to fit specific site conditions. 
 
 ![fid](Images/Image%2009.png)
 
-
-
 > Note: These settings apply for the entire network of canals.
-
-
-
- 
 
 ## BoQ calaculation for drops
 

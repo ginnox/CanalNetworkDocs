@@ -110,17 +110,31 @@ Drops are created automatically following the variation of the ground level. The
 
 For many reasons, the automated design output will not satisfy the engineers desires. Each drop can be edited and adjusted as follows:
 
-![](Images/Image%20017.png)
-
 To change the location of the drop:
 
-* Click on the desired drop. An interactive tool appears reading station location for the new locatio of the drop. Click at the desired new location, and the drop is repositioned to a new station.
+- Click on the desired drop. An interactive tool appears reading station location for the new locatio of the drop. Click at the desired new location, and the drop is repositioned to a new station.
+
+![](Images/Image%20017.png)
+
+Annotation information can also be used to guide drop insertion. Often times, one may want to locate the position of drops manually based on FSL-OG or CTL-OGL values. This can be achieved by using the above same method, but after invoking supported annotations. 
+
+In the example below, the drop near statio 1600 is automatically positioned using the setting of FitHt=-0.5.This can be confirmed by starting the relevant annotator from `Explore Solutions > Annotators > CBL-OGL`. It can be seen in the annotator, CBL-OGL= -0.513, slightly higher than specified because of the position the reading is taken. 
+
+![image036](images/Image%20036.png)
+
+Assume, it is required to move this drop to a location where CBL-OGL is about -0.20. First, move the drop further right to about station 1+670.
+
+![Image037](images/Image%20037.png)
+
+Now, click on the drop again. The interactive, marker tracks the value of CBL-OGL as you move the location. Drag to the new location where CBL-OGL meets the desired value. In this case it is near station 1+639. Click, and the drop is positioned.
+
+![image038](images/Image%20038.png)
+
+As shown below, there are other ways to edit drop positions. To manually change the location and/or height of the drop:
 
 ![](Images/Image%20018.png)
 
 ![](Images/Image%20019.png)
-
-To manually change the location and/or height of the drop:
 
 * right click on the desired drop, and choose Adjust Drop conext menu item. This will start a dialog box. 
 
@@ -276,7 +290,25 @@ The other group of tools to explore solutions is viewing tabular data. The solut
 
 This table shows extensive detail of profile data along with canal bed level and embankement formation data for the entire range of stations in the route. 
 
-Note: The data are tabulated at exactly the same incremental stations generated during profile extraction.
+Note: The data are tabulated at exactly the same incremental stations generated during profile extraction. 
+
+
+
+It is also important to note the following additional refinements, that are not specified by the user, rather applied in run-time.
+
+(a) the data is further refined at additional stations, for:
+
+- control locations, including floating nodes.
+
+- Drop structure locations
+
+(b) calculations in transverse direction depend on the offset data interval during profile extraction. However, additional refinements are applied to the transverse data set if:
+
+- the number of offset locations is less than 5, and
+
+- the applied refinement is -15:3:15 in conventional notation, or -15, -12, -9, -6, -3, 0, 3, 6, 9, 12, 15.
+
+
 
 ![d](Images/Image%20042.png)
 
