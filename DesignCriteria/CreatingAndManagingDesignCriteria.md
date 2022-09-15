@@ -37,6 +37,8 @@ This method very common among users. It brings forward the builtin default crite
 5. Edit the parameters to your requirement and ckick on `Apply `to save changes to the workspace.
    
    ![](Images/Image%20006.png)
+   
+   In recent release new variable sets are included to allow flexibility in the design of complex cut and fill shapes. See the section About Design Criteria for details.
 
 6. Repeat the same for each generation of canal route.
 
@@ -81,9 +83,9 @@ This method allows users to import criteria from an existing file. For this meth
    In the *Select File to Open* dialog, choose your file and hit *Open.*
    
    ![](Images/Image%20008.png)
-
+   
    If successful, the Success dialog will display status and summary of the contents of the data file.
-
+   
    ![](Images/Image%20009.png)
 
 The saved design criteria, along with the naming style used to create it is now available in the workspace. Check using `Workspace > Edit Current Naming...` The editor dialog displays the contents of the data file, with a note at the top, proving the description level for the data file that was entered during the time of creation.

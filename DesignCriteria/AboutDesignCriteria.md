@@ -221,12 +221,44 @@ This parameter specifies how the formation level varies in the transverse direct
 This parameter serves the same function as *Earth Cut Shape* parameter above, but in Fill condition.
 
 * w, m, h: single triplet specifiying - consequetively - top berm width (for unlined and thin lined canals) or formation width beyond canal lining for (thick lined canals), fill slope (mH:1V), and height through which the fill slope is applied. 
+  
+  
 
-* h is set to inf (Infinity) for the last entry.
+* ALWAYS h is set to inf (Infinity) for the last entry.
+  
+  
 
 ![](ImagesAbout/Image%20016.png)
 
 *Figure showing a canal section in cut using single and double entry specification.*
+
+
+
+#### Complex Cut and Fill Shapes
+
+There are a number of ways to create complex cut and fill shapes in canal segments. These can be applied to the design criteria content, or to the contents of each segment.
+
+For any segment, the number of entries for both Cut Shape and Fill shape variables must be equal.
+
+![image027](ImagesAbout/Image%20027.png)
+
+ In above figure, it can be seen that the fill shape has 2 triplets of B,m,H. In the cut shape however, single triplet is considered sufficient. To mock this condition, a second triplet of B,m,h is used but the B and m for the second triplet are set to 0.051 (the smallest value allowed), and 1.5 (same as that for first triplet), respectively.
+
+An other way to create complex cut and fill shapes is to use the `Canal Top Provission` variable. This allows for the provission of extra berms at canal top level, in addition to the first B value entries set in Cut and Fill shapes described above. The convnention for setting this variable is as follows:
+
+First two entries: Required Additional Berm width on Left side, and Right side - respectively - of the canal top (Facing Down stream). 
+
+Second two entries: height of cut or fill - respectively-from CTL at Centerline, used to control whether the above specified extra berm is provided or not. i.e., the cut and fill berms will only be applied if this value is exceeded. To Apply at all conditions set to 0, to apply at no condition use 99.
+
+Although four entries are shown the user can input as follows:
+
+single value: is considered taken as left side extra berm provission width, applied at all times.
+
+two values: left and side berm widths applied at all conditions
+
+Four values: as explained above.
+
+![Images27](ImagesAbout/Image%20026.png)
 
 ### Hydraulic Design
 
@@ -264,23 +296,13 @@ The built in table is represented as a chart as follows. (Source: USBR Recommend
 
 Limiting velocity prescribe the minimum and maximum allowable velocities, consequtively, in any given segment. These are used to guide design of flow sections, along with Shear stress value prescriptions. (See below table on *Default Design Criteria*)
 
-
-
 The drop down list for setting limiting velocity looks similar to the below figure.
-
-
 
 ![fig](ImagesAbout/Image%20025.png)
 
-
-
 Note that, upon user choice the minimum velocity is always set to a default of 0.30m/sec. The user chooses the maximum allowable velocity. The value is set based on the average of the range indicated in the dropdown list.
 
-
-
 For instance, in the figure, a user chooses values for *Firm Clay Loom* soil type with a range of 0.90-1.15, the average value of 1.0 is set, as shown in the table. The dropdown range options and associated values are shown here.
-
-
 
 | Soil Type         | Range Value | Set Value |
 | ----------------- | ----------- | --------- |
@@ -291,8 +313,6 @@ For instance, in the figure, a user chooses values for *Firm Clay Loom* soil typ
 | Hard Rock         | >3.0        | 4         |
 | Concrete          | ~6          | 6         |
 | Steel Lining      | 10          | 10        |
-
-
 
 #### Max. All. Shear Stress (Kg/m2)
 
