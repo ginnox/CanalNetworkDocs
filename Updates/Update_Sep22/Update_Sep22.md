@@ -5,7 +5,7 @@ Hi Everyone,
 We are pleased to bring to you many enhanced features and functionalities to our products, building on our innovation and experimentation of different use cases as well as user feedback. The update in this period, includes - among others - the following key features:
 
 - Alternate CsV file option for iCAD now included, the same as CanalNETWORK product, allowing data strealining and storage reduction.
-- Up to 7X speed on key workflows (Profile generation, Node Identification and resolution)
+- Up to 7X speed and accuracy on key workflows (Profile generation, Node Identification and resolution)
 - Integration some iCAD tools to CanalNETWORK for enhanced design production quality and speed: namely Plan view generation, extended cross-sections and more.
 - Improved control of drop design for longitudinal design work
 - Improved performance and design production of canal structures: Head Regulators, Cross-regulators, and Inclined Drops.
