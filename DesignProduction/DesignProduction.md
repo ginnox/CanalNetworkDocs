@@ -358,6 +358,16 @@ Provide the desired array size for creating the drawings, and Click Ok.
 
 Follow the proceedure for method one above to complete from this step onwards.
 
+> Note: While in plan view, the batch process for XSection drawing generation will only create drawings for those cross-sections whose stations are included in the START and END stations of the plan view.
+
+### Generating drawings for Canal Structures
+
+Special structures, such as Head Regulators, Cross-Regulators and Inclined drops are designed outside of CanalNETWORK using iCAD's *CanalStructuresJET*module. A complete set of tools is available with in iCAD environment the drawinsg for these structures. 
+
+Refere to pertaining documentation on Design of Canal Structures using FLoating Nodes, for details. Note, the drawings can be overlayed on a generated plan view to create woring drawings, such as the one shown below for canal intersection location.
+
+![image107](images/Image%20107.png)
+
 ### Plan View
 
 > Note: Starting from Release 1.5.3, users can access this tool right with in CanalNETWORK interface from `Workflow > Plot to AutoCAD` . The procedure is the same. 
