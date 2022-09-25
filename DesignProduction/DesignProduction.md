@@ -256,7 +256,7 @@ Then:
    
    The progress is displayed in a dialog box.
    
-   ![image107](images/Image%20106.png)
+   ![image107](Images/Image%20106.png)
    
    All the LSecs in this session will be created using the scaling you provide here.
    
@@ -366,7 +366,7 @@ Special structures, such as Head Regulators, Cross-Regulators and Inclined drops
 
 Refere to pertaining documentation on Design of Canal Structures using FLoating Nodes, for details. Note, the drawings can be overlayed on a generated plan view to create woring drawings, such as the one shown below for canal intersection location.
 
-![image107](images/Image%20107.png)
+![image107](Images/Image%20107.png)
 
 ### Plan View
 
