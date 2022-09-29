@@ -9,7 +9,7 @@ We are pleased to bring to you many enhanced features and functionalities to our
 - Integration some iCAD tools to CanalNETWORK for enhanced design production quality and speed: namely Plan view generation, extended cross-sections and more.
 - Improved control of drop design for longitudinal design work
 - Improved performance and design production of canal structures: Head Regulators, Cross-regulators, and Inclined Drops.
-- A small bug fix on LSec generation for CanalNETWORK product is included as of Sep25th, 22.
+- A small bug fix on LSec generation (drop scheduling and vertical scaling) for CanalNETWORK product  is included as of Sep29th, 22.
 
 ## Download files:
 
@@ -21,7 +21,7 @@ Alway make sure you are working with the updated versions of our products. To up
 
 * [Download iCAD bridge](https://drive.google.com/uc?export=download&id=1CnTmhM2ddaukULOwKaNiBN3WnqLzTXWC)
 
-* [Donaload CanalNetwork 1.5.2.1435](https://drive.google.com/uc?export=download&id=1ho0NQPtQgU1euS6hZWOsmDhaLF8YKbj0)
+* [Donaload CanalNetwork 1.5.2.1437](https://drive.google.com/uc?export=download&id=1ho0NQPtQgU1euS6hZWOsmDhaLF8YKbj0)
 
 
 
