@@ -21,7 +21,7 @@ Alway make sure you are working with the updated versions of our products. To up
 
 * [Download iCAD bridge](https://drive.google.com/uc?export=download&id=1CnTmhM2ddaukULOwKaNiBN3WnqLzTXWC)
 
-* [Donaload CanalNetwork 1.5.2.1437](https://drive.google.com/uc?export=download&id=1ho0NQPtQgU1euS6hZWOsmDhaLF8YKbj0)
+* [Donaload CanalNetwork 1.5.2.1438](https://drive.google.com/uc?export=download&id=1ho0NQPtQgU1euS6hZWOsmDhaLF8YKbj0)
 
 
 
