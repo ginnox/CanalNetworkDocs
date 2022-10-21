@@ -433,11 +433,11 @@ Then, you can start plan view generation. There are two steps to generate plan v
 3. To create a plan view from the updated data just created above, make sure selection in profile view is cleared, and go to `Explore Solutions > Plan View (Contd).` This will invoke the variable editor again, allowiing to revise any settings. 
    
    ![fig2](Images/Image%20112.png)
-
+   
    Note the *Station Range* values are set to the default values of start to end of the route. You can input a valid range, and hit apply. The plan view is generated as shown below. A table data describing the setting out detail for the route of the specified station range is also included.
-
+   
    ![a](Images/Image%20113.png)
-
+   
    Note: To create full length plans, leave station range to default values, or seleect full range from the drop down menu.
 
 4. To exit from plan view, right click on *Plan View Area* and choose `Refresh Nodes and Routes` option. This will clear the plan drawing, and repoulate route and node information.
@@ -476,7 +476,7 @@ You can also create a data tip in plan view along the centerline of the route, a
 
 ![image](Images/Image%20116.png)
 
-
+> Note: Station information on Data Tips of plan view are re-calculated based on rendered geometery, and may not always be precise to actual stations used to create the cross-section view.
 
 #### Creating Extended Plan Views
 
