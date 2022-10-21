@@ -370,61 +370,39 @@ Refere to pertaining documentation on Design of Canal Structures using FLoating 
 
 ### Plan View
 
-> Note: Starting from Release 1.5.3, users can access this tool right with in CanalNETWORK interface from `Workflow > Plot to AutoCAD` . The procedure is the same. 
-> 
-> A complete documentation will be included soon.
+Plan view is a key product in the design workflow. It presents detailed alignment and embankement information, along with locations for various structures and station markers along the route. Plan views are also used to provide a view of parallely running canal routes, to refine any constructabilty issues.
 
-> ![fig92](Images/Image%20092.png)
-> 
-> Flexible tools are included allowing to:
-> 
-> - generate complete plan view, including curve, station, control and cross-section markers for selected segments, or entire route length, or user specified range.
-> 
-> - as well as capability to generate plan views for adjacently running canal routes (MCs and TCs for instance.)
-> 
-> - generate North-Free layout maps to fit selected area in AutoCAD environment, suited for the newly introduced standard of presentation.
-> 
-> - generate and save cross-sections for multiple stations while in plan view, using `Ctrl+G ` key combination.
+![imageIntro](images/Image%20092.png)
 
-Similar to Flow Sections generation method described above, a plan view is is generated using CanalStructures module in iCAD.
+#### Generating Full Length Plans
 
-1. Start iCAD, if not already open, and define a session using the module over the canal route object in AutoCAD, whose plan view is desired.
-   
-   This will create a tentative route with two controls, one at the begining and one at the end.  
+To succesfuly generate plan views for a given route, the profile data must be fully updated. To do this, while the route is selected in plan view:
 
-2. Populate the longitudinal profile with design data from canal network, by using `Workflow > Reload Alignment` then choose `Network Nodes`.  Choose the network host object in AutoCAD. 
-   
-   ![[  ]](Images/Image%20003.png) 
-   
-   This will read the existing design data in the host, corresponding to the route in question, and populate the graphic area with controls, drops and other details as needed.
-   
-   ![[  ] ](Images/Image%20004.png)
-   
-   *Note: There is no need to try and alter design data in iCAD environment, as the end result with not be compatible with CanalNETWORK design and can not be saved. Simply proceed to plan view generation as described below.*
+1. Clear any selection in Profile View area
 
-3. Start a cross-section view from `Workflow > Cross-Section View.` and pick any location. This will create a cross-section view at the selected station. To create the necessary details for plan view generation to desired range of stations:
-   
-   ![[  ]](Images/Image%20005.png) *Screenshot showing a cross-section view at a tentative station along a canal route.*
-   
-   a) Use` Workflow > Go to Station` or `Ctrl + G`, and input the starting station for plan view. This will create a cross-section at the newly specified station.
-   
-   ![[  ]](Images/Image%20006.png) 
-   
-   b) Invoke liveiew from `Workflow > Cross-Section Liveiew`. This will automatically generate cross-sections at each incremental station downstream of the starting station provided above, until `Ctrl + Q` is pressed or the end of the canal station is reached.
-   
-   c) follow the station informaion on the descriptive text to see if the desired range is reached to stop the process, as described in (b) above.
-   
-   This will create and store the necessary data that will help generate the plann view.
-   
-   *Note: It is best to run Liveiw for the entire reach of the canal route at once, and store the data, instead of running the command for individual ranges of interest separately. Hence it is often recommended to input 0.0 for (a), and allow the lieveiw process to complete the process automatically at the end of the canal route.*
+2. go to `Explore Solutions > Table Data > LSec Profile Data`. This will update the profile data for the route.
 
-4. Start the plan view generation from Workflow > Plan View. A dialog will apear requesting specifics for the desired plan view.
+Then, you can start plan view generation. There are two steps to generate plan view:
+
+1. Create the plan view data from `Explore Solutions > Plan View (Current Route)` . 
    
-   ![[  ] ](Images/Image%20007.png)
+   ![fig5](Images/Image%20108.png)
+   
+   This will automatically start creating the data. However, if there is an existing data, you will be promoted with the *Re-extract Trail?* dialog. 
+   
+   ![fig6](Images/Image%20109.png)
+   
+   Choose `Update` if there are any changes to CBL information, otherwise choose `Use Current`.
+
+2. Next the *Edit Variables* dialog is open, allowing to set specifications for creating the plan drawing.
+   
+   ![fig](Images/Image%20110.png)
+   
+   <u>OnApply</u>: Save option simply saves the settings. Generate Drawing option creates the drawing per the table of specification. Use the `Save` option.
    
    <u>Contour Intervals</u>: the inverval value to be used to generate contour lines with the plan view. a value of <0.5 indicates, no contour is needed. Default is set to 0.
    
-   <u>Length of Control Markers</u>: The length of control markers on the plan view. This will also determine the length of station/curve markers. 
+   <u>Length of Control Markers</u>: The length of control markers on the plan view. This will also determine the length of station/curve markers.
    
    Note: Providing 0 value supresses all markers. Providing too large a value could result in curve markers crossing each other, giving poor presentation quality. Recommended values are:
    
@@ -432,33 +410,109 @@ Similar to Flow Sections generation method described above, a plan view is is ge
    
    - small canals 5-10 units
    
-   <u>Lateral Exageration Scale</u>: Often canal layouts appear as narrow and to conjusted, making it difficult to view details and poor presentation. To aid this, an exageration scale can be set between 1 to 10. Usually, 3 to 5 gives good drawings. 
+   <u>Lateral Exageration Scale</u>: Often canal layouts appear as narrow and to conjusted, making it difficult to view details and poor presentation. To aid this, an exageration scale can be set between 1 to 10. Usually, 3 to 5 gives good drawings.
    
-   Note: When exageration scale is applied, the distance normal to the route center line is multiplied by the specified scale factor. True ground distance is obtained by dividing the measuered distance in AutoCAD environment to the product of  this scale value and that of the plot scale.
+   Note: When exageration scale is applied, the distance normal to the route center line is multiplied by the specified scale factor. True ground distance is obtained by dividing the measuered distance in AutoCAD environment to the product of this scale value and that of the plot scale.
    
-   Note: too large exageration values may distort true appearance of the layout components on edge, and RoW markers, as well as on contour lines - especially on curve locations. 
+   Note: too large exageration values may distort true appearance of the layout components on edge, and RoW markers, as well as on contour lines - especially on curve locations.
    
    Note: On posed plan view generation (generating plans of adjacent routes) the exageration scale is set to 1.0.
    
-   <u>Station Range</u>: The range of values to generate plan view for. These are automatically rounded to the nearest available value on the station date list.
+   <u>Control Markers and Drop Markers Direction:</u> The direction of marker lines with respect to the centerline of the alignment route.
+   
+   <u>Station Range:</u> The range of values to generate plan view for. These are automatically rounded to the nearest available value on the station date list.
    
    <u>Show Route Geometry</u>: control the visibility of route center line, and all curve and control markers.
    
-   <u>Fit BBox</u>: Set to None, the plan view is generated in natural North UP orientation. When set to *Pick AutoCAD*, the user is prompted to pick a bounding object  in AutoCAD. The drawing creation attempts to automatically determine the best orientation and scaling for the drawing to fit in to the selected area.
+   <u>Fit BBox</u>: Set to None, the plan view is generated in natural North UP orientation. When set to *Pick AutoCAD*, the user is prompted to pick a bounding object in AutoCAD. The drawing creation attempts to automatically determine the best orientation and scaling for the drawing to fit in to the selected area.
    
    Tip: Upon creating the drawing to AutoCAD the exageration scale is exported along with the north symbol. Use the `Aligned Annotation` addon tool to generate this info.
+   
+   Upon hitting `Apply`, the settings are saved, and the command exits.
 
-5. Upon hitting Apply, the plan view will be generated per specifications. The following two screenshots show drawing created using different options for Fit BBox.
+3. To create a plan view from the updated data just created above, make sure selection in profile view is cleared, and go to `Explore Solutions > Plan View (Contd).` This will invoke the variable editor again, allowiing to revise any settings. 
    
-   ![t](Images/Image%20008.png)
-   
-   *Fig: Plan view with out a BBox specified, showing view oriented on North upwards..*
-   
-   ![f](Images/Image%20009.png)
-   
-   *Fig: Plan view generated with a bounding box specified in AutoCAD for plotting, showing rotation and scaling to fit.*
+   ![fig2](Images/Image%20112.png)
 
-6. To generate the drawings to AutoCAD, use the standard tool from `Workflow > Render To AutoCAD` or `Ctrl + P`,  The first step would be to copy the axes information to the region of plot in AutoCAD, hence choose *Copy BBox*. 
+   Note the *Station Range* values are set to the default values of start to end of the route. You can input a valid range, and hit apply. The plan view is generated as shown below. A table data describing the setting out detail for the route of the specified station range is also included.
+
+   ![a](Images/Image%20113.png)
+
+   Note: To create full length plans, leave station range to default values, or seleect full range from the drop down menu.
+
+4. To exit from plan view, right click on *Plan View Area* and choose `Refresh Nodes and Routes` option. This will clear the plan drawing, and repoulate route and node information.
+
+#### Generating plan views for selected segements
+
+One can quickly create a plan view for a segment of the route profile as follows:
+
+1. Select a segment in the profile view area.
+
+2. start the command `Explore Solutions > Plot to AutoCAD > Plan View (Contd)` or use Ctrl+W short cut. The plan fof the selcted segment is generated.
+
+This step is particularly helpful when making modifications to the CBL of a segment, and an updated plan view is needed to see the change. Simply start the profile data update command (Ctrl+L) and request the plan view (Ctrl+W). This saves significant time, especially when working on very long canals where the drawing creation time is relatively longer. 
+
+#### Generating plan view for user selected range
+
+One can also create plan views from an interactively selected window. To use this method:
+
+1. Select any node in profile view area.
+
+2. Start the command Ctrl+W. An cursor waits for user input. Click and drag to create the rectangle that represents the desired range of plan view generation. Release when done. 
+   
+   ![figInter](Images/Image%20114.png)
+
+3. If the range selected specifies a length less than 100meters, the command exits after blinking the rectangle. Otherwise, the plan view is created for the desired range.
+
+#### Exploring Sections in Plan View
+
+You can explore sections in plan view in one of two ways. Start the Cross-Sections command from `XSEC` button, and click on a vertical section bar (solid, not dotted) created in profile view. An interactive vertical bar is created that allows you to pick a section. As you hover in the profile view, a red start marker is shown in plan view, pointing to the exact location of the selected station. Upon click, the section for that station is generated.
+
+> Note: This tool also works with any of the annotation markers and drop positioning tools. 
+
+![image9](Images/Image%20115.png)
+
+You can also create a data tip in plan view along the centerline of the route, and use `Ctrl+G` key short cut. This will start a dialog confirming the station. Hit `Ok` to create the section.
+
+![image](Images/Image%20116.png)
+
+
+
+#### Creating Extended Plan Views
+
+You can generate plan views of two parallelly running canals at the same time, to see any overlap issues or to confirm if adeuate space is maintained between the two. To do this:
+
+1. First, click on the larger canal route which whose plan is needed, and pose it using `Explore Solutions > Plot Extended XSection` menu command. This will invoke the dialog shown. Accept to confirm.
+   
+   ![figu](Images/Image%20117.png)
+   
+   If you go back to the menu, you will notice that the menu is Checked with the name and ID of posed route.
+   
+   ![imageu](Images/Image%20118.png)
+
+2. Then go to plan view, and click on the other canal route running close to posed canal above and parallel to it. Use one of the above methods to specifiy a plot range for the plan view. The plan view is created for the specified range for both routes.
+   
+   ![imageuuu](Images/Image%20119.png)
+   
+   Note: The range for the posed canal is estimated automatically. No need for the user to input this value.
+
+You can use explore methods mentioned above to visualize and interact in all three view areas.
+
+![imagett](Images/Image%20120.png)
+
+Note the following points when using this method:
+
+- Both routes should be uptodate for profile data and plan view data for a succesful plan view creation.
+
+- Exageration scales are set to 1.00.
+
+- Contrours may or may not be created depending on the plan view creation settings of both routes.
+
+- Contours, if created, can not be plotted, because there are two instances of the same data type on plan view.
+
+#### Exporting plan view to AutoCAD
+
+1. To generate the drawings to AutoCAD, use the standard tool from `Workflow > Render To AutoCAD` or `Ctrl + P`,  The first step would be to copy the axes information to the region of plot in AutoCAD, hence choose *Copy BBox*. 
    
    ![[  ]](Images/Image%20010.png) 
    
