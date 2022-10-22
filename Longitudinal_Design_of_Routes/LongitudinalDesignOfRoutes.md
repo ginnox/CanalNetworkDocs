@@ -260,9 +260,17 @@ To show hydraulic annotations such as OGL, CBL, FSL inforation:
 
 ![](Images/Image%20025.png)
 
-An other imporant annotation available is cut and fill volume annotator. This tool can cumulate volumes of earth work for entire reach or between selected stations giving an insight in to the cost of the design. To view volume informaiton:
+An other imporant annotation available is cut and fill volume annotator, shown above. This tool can cumulate volumes of earth work for entire reach or between selected stations giving an insight in to the cost of the design. To view volume informaiton:
 
 * Click on` Explore Solutions > Annotators > VCUT, VFIL` menu item. 
+
+Note: If there are annotation markers in the profile view, then the partial volumes are automatically calculated and displayed. In such cases, all markers with in 100m of start and end station, or 100m distance between are ignored - i.e.,  do not affect the partial volumes calculated. The values are interpolated between succesive stations, and hence are accurate only at data stations. 
+
+
+
+![figt](Images/Image%20057.png)
+
+
 
 Yet another helpful annotation is available from `Explore Solutions > Annotatiors > LSec Details`. This will display details of the longitudinal design including station range and flow section details for each segment of route. In addition it also annotates canal curve information if avaiilable.
 
@@ -292,8 +300,6 @@ This table shows extensive detail of profile data along with canal bed level and
 
 Note: The data are tabulated at exactly the same incremental stations generated during profile extraction. 
 
-
-
 It is also important to note the following additional refinements, that are not specified by the user, rather applied in run-time.
 
 (a) the data is further refined at additional stations, for:
@@ -307,8 +313,6 @@ It is also important to note the following additional refinements, that are not 
 - the number of offset locations is less than 5, and
 
 - the applied refinement is -15:3:15 in conventional notation, or -15, -12, -9, -6, -3, 0, 3, 6, 9, 12, 15.
-
-
 
 ![d](Images/Image%20042.png)
 
