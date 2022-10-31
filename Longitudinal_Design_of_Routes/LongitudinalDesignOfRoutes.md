@@ -82,11 +82,13 @@ To Change the bed slope upstream of the control,
 
 * Click on the drop down menu at the right of the edit box, to pick from a set of default values.
 
-![](Images/Image%20016.png)
+![imag](Images/Image%20016.png)
 
 Finally, to change the functions of the control:
 
-* By default, all controls are configured as Turnout structures. To change the function of the control to a division box structure, check the Division Box option. 
+* By default, all controls are configured as Turnout structures. You can decide to change it to a division box struture or no structure at all. If HR/CR provissions are expected, then turning off both checkboxes ensure the control is treated as a simple junction (no structure associated to it). Such controls have no quantities associated with them.
+
+* To change the function of the control to a division box structure, check the Division Box option. (Note: Division boxes are allowed on Parent Canals whose capacity is <=80 litres per second.)
 
 * This will throw the confirm dialog shown below.
   
@@ -266,11 +268,7 @@ An other imporant annotation available is cut and fill volume annotator, shown a
 
 Note: If there are annotation markers in the profile view, then the partial volumes are automatically calculated and displayed. In such cases, all markers with in 100m of start and end station, or 100m distance between are ignored - i.e.,  do not affect the partial volumes calculated. The values are interpolated between succesive stations, and hence are accurate only at data stations. 
 
-
-
 ![figt](Images/Image%20057.png)
-
-
 
 Yet another helpful annotation is available from `Explore Solutions > Annotatiors > LSec Details`. This will display details of the longitudinal design including station range and flow section details for each segment of route. In addition it also annotates canal curve information if avaiilable.
 
@@ -491,6 +489,10 @@ Station: Location of the drop structure
 ![sddf](Images/CDSWC_str/Image%20008.png)
 
 *Figure: Details of a Drop Structure from ECDSWC, and some of dimensions included in the standard output of Explore command.*
+
+It is possible to extract the drops of a number of canal routes in one go. To do this, select all the routes whose drop list is desired, and invoke the command `Explore Solutions > Data Tables > Explore Drops`.
+
+![fig](Images/Image%20058.png)
 
 ### Exploring Turnouts
 

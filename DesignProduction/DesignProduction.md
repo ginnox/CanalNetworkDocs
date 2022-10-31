@@ -154,13 +154,17 @@ These parameters cab be set flexibly by the user from `Workspace > Edit Preferen
 
 1. BoQ List of Items:
    
-   Detailed [Default] lists each componenet of the canal route separately, often resulting in a very long list.
+   **Detailed** [Default] lists each componenet of the canal route separately, often resulting in a very long list.
    
-   Summarized: Using this option creates a listing that summarizes Canal Segments, Drops, Turnouts, and Division Boxes separately.
+   **Summarized**: Using this option creates a listing that summarizes Canal Segments, Drops, Turnouts, and Division Boxes separately.
    
    ![figzx](Images/Image%20069.png)
    
    The above snapshot shows a summarized listing. Notice the description column for Canal, and Drops, explicitly listing summary for a number of segments and structures respectively.
+   
+   **SummaryOfSummary**: groups items together for summary display. This option woks ONLY for canals of the same generation,i.e., Multiple TC canals or Multiple QC canals for instance. 
+   
+   ![imagboq](Images/Image%20121.png)
 
 2. Clearing Depth:
    

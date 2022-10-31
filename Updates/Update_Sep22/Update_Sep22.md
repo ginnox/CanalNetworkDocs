@@ -1,8 +1,20 @@
-# Update Aug-Sep22
+# Update Aug-Nov22
 
 Hi Everyone,
 
-We are pleased to bring to you many enhanced features and functionalities to our products, building on our innovation and experimentation of different use cases as well as user feedback. The update in this period, includes - among others - the following key features:
+We are pleased to bring to you many enhanced features and functionalities to our products, building on our innovation and experimentation of different use cases as well as user feedback. The latest update in this period, includes - among others - the following key features and functionalities:
+
+- Improved zoom funcitonality(CTRL+Scroll) for constrained zooming ability
+- Visual elements for interactive view, dynamically tracking marker location in profile view to layout view area.
+- Allow update of plan view generation data by segments, avoiding the need to update the entire route for small changes. Now user only needs to update the segment where the change was made.
+- Summary of BoQ function included to generate highlevel summary of items for similar generation(levels) of canals.
+- Natural sorting algorithm included for intutive display of results in Canal Naming, Farmblock tables, and LSec drawing generations.
+
+![Image](Images/Image%208.png)
+
+
+
+Previous updates included:
 
 - Alternate CsV file option for iCAD now included, the same as CanalNETWORK product, allowing data strealining and storage reduction.
 - Up to 7X speed and accuracy on key workflows (Profile generation, Node Identification and resolution)
@@ -14,20 +26,24 @@ We are pleased to bring to you many enhanced features and functionalities to our
 
 ## Download files:
 
-Alway make sure you are working with the updated versions of our products. To update your software to the recent version, down load these resources and follow the usual procedure.
+Alway make sure you are working with the updated versions of our products. To update your software to the recent version, download these resources and follow the usual procedure.
+
+![image](Images/Image%2025.png)
 
 *Note: The download links will take you to a goole drive link. Go to the top right of the page, and choose download to get the files.*
 
-* [Download iCAD 2.2.0.7612](https://drive.google.com/file/d/1NqlyPdHxE0_HG0SEJdhx_B0898kA0UlJ/view?usp=sharing)
+* [Download iCAD 2.2.0.7625 - Google Drive]([iCAD22.exe - Google Drive](https://drive.google.com/file/d/1MNElvOTHPYQwwlpYpGSgZFmsSWIVHruc/view?usp=share_link))
 
-* [Download iCAD bridge](https://drive.google.com/uc?export=download&id=1CnTmhM2ddaukULOwKaNiBN3WnqLzTXWC)
+* [Download iCAD bridge - Google Drive](https://drive.google.com/uc?export=download&id=1CnTmhM2ddaukULOwKaNiBN3WnqLzTXWC)
 
-* [Donaload CanalNetwork 1.5.2.1438](https://drive.google.com/uc?export=download&id=1ho0NQPtQgU1euS6hZWOsmDhaLF8YKbj0)
-
-
+* [Download CanalNetwork 1.5.9.1530-Google Drive](https://drive.google.com/file/d/1IalS3xMQ7QAnqb3k87cdAe4aevdabcHJ/view?usp=sharing)
 
 > Caution: The above files are only update files. A lincensed and working version of both products is required on a host computer for the updates to function. Contact us if you would like the installation files.
 
+<<<<<<< Updated upstream
 If you would like to test beta releases, you can download from [Here CanalNetwork 1.5.5.01473](https://drive.google.com/uc?export=download&id=1vTBKXGhE6T9XohmYEW8iuo2wCTc8FeFL)
+=======
+
+>>>>>>> Stashed changes
 
 END.

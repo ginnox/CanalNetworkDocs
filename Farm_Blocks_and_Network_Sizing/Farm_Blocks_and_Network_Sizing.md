@@ -116,7 +116,7 @@ You can see that, the area corresponding to the parent canal is 0.00. This is be
 
 Where fast estimates are required, the auto estimator tool can be used. The tool is available from `Workflow > Farm Blocks > Auto Estimate...` as shown below.
 
-![fig50](Images/Image%20021.png)
+![fig50](Images/Image%20032.png)
 
 Note: This should be applied on a fully resolved network, else errors will be encountered in the process.
 
@@ -139,9 +139,9 @@ To use the tool:
 3. The final result is presented as shown below, giving the sum total of farm parcel areas found for the network. You can see that the blocks are only calculated for the last generation canals.
    
    ![fig55](Images/Image%20025.png)
-
+   
    The process ends with the below dialog.
-
+   
    ![fig57](Images/Image%20026.png)
 
 The above process, has already assigned each route in the network with the corresponding estimated areas of the farm parcel area. This can be viewed from `Workflow > Farm Blocks > Edit Block Area` command. The procedure is same as that for the manual process described further above.
@@ -158,7 +158,53 @@ You can select/deselect parcels by left-clicking on them, and choose to delete t
 
 ![fig62](Images/Image%20027.png)
 
+### Editing Automatically created farm blocks
 
+Farm blocks automatically created can be edited and updated by using the context menu accessed by right-clicking on any block.
+
+To select blocks for processing, click on the desired blocks. The blocks will be selected or deselected accordingly. Use `Select All` option to select all blocks.
+
+![ima32](Images/Image%20034.png)
+
+To view area and associated property, use the `Properties` context menu.
+
+![ImagAr](Images/Image%20035.png)
+
+To Delete blocks, use `Delete Block(s)` context menu. This is helpful, when canals that do not supply water to fields are assigned a block.
+
+You can also draw the farm blocks to AutoCAD. This allows to easily edit the vertices of each farm block and update from it. To achieve this a farm block host object is required. The object must be referenced to the comman area reference axis, and tagged appropriately.
+
+To Link a Host Object: go to `WorkFlow > Farm Blocks > Host Object` . 
+
+![imagHost](Images/Image%20036.png)
+
+This will display the dialog showig the contents of the selected host object if any are found. Click on the `Link` button to accept.
+
+![imagdlg](Images/Image%20037.png)
+
+Note: The menu item now shows the changes made.
+
+![imagnew](Images/Image%20038.png)
+
+To draw blocks to AutoCAD, select the desired blocks and choose the `Draw to CAD` context menu. This will create the drawings to AutoCAD. You can edit the vetrices of any of the blocks.
+
+![imag29](Images/Image%20041.png)
+
+To update from the drawings, select the desired blocks to update, and choose `Update from CAD` context menu. A dialog will show 
+
+![imag40](Images/Image%20042.png)
+
+Such work saved in AutoCAD can be reloaded to the CanalNETWORK environment using `Workflow>FarmBlocks> AutoEstimate...` tool, if the FarmBlock Host object is available and linked.
+
+Tips:
+
+- It is highly recommended to create and use a separate layer to contain the host object and the blocks of farm parcels. With the number of objects increasing in the AutoCAD environment, it may be hard to keep track of changes, and accidentally delete uninteded objects that may cause problems at later stage.
+
+- Using `Edit > Highlight Selection in AutoCAD` helps to know which block is for which route while working in AutoCAD.
+  
+  You can not import farm blocks using manual steps, while a FarmBlock host object is linked to the current workspace. The following message will appear if attempted.
+  
+  ![figinfo](Images/Image%20043.png)
 
 ### Important Notes about Farm blocks
 
@@ -168,21 +214,15 @@ Farm blocks are expected to meet few requirements to be succesfully imported, an
 
 * All farm blocks are expected to cross ONLY one canal route. This will not cause an error. However, In case of multiple intersections are found, the block area is associated with the route whose intersection is found first.
 
-* It is highly recommended that they contain no Curved segments. FarmBlocks are imported as segments of straight lines, and hence all curve information will be removed. This does not cause an error. However, it may lead to unwanted confusion regarding intersecting routes. Consider the below example.
-
-
+* It is highly recommended that they contain no Curved segments. FarmBlocks are imported as segments of straight lines, and hence all curve information will not be considered. This does not cause an error. However, it may lead to unwanted confusion regarding intersecting routes. Consider the below example.
 
 ![Image40](Images/Image%20040.png)
 
 Here, the Farm-block corresponding to SC_1 has a curve tracing the curve of the main canal (as shown in the highlighted area.) Upon import to network, the curve information is not considered, and the Farm block will have the geometry shown below.
 
-
-
 ![Image413](Images/Image%2041.png)
 
 As a result of removing the curve, the farm block now happens to cross not only the intended SC_1 route, but also MC. This may result in linking of farm block to MC, instead of SC_1. 
-
-
 
 ## Working with large networks
 
