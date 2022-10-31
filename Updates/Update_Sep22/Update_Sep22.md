@@ -12,8 +12,6 @@ We are pleased to bring to you many enhanced features and functionalities to our
 
 ![Image](Images/Image%208.png)
 
-
-
 Previous updates included:
 
 - Alternate CsV file option for iCAD now included, the same as CanalNETWORK product, allowing data strealining and storage reduction.
@@ -40,10 +38,8 @@ Alway make sure you are working with the updated versions of our products. To up
 
 > Caution: The above files are only update files. A lincensed and working version of both products is required on a host computer for the updates to function. Contact us if you would like the installation files.
 
-<<<<<<< Updated upstream
-If you would like to test beta releases, you can download from [Here CanalNetwork 1.5.5.01473](https://drive.google.com/uc?export=download&id=1vTBKXGhE6T9XohmYEW8iuo2wCTc8FeFL)
-=======
 
->>>>>>> Stashed changes
+
+
 
 END.
