@@ -30,16 +30,12 @@ Alway make sure you are working with the updated versions of our products. To up
 
 *Note: The download links will take you to a goole drive link. Go to the top right of the page, and choose download to get the files.*
 
-* [Download iCAD 2.2.0.7625 - Google Drive]([iCAD22.exe - Google Drive](https://drive.google.com/file/d/1MNElvOTHPYQwwlpYpGSgZFmsSWIVHruc/view?usp=share_link))
+* [Download iCAD 2.2.0.7625 - Google Drive](https://drive.google.com/uc?export=download&id=1MNElvOTHPYQwwlpYpGSgZFmsSWIVHruc)
 
 * [Download iCAD bridge - Google Drive](https://drive.google.com/uc?export=download&id=1CnTmhM2ddaukULOwKaNiBN3WnqLzTXWC)
 
 * [Download CanalNetwork 1.5.9.1530-Google Drive](https://drive.google.com/file/d/1IalS3xMQ7QAnqb3k87cdAe4aevdabcHJ/view?usp=sharing)
 
 > Caution: The above files are only update files. A lincensed and working version of both products is required on a host computer for the updates to function. Contact us if you would like the installation files.
-
-
-
-
 
 END.
