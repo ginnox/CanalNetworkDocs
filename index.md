@@ -6,7 +6,7 @@ This is official site for documentation and guide of CanalNetwork software, and 
 
 We will continually update this site to provide information on progress and latest developments.
 
-[Learn about latest updates and feature enhancements for Aug-Sep 2022 here](Updates/Update_Sep22/Update_Sep22.md)
+[Learn about latest updates and feature enhancements for Aug-Nov 2022 here](Updates/Update_Sep22/Update_Sep22.md)
 
 This site will also be the platform for online documentation. Contents relevant to software users will soon be available with a link on this page.
 
