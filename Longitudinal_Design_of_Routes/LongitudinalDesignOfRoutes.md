@@ -552,6 +552,56 @@ The symbols for each dimension heading is described in the below drawing.
 
 *Fig: Drawing for a typical division box from CDSWC, showing the deginition of symbols used in the table listing.*
 
+### Viewing BoQ data for a route
+
+After the above solutions are explored, a complete BoQ information can be generated for a route as follows.
+
+1. Start the command from `Explore Solutions > Data Tables > Generate Route BoQ`. 
+   
+   ![fig67](Images/Image%20067.png)
+
+2. This will extract all available informations, and request output specifications.
+   
+   ![fig68](Images/Image%20068.png)
+
+3. The report is generated per specified output format.
+   
+   ![fig69](Images/Image%20069.png)
+
+> Note: If all solutions are not explored, generated BoQ may not be complete, or not succesfully reported at all.
+
+More detail is available under the Topic [Design Production]().
+
+### Batch Explore of Solutions
+
+Exploring solutions is desired to analyze and confirm the outputs are acceptable, or if there are modifications required to the design. It is also important for production tasks. However, it can be tedious to run all the above commands for each canal in a network of canal systems. To assist in this process, batch processing options are available. This allows to automatically run the solutions for a number of canals at a time, and update the data contents for each route.
+
+To use this tool, to explore solutions for sub canals of a route:
+
+1. Select the parent canal in layout view. In the figure below, a secondary canal is selected. 
+   
+   Start the command from `Explore Solutions > Batch Process > Batch Explore SubRoutes...` 
+   
+   ![fig1](Images/Image%20039.png)
+
+2. Choose the level or generation of canals whose solution is desired, from the dialog below. The immediate generation TC is selected in this case.
+   
+   ![dsad](Images/Image%20064.png)
+   
+   Your choice is confirmed in the dialog displayed. Confirm action by clicking on `Go` button.
+   
+   ![img2](Images/Image%20059.png)
+   
+   This will run each of the branch canals for the above list of solutions, namely - Lsec profile data, drops, turnouts and divisionboxes. In the process BoQ data is updated and stored.
+   
+   When no components are found on a given route, the following dialog appears to provide the information.
+   
+   ![imag365](Images/Image%20065.png)
+
+3. Once all routes in the specified generation are complted, the completion dialog shown below is displayed.
+   
+   ![image66](Images/Image%20066.png)
+
 ### Creating and Viewing Cross-section views
 
 One can easily view the cross-section at any station along the canal route. To view cross-sections, make sure the desired route is selected in plan view, and its details are presented in profile view. Then:
@@ -672,7 +722,7 @@ The above procedure used for designing a single segment of a given route can be 
 
 Note the following added functionalities in this use-case:
 
-1. Automatically considers the available slope from the OGL
+1. Automatically considers the available slope from the OGL. Note here that the ground slope is calculated from invert levels of the upstream and downstream nodes of each segment, and hence assumed to be straight line.
 
 2. Automatic positioning of inverts attempting to respect minimum FSL-OGL value in the design criteria set, where possible.
 
@@ -719,5 +769,29 @@ This will start the process for all selected routes sequentially.
 Important: It is important to revisit the designs for each route designed with the Auto tool, and make any adjustments before production.
 
 *Note: AutoDesign task can not be undone. To reset to original tentative settings, select the route, apply Resize. Design parameters are reapplied. To view the updated view, click on the route in plan view, which will refresh the view in Profile View Axis.*
+
+# Working with large networks
+
+Working with large netwroks can pose some challenges when dealing with farm blocks creation. This can be easily solved using the sub-network view feature. This feature limits the displayed network to all branches of a given route. There are two ways to start this function.
+
+1. Go to `View > Sub-Network` menu. The first time, the list contains only one item, Click on the `Re-create Sub Networks` item. This will analyze and group your network in hirarchies.
+   
+   ![figx](Images/Image%20060.png)
+   
+   To view this, restart the command again. You will now see a list of items, and sub items.
+   
+   ![figy](Images/Image%20061.png)
+   
+   Click on any one item, only the corresponding routes will be displayed.
+   
+   ![figz](Images/Image%20062.png)
+
+2. The other method is to use `View > Go to Route...` menu or `Ctrl+G` for short. Select the desired route on plan view, and start the command.
+   
+   ![figa](Images/Image%20063.png)
+   
+   Accept OK on the dialog, and this will retain only relevant canal routes in the view.
+
+You can work on any sub-network, as you would on the entire network. The changes will only affect the network in view.
 
 END.
