@@ -24,7 +24,7 @@ Previous updates can be accessed below:
 
 
 
-
+pos
 
 ## Online documentation
 
@@ -97,5 +97,7 @@ Below you will find short articles that provide guidance to tackle specific desi
 Stay tuned for more content on techniques and tips to tackle complex design tasks with ease and efficiency using out products.
 
 ---------------------------------------------------------------------------------------
+
+Follow us on [**LinkedIn** ](https://www.linkedin.com/company/quanomic-ites/) in to get insights and news on our efforts.
 
 For information visit Our website at [www.quanomic.co](https://www.quanomic.co).
