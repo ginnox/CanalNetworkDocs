@@ -399,8 +399,6 @@ Use `Ctrl` + `F` keyboard combination to search for such texts in large networks
 
 > Note: Some times, you may need to change the name of a parent canal. For instance for canal exceptions.  In such cases, the branch canal naming must also change accordingly. Or you may just want to re-create the text.  You can easily achieve this by running `Edit > Route Text > Create New Text` command for the desired route.
 
-
-
 ## Exceptions for Canal Routes
 
 In some cases, the automatic assigning of a generation to a canal route may not serve the needs of the project. For instance, a canal may need to be designed as a TC route despite its parent canal is an MC or TC canal. To allow such unusual design requirements, the exceptions method is available. This allows to manually assign a generation or level to a route.
@@ -455,7 +453,7 @@ This completes the exception definition process. Note that canal routes named wi
 
 You can manage the exceptions set for the entire project in one place. 
 
-1.  Start the command `Edit > Route Exception > Manage Exceptions...`. 
+1. Start the command `Edit > Route Exception > Manage Exceptions...`. 
    
    ![fig63](Images/Image%20063.png)
    
@@ -463,25 +461,17 @@ You can manage the exceptions set for the entire project in one place.
    
    ![fig63](Images/Image%20064.png)
 
-2.  Select the route whose exception data you want to remove, and click `Ok`. Note that the displayed route names are as per current exception naming set. The below confirmation dialog appears.
+2. Select the route whose exception data you want to remove, and click `Ok`. Note that the displayed route names are as per current exception naming set. The below confirmation dialog appears.
    
    ![fig64](Images/Image%20065.png)
    
    Note: This dialog also warns that resizing must be manually handled. So apply resizing on the route, before proceeding to design immediately after this change.
-   
-   
 
 3. Click on `Remove Data` to confirm your action. This will (a) remove all exception data for the selected route, and (b) re-instate the original naming for the route, which is created during the initial canal naming task.
    
    Click on the route again, to see its rolled back naming on the profile view. 
-   
-   
-   
-   
 
 > Note: The original naming for routes (generated automatically) may not be available, especially after repeated renaming. If you want to re-instate original naming, clear all exceptions for the project (or the deisred route), create route naming text as new and proceed.
-
-
 
 If you want to clear all exceptions set for the entire project, choose `View > Route Exception > Clear All Exceptions...` menu command, and confirm to the dialog box.
 
@@ -494,8 +484,6 @@ When working with route name exceptions, it is important to note the following b
 - Exceptions are persistent, retain the value set even when new name creation is requested from `View > Route Text > Create New Text` menu command.
 
 - The naming style should be strictly consistent with the currently defined naming style. If naming style, or its parameters, are changed (which is not recommened), errors in data processing are bound to occur and difficult to resolve easily. 
-
-
 
 ### Rendering Names to AutoCAD
 
@@ -525,7 +513,7 @@ The canal namimng generated as described above can be exported to the AutoCAD en
 
 The order in which canal branches are read in to a node is on first-found first-registered basis. 
 
-![Image50](images/Image%20050.png)
+![Image50](Images/Image%20050.png)
 
 In the above figure, the Right side (Facing downstream) canal is registered, and the left side registered last. Hence, the naming MC_1 and MC_2 respectivly. To change the order of such branches:
 
@@ -535,15 +523,15 @@ In the above figure, the Right side (Facing downstream) canal is registered, and
 
 This will leave only the other route (MC_2) connected to the node.
 
-![Image52](images/Image%20052.png)
+![Image52](Images/Image%20052.png)
 
 2. Then, select the MC_1 route, and click on the node again. This time, the *Edit Node* dialog offers a different option. Click on the `New Merged Node` button. 
 
-![Fig53](images/Image%20053.png)
+![Fig53](Images/Image%20053.png)
 
 This will ensure that right side canal (facing downstream) is registered next to the left side canal. To see the changes in action, select the PC route and run `View > Route Text > Create New Text...` menu command. You can see that the names are swapped as desired.
 
-![image54](images/Image%20054.png)
+![image54](Images/Image%20054.png)
 
 **Important Note:**
 
