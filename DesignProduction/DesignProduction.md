@@ -111,15 +111,11 @@ Sometimes, extracting BoQ for selected group of canals may be needed. For this a
    ![fig123](Images/Image%20123.png)
    
    **Note: The lists contain all possible leves defined in the Naming Style used for the project. The currently selected route may not have all the listed levels.**
-   
-   
-   
+
    Pick the canal generations to include in the selection, and hit `Ok`.
-   
-   
-   
+
    ![figk](Images/Image%20043.png)
-   
+
    In the above example, this will select all the branches of the TC canal, including the TC canal itself.
 
 2. Prepare a host object in AutoCAD for the instance data. Then instance the selection from `Workflow > Prep Network > Create Instances`. 

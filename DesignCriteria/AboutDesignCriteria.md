@@ -221,18 +221,12 @@ This parameter specifies how the formation level varies in the transverse direct
 This parameter serves the same function as *Earth Cut Shape* parameter above, but in Fill condition.
 
 * w, m, h: single triplet specifiying - consequetively - top berm width (for unlined and thin lined canals) or formation width beyond canal lining for (thick lined canals), fill slope (mH:1V), and height through which the fill slope is applied. 
-  
-  
 
 * ALWAYS h is set to inf (Infinity) for the last entry.
-  
-  
 
 ![](ImagesAbout/Image%20016.png)
 
 *Figure showing a canal section in cut using single and double entry specification.*
-
-
 
 #### Complex Cut and Fill Shapes
 
@@ -246,17 +240,27 @@ For any segment, the number of entries for both Cut Shape and Fill shape variabl
 
 An other way to create complex cut and fill shapes is to use the `Canal Top Provission` variable. This allows for the provission of extra berms at canal top level, in addition to the first B value entries set in Cut and Fill shapes described above. The convnention for setting this variable is as follows:
 
-First two entries: Required Additional Berm width on Left side, and Right side - respectively - of the canal top (Facing Down stream). 
+- First two entries: Required Additional Berm width on Left side, and Right side - respectively - of the canal top (Facing Down stream). 
 
-Second two entries: height of cut or fill - respectively-from CTL at Centerline, used to control whether the above specified extra berm is provided or not. i.e., the cut and fill berms will only be applied if this value is exceeded. To Apply at all conditions set to 0, to apply at no condition use 99.
+- Second two entries: height of cut or fill - respectively-from CTL at Centerline, used to control whether the above specified extra berm is provided or not. i.e., the cut and fill berms will only be applied if this value is exceeded. To Apply at all conditions set to 0, to apply at no condition use 99.
 
-Although four entries are shown the user can input as follows:
+- Although four entries are shown the user can input as follows:
+  
+  - single value: is considered taken as left side extra berm provission width, applied at all times.
+  
+  - two values: left and side berm widths applied at no conditions (more like a place holder, to be edited at segment level.)
+  
+  - Four values: as explained above.
+  
+  - A fifth value can be included to provide general orientation with respect to transverse grade line. This value dictates whether the first input (Left Width), is applied on the upgrade direction, or downgrade direction - irrespective of the orientation with respect to the FUS default convention. The value can be set as below:
+  
+  - 0<=value<1: Use default (FUS convention)
+  
+  - 1<=value<5: Apply Left width on downgrade side, and Right width on upgrade side
+  
+  - 5<value<10: Apply Left width on upgrade side, and Right width on downgrade side.
 
-single value: is considered taken as left side extra berm provission width, applied at all times.
 
-two values: left and side berm widths applied at all conditions
-
-Four values: as explained above.
 
 ![Images27](ImagesAbout/Image%20026.png)
 
@@ -350,6 +354,8 @@ Specifies the bed slope of the canal segment. The minimum (Steepest) value is 1i
 
 The following table summarizes default values set to different canal levels upon generation of default design criteria set.
 
+
+
 | Parameter                      | MC, PC              | SC                    | TC                  | QC, FC, …           |
 | ------------------------------ | ------------------- | --------------------- | ------------------- | ------------------- |
 | **CBL_designSettings**         |                     |                       |                     |                     |
@@ -371,6 +377,7 @@ The following table summarizes default values set to different canal levels upon
 | Foundation Thickness, THK(m)   | 0.6                 | 0.6                   | 0.6                 | 0.6                 |
 | Earth cut shape, Smc(-)        | [2.000, 1.500, Inf] | [1.000, 1.500, Inf]   | [0.800, 1.500, Inf] | [0.600, 1.500, Inf] |
 | Earth fill shape, Smf(-)       | [2.000, 2.000, Inf] | [1.000, 1.750, Inf]   | [0.800, 1.750, Inf] | [0.600, 1.500, Inf] |
+| Canal Top Provission           | 0                   | 0                     | 0                   | 0                   |
 | **Hydraulic_Design**           |                     |                       |                     |                     |
 | Min. Design Discharge(m3/sec)  | 0.5                 | 0.1                   | 0.05                | 0.03                |
 | Design B to D ratio(-)         | -1                  | -1                    | -1                  | -1                  |

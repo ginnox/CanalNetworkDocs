@@ -62,6 +62,8 @@ After a succesful network resolution task, the user can do the following:
 
 3. Use the resolved network structure to group canal routes by generation and instance them in AutoCAD, for batch processing at a later stage.
 
+> Note: See below on exceptions and their naming convention.
+
 Lets now see how layout maps prepared in AutoCAD are imported to CanalNETWORK environment and analyzed for connectivity.
 
 ## Importing layout map to CanalNETWOK environment
@@ -396,6 +398,104 @@ Beware of double astrisk (** or place holder) strings. These indicate routes who
 Use `Ctrl` + `F` keyboard combination to search for such texts in large networks. If found, they will be highlighted for easily locating them.
 
 > Note: Some times, you may need to change the name of a parent canal. For instance for canal exceptions.  In such cases, the branch canal naming must also change accordingly. Or you may just want to re-create the text.  You can easily achieve this by running `Edit > Route Text > Create New Text` command for the desired route.
+
+
+
+## Exceptions for Canal Routes
+
+In some cases, the automatic assigning of a generation to a canal route may not serve the needs of the project. For instance, a canal may need to be designed as a TC route despite its parent canal is an MC or TC canal. To allow such unusual design requirements, the exceptions method is available. This allows to manually assign a generation or level to a route.
+
+### Setting Exceptions
+
+To manually override the naming for a canal route:
+
+1. Click on the canal route whose route name is to be manually changed.
+
+2. Go to `Edit > Route Exception > Exception for Current Route`.  
+   
+   ![fig56](Images/Image%20057.png)
+   
+   This will invoke the dialog box to manuall insert the desired canal naming.
+   
+   ![fig58](Images/Image%20058.png)
+   
+   If a previous exception is found, a dialog similar to below will apear showing more information, and also requesting for confimation of action.
+   
+   ![Fig059](Images/Image%20059.png)
+   
+   If `Replace` is confirmed, the above dialog *Input Exception* is displayed.
+
+3. Input the desired exception naming in the dialog. 
+   
+   ![fig60](Images/Image%20060.png)
+   
+   Note the following requirements:
+   
+   - The first letter has always to be an alphabet
+   
+   - No brackets, hyphens, or special characters are allowe, except the under-score symbol.
+   
+   - The name must be formatted as [prefx]GEN[suffix]_numbering1_numbering2 ... 
+   
+   - GEN must be an exact match to one of the generations defined in the naming style for the project.
+   
+   - Prefix OR suffix are optional. If provided, they must match the prefix or suffix settings defined in the naming style for the project.
+
+4. Click on `OK` to confirm manual override. The naming is applied to the route selected. 
+
+5. Note that manual overrides means, a different design criteria is required fot the route in question. Hence, a dialog requesting to confirm resizing operation is displayed. Confirm to proceed.
+   
+   ![fig061](Images/Image%20061.png)
+
+This completes the exception definition process. Note that canal routes named with exceptions have their names (in the profile view) displayed with an *(EX)* suffix, as shown in below example.
+
+![img62](Images/Image%20062.png)
+
+### Managing Exceptions
+
+You can manage the exceptions set for the entire project in one place. 
+
+1.  Start the command `Edit > Route Exception > Manage Exceptions...`. 
+   
+   ![fig63](Images/Image%20063.png)
+   
+   This will list of all exceptions set for the entire project data.
+   
+   ![fig63](Images/Image%20064.png)
+
+2.  Select the route whose exception data you want to remove, and click `Ok`. Note that the displayed route names are as per current exception naming set. The below confirmation dialog appears.
+   
+   ![fig64](Images/Image%20065.png)
+   
+   Note: This dialog also warns that resizing must be manually handled. So apply resizing on the route, before proceeding to design immediately after this change.
+   
+   
+
+3. Click on `Remove Data` to confirm your action. This will (a) remove all exception data for the selected route, and (b) re-instate the original naming for the route, which is created during the initial canal naming task.
+   
+   Click on the route again, to see its rolled back naming on the profile view. 
+   
+   
+   
+   
+
+> Note: The original naming for routes (generated automatically) may not be available, especially after repeated renaming. If you want to re-instate original naming, clear all exceptions for the project (or the deisred route), create route naming text as new and proceed.
+
+
+
+If you want to clear all exceptions set for the entire project, choose `View > Route Exception > Clear All Exceptions...` menu command, and confirm to the dialog box.
+
+### Notes on Eceptions
+
+When working with route name exceptions, it is important to note the following behaviours.
+
+- No limits to the number of exceptions that can be set in a given project.
+
+- Exceptions are persistent, retain the value set even when new name creation is requested from `View > Route Text > Create New Text` menu command.
+
+- The naming style should be strictly consistent with the currently defined naming style. If naming style, or its parameters, are changed (which is not recommened), errors in data processing are bound to occur and difficult to resolve easily. 
+
+
 
 ### Rendering Names to AutoCAD
 
