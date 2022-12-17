@@ -519,7 +519,7 @@ In the above figure, the Right side (Facing downstream) canal is registered, and
 
 1. Select the MC_1 route, and click on the branch node. On the *Edit Node* dialog, use `Remove (Merged)` button to remove the branch. 
 
-![Image51](images/Image%20051.png)
+![Image51](Images/Image%20051.png)
 
 This will leave only the other route (MC_2) connected to the node.
 
