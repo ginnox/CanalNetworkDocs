@@ -1,20 +1,46 @@
-**Hi Everyone**,
+## **Hi Everyone,**
 
-As always, we are excited to bring to you many enhanced features and functionalities to our products, building on our innovation and experimentation of different use cases as well as user feedback. 
+Well come to our latest release including updates for ** Nov-Dec 2022** . As always, we are excited to bring to you many enhanced features and functionalities to our products, building on our innovation and experimentation of different use cases as well as user feedback. 
 
 Further to great improvements and additions in previous release of Sep2022, this latest update for this period, includes - among others - the bekow listed key features and functionalities.
 
 Happy Designing,
 
-
-
 Team Quanomic.
+
+
+
+### Download files:
+
+Alway make sure you are working with the updated versions of our products. To update your software to the recent release.
+
+Download these resources below and follow the usual procedure to update your products.
+
+*Note: The download links will take you to a goole drive link. Go to the top right of the page, and choose download to get the files.*
+
+- [Download iCAD 2.2.0.7635 - Google Drive](https://drive.google.com/uc?export=download&id=1iwZkS-dC8lcyAM_GfTrUcoXKIsxTY6mM)
+
+- [Download iCAD bridge - Google Drive](https://drive.google.com/uc?export=download&id=1CnTmhM2ddaukULOwKaNiBN3WnqLzTXWC)
+
+- [Download CanalNetwork 1.5.9.1562-Google Drive](https://drive.google.com/uc?export=download&id=1m7joxCNDvkxZgRPiAq5k1UG57J9aOYWH)
+
+
+
+![fig](Images/screenshots.png)
+
+
+
+> Caution: The above files are only update files. A lincensed and working version of both products is required on a host computer for the updates to function. Contact us if you would like the installation files.
+
+
 
 
 
 -----------
 
-Major updates and funtionalities for this update:
+## Major updates and funtionalities
+
+Major feature updates and functionalities for this release include:
 
 - New function to over ride canal route capacity, to account for rotational water supply options that may be required on certain canals.
 
@@ -52,24 +78,6 @@ Previous updates included:
 - Summary of BoQ function included to generate highlevel summary of items for similar generation(levels) of canals.
 - Natural sorting algorithm included for intutive display of results in Canal Naming, Farmblock tables, and LSec drawing generations.
 - Alternate CsV file option for iCAD now included, the same as CanalNETWORK product, allowing data strealining and storage reduction.
-
-## Download files:
-
-Alway make sure you are working with the updated versions of our products. To update your software to the recent release. 
-
-Download these resources below and follow the usual procedure to update your products. 
-
-![image](Images/screenshots.png)
-
-*Note: The download links will take you to a goole drive link. Go to the top right of the page, and choose download to get the files.*
-
-* [Download iCAD 2.2.0.7635 - Google Drive](https://drive.google.com/uc?export=download&id=1iwZkS-dC8lcyAM_GfTrUcoXKIsxTY6mM)
-
-* [Download iCAD bridge - Google Drive](https://drive.google.com/uc?export=download&id=1CnTmhM2ddaukULOwKaNiBN3WnqLzTXWC)
-
-* [Download CanalNetwork 1.5.9.1562-Google Drive](https://drive.google.com/uc?export=download&id=1m7joxCNDvkxZgRPiAq5k1UG57J9aOYWH)
-
-> Caution: The above files are only update files. A lincensed and working version of both products is required on a host computer for the updates to function. Contact us if you would like the installation files.
 
 
 
