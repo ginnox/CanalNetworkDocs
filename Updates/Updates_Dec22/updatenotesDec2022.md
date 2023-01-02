@@ -1,14 +1,12 @@
 ## **Hi Everyone,**
 
-Well come to our latest release including updates for ** Nov-Dec 2022** . As always, we are excited to bring to you many enhanced features and functionalities to our products, building on our innovation and experimentation of different use cases as well as user feedback. 
+Well come to our latest release including updates for **Oct-Dec 2022** . As always, we are excited to bring to you many enhanced features and functionalities to our products, building on our innovation and experimentation of different use cases as well as user feedback. 
 
 Further to great improvements and additions in previous release of Sep2022, this latest update for this period, includes - among others - the bekow listed key features and functionalities.
 
 Happy Designing,
 
 Team Quanomic.
-
-
 
 ### Download files:
 
@@ -24,17 +22,9 @@ Download these resources below and follow the usual procedure to update your pro
 
 - [Download CanalNetwork 1.5.9.1562-Google Drive](https://drive.google.com/uc?export=download&id=1m7joxCNDvkxZgRPiAq5k1UG57J9aOYWH)
 
-
-
 ![fig](Images/screenshots.png)
 
-
-
 > Caution: The above files are only update files. A lincensed and working version of both products is required on a host computer for the updates to function. Contact us if you would like the installation files.
-
-
-
-
 
 -----------
 
@@ -78,7 +68,5 @@ Previous updates included:
 - Summary of BoQ function included to generate highlevel summary of items for similar generation(levels) of canals.
 - Natural sorting algorithm included for intutive display of results in Canal Naming, Farmblock tables, and LSec drawing generations.
 - Alternate CsV file option for iCAD now included, the same as CanalNETWORK product, allowing data strealining and storage reduction.
-
-
 
 END.
