@@ -2,6 +2,8 @@
 
 ## General Assumptions and Conventions
 
+Drainage canal alignments are drawn away from parent canals. For drainage networks, this would mean that alignments are drawn FUS direction.
+
 Once network is resolved and sized, the design of individual routes shall be executed from the most downstream to upstream. This would be incotrast to the design of routes in supply canal network, where task progresses from upstream parent canal to downstream branch canals.
 
 ## UI for DrainNETWORK
@@ -9,8 +11,6 @@ Once network is resolved and sized, the design of individual routes shall be exe
 No FSL-OGL criteria in design criteria, hence no annotators and related features.
 
 ## Design Criteria for DrainNETWORK
-
-
 
 ## Routes
 
@@ -49,10 +49,6 @@ Node inverts for branch inlets are positioned to a maximum of:
 - OGL-CTL of Branch at control
 
 - CBL at collector canal.
-
-
-
-
 
 ## DBL Design and recomended practice
 

@@ -240,6 +240,20 @@ To resolve these issues, DO NOT USE ReDraw Node DBL button, as shown at bottom r
 
 In above note, you notice that the reDraw button also creates an auto-generated data set for drop location in the immediate-next segment of the control. This is mandatory process, to ensure that any changes in invert level of the control node, is accomodated with respect to the downstream setment.
 
+## Using Floating Nodes
+
+Floating nodes are nodes (or contols) similar to other nodes, but can be used to represent different hydraulic and physical constraints along a canal route. They can be an effective way to regulate and interact with the longitudinal design of a route. The following notes deal with the insertion, specification and management of floating nodes to emualte practical design considerations.
+
+Inserting a floating Node
+
+Floating node parameters
+
+Deleteing a floating Node
+
+Canal Structures
+
+Special Segments
+
 ## Exploring Solutions
 
 There are multiple ways to explore and interact with the solutions of a longitudinal profile design of a canal route. These are all accessible from the menu `Explore Solutions`.  These are categorized in to two groups, annotations and data tables.
