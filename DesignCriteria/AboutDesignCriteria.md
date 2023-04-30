@@ -253,14 +253,16 @@ An other way to create complex cut and fill shapes is to use the `Canal Top Prov
   - Four values: as explained above.
   
   - A fifth value can be included to provide general orientation with respect to transverse grade line. This value dictates whether the first input (Left Width), is applied on the upgrade direction, or downgrade direction - irrespective of the orientation with respect to the FUS default convention. The value can be set as below:
+    
+    - 0<=value<1: Use default (FUS convention)
+    
+    - 1<=value<5: Apply Left width on downgrade side, and Right width on upgrade side
+    
+    - 5<value<10: Apply Left width on upgrade side, and Right width on downgrade side.
   
-  - 0<=value<1: Use default (FUS convention)
-  
-  - 1<=value<5: Apply Left width on downgrade side, and Right width on upgrade side
-  
-  - 5<value<10: Apply Left width on upgrade side, and Right width on downgrade side.
-
-
+  - NOTE: for the berm provission value to be considered, the height of cut and/or fill values (in third and fourth entries) must be provided explicitly. Hence inputs of one or two entries may not work as expects, and will depreciate soon.
+    
+    
 
 ![Images27](ImagesAbout/Image%20026.png)
 
@@ -353,8 +355,6 @@ Specifies the bed slope of the canal segment. The minimum (Steepest) value is 1i
 # Default Criteria values for different canal Levels
 
 The following table summarizes default values set to different canal levels upon generation of default design criteria set.
-
-
 
 | Parameter                      | MC, PC              | SC                    | TC                  | QC, FC, …           |
 | ------------------------------ | ------------------- | --------------------- | ------------------- | ------------------- |

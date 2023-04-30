@@ -16,8 +16,6 @@ Previous updates can be accessed below:
 
 [Updates for Jan22 to Jun22 (Partly)](Updates/Update_Jan22/Update_Jan22.md)
 
-
-
 ## Online documentation
 
 This online resource site is under continuous devekiopment and enhancement. New contents will be added frequently, and additions and enhancements are published often. Please make sure you always have the most uptodate reference to our products by directly accessing this resource site.
@@ -85,6 +83,8 @@ Below you will find short articles that provide guidance to tackle specific desi
 [8. Design of Canal Structures using Floating Nodes](https://docs.google.com/document/d/1ywZ02JvbcUlRRO3mwWogG4ZTRjwKy4x2pbU4MAhgZFw/edit?usp=sharing)
 
 [9. Understanding FLow Check in CanalNETWORK](https://docs.google.com/document/d/1jr9SPyF_zM2eyNAKcefduKt1Rzi2wtrKuiuOtSVA830/edit?usp=sharing)
+
+[10. Plot Box generation and use](https://docs.google.com/document/d/1a2VWmPVnPdIwNhO_pPi-nHIdPwxhMO4ntEb0yLr5-yw/edit?usp=sharinghttps://docs.google.com/document/d/1a2VWmPVnPdIwNhO_pPi-nHIdPwxhMO4ntEb0yLr5-yw/edit?usp=sharing)
 
 Stay tuned for more content on techniques and tips to tackle complex design tasks with ease and efficiency using out products.
 

@@ -32,6 +32,22 @@ Download these resources below and follow the usual procedure to update your pro
 
 Major feature updates and functionalities for this release include:
 
+- Bigger Detail view is now available from the view manager menu command, allowing to see details of cross-sections and junciton nodes comfortably.
+  
+  
+  
+  ![fog99](Images/Image%20112.png)
+  
+  
+
+- Additional data safety feature (accesible from iCAD) is incuded to overcome basic object property issues in AutoCAD system. This can only be set once. If an object is sel already, the original is maintained.
+
+- New tool -accesible from iCAD - is introduced for using the newl production sheet layout we proposed from CAD Tools menu (an experimental release).
+  
+  ![fig5](Images/Image%20040.png)
+
+- All reports and BoQ extracts are now generated to the project folder, where the AutoCAD file resides.
+
 - New function to over ride canal route capacity, to account for rotational water supply options that may be required on certain canals.
 
 ![figure](Images/Image%20036.png)
@@ -46,7 +62,7 @@ Major feature updates and functionalities for this release include:
 
 - Improved subroute selection feature, to handle route selections flexibly for various tasks. The use can now specify explicitly which levels of sub-routes to select for further processing- for instance, BoQ generattion, Drawing production, or Design Criteria (Discharge) override.
 - Improved canal top provission specification, allowing to automactically position provissions depending on natural gradient. This eliminates the need for the user to specify conditions for each route one by one, contributing to design speed and saving much time for the designer.
-- Improved canal route exception handling and management, allowing to accomodate specified naming prefix/suffix settings.
+- Improved canal route exception handling and management, allowing to accomodate specified naming prefix/suffix settings, including provision to provide naming prefix/suffix in reverse order, and accomodate exceptions for naming with prefixes.
 
 ![figure](Images/Image044.jpg)
 
