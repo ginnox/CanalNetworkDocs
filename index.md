@@ -84,7 +84,7 @@ Below you will find short articles that provide guidance to tackle specific desi
 
 [9. Understanding FLow Check in CanalNETWORK](https://docs.google.com/document/d/1jr9SPyF_zM2eyNAKcefduKt1Rzi2wtrKuiuOtSVA830/edit?usp=sharing)
 
-[10. Plot Box generation and use](https://docs.google.com/document/d/1a2VWmPVnPdIwNhO_pPi-nHIdPwxhMO4ntEb0yLr5-yw/edit?usp=sharinghttps://docs.google.com/document/d/1a2VWmPVnPdIwNhO_pPi-nHIdPwxhMO4ntEb0yLr5-yw/edit?usp=sharing)
+[10. Plot Box generation and use](https://docs.google.com/document/d/1a2VWmPVnPdIwNhO_pPi-nHIdPwxhMO4ntEb0yLr5-yw/edit?usp=sharing)
 
 Stay tuned for more content on techniques and tips to tackle complex design tasks with ease and efficiency using out products.
 
